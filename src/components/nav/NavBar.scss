@@ -1,0 +1,48 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+
+@import "../../variables";
+
+.NavBar {
+
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+
+	li {
+		text-transform: uppercase;
+		text-align: center;
+		padding: 10px;
+		font-weight: bold;
+		color: $mtuGold;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.active {
+		color: $white;
+	}
+
+}
+
+@media(min-width: $constraint) {
+	.NavBar {
+		flex-direction: row;
+
+		li {
+			margin-right: 20px;
+			transition: transform 250ms ease-in-out;
+		}
+
+		li:hover {
+			transform: scale(1.25);
+		}
+	}
+}

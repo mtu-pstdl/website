@@ -1,0 +1,44 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+.HomePage .header {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px;
+  font-size: 1.25em;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.HomePage .header span {
+  display: block;
+}
+.HomePage .header .title {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+@media (min-width: 720px) {
+  .HomePage .header {
+    font-size: 2.5em;
+    height: 90vh;
+  }
+  .HomePage .header span {
+    width: 60vw;
+    margin-left: 100px;
+  }
+}
+
+/*# sourceMappingURL=HomePage.css.map */

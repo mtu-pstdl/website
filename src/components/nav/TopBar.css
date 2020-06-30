@@ -1,0 +1,39 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+.TopBar {
+  display: flex;
+  flex-direction: column;
+}
+.TopBar .logo {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+@media (min-width: 720px) {
+  .TopBar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    background: black;
+  }
+  .TopBar .logo {
+    width: 200px;
+    max-height: 200px;
+  }
+}
+
+/*# sourceMappingURL=TopBar.css.map */

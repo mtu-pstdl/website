@@ -13,8 +13,11 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "typescript": "^3.7.5"
+    "typescript": "^3.7.5",
+    "react-router-dom": "latest",
+    "@types/react-router-dom": "latest"
   },
+  "homepage": "/build",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
