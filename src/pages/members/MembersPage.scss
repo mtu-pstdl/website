@@ -7,4 +7,13 @@
 
 .MembersPage {
 
+	.MemberSection {
+		margin: 20px 0;
+
+		.members {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+	}
 }

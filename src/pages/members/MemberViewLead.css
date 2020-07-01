@@ -1,0 +1,61 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+.MemberViewLead {
+  margin: 20px 0;
+}
+.MemberViewLead img {
+  width: 100%;
+}
+.MemberViewLead .content {
+  padding: 10px 0;
+}
+.MemberViewLead .content span, .MemberViewLead .content p {
+  display: block;
+  margin: 4px 0;
+}
+.MemberViewLead .content .name {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.MemberViewLead .content .email {
+  font-weight: lighter;
+}
+
+@media (min-width: 720px) {
+  .MemberViewLead {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #222;
+    border-radius: 40px;
+  }
+  .MemberViewLead .content .name {
+    font-size: 2em;
+  }
+  .MemberViewLead .content span, .MemberViewLead .content p {
+    margin: 10px;
+  }
+  .MemberViewLead .content .email {
+    font-size: 1.25em;
+  }
+  .MemberViewLead .content .bio {
+    flex-grow: 1;
+  }
+  .MemberViewLead img {
+    border-radius: 50%;
+    min-width: 300px;
+    padding: 0 40px;
+  }
+}
+
+/*# sourceMappingURL=MemberViewLead.css.map */

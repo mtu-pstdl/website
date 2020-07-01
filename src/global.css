@@ -18,15 +18,16 @@
 }
 
 h2 {
-  color: #ffcd00;
   font-size: 2em;
-  margin: 10px 0;
 }
 
 h3 {
-  color: #fff;
   font-size: 1.5em;
   font-weight: lighter;
+}
+
+h2, h3 {
+  color: #ffcd00;
   margin: 10px 0;
 }
 
@@ -36,7 +37,7 @@ h3 {
 
 @media (min-width: 720px) {
   .main {
-    margin: 40px;
+    margin: 40px 100px;
   }
 
   h2 {

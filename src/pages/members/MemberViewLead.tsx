@@ -7,6 +7,7 @@
 
 import * as React from "react";
 import {Member} from "./members";
+import "./MemberViewLead.css"
 
 export interface MemberViewLeadProps {
 	member: Member;
@@ -26,7 +27,12 @@ export class MemberViewLead extends React.Component<MemberViewLeadProps, MemberV
 
 	public render(): React.ReactElement {
 		return (<div className={"MemberViewLead"}>
-			<span>{this.props.member.firstName} <b>{this.props.member.lastName}</b></span>
+			<img src={this.props.member.profile} alt={`${this.props.member.firstName} closeup`}/>
+			<div className={"content"}>
+				<span className={"name"}>{this.props.member.firstName} {this.props.member.lastName}</span>
+				<span className={"email"}>{this.props.member.email}</span>
+				<p className={"bio"}>{this.props.member.bio}</p>
+			</div>
 		</div>);
 	}
 

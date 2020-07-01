@@ -35,14 +35,16 @@ export class App extends React.Component<AppProps, AppState> {
 		return (<div className={"App"}>
 			<Router>
 				<TopBar/>
-				<Switch>
-					<Route path="/projects"><ProjectsPage/></Route>
-					<Route path="/members"><MembersPage/></Route>
-					<Route path="/publications"><PublicationsPage/></Route>
-					<Route path="/facilities"><FacilitiesPage/></Route>
-					<Route path="/contact"><ContactPage/></Route>
-					<Route path="/"><HomePage/></Route>
-				</Switch>
+				<div className={"rootAppContainer"}>
+					<Switch>
+						<Route path="/projects"><ProjectsPage/></Route>
+						<Route path="/members"><MembersPage/></Route>
+						<Route path="/publications"><PublicationsPage/></Route>
+						<Route path="/facilities"><FacilitiesPage/></Route>
+						<Route path="/contact"><ContactPage/></Route>
+						<Route path="/"><HomePage/></Route>
+					</Switch>
+				</div>
 			</Router>
 		</div>);
 	}

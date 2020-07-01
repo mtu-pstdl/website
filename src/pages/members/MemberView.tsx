@@ -7,6 +7,7 @@
 
 import * as React from "react";
 import {Member} from "./members";
+import "./MemberView.css";
 
 export interface MemberViewProps {
 	member: Member;
@@ -26,7 +27,11 @@ export class MemberView extends React.Component<MemberViewProps, MemberViewState
 
 	public render(): React.ReactElement {
 		return (<div className={"MemberView"}>
-			<p>Hello, world!</p>
+			<img src={this.props.member.profile} alt={this.props.member.firstName + " profile"}/>
+			<div className={"content"}>
+				<span className={"name"}>{this.props.member.firstName + " " + this.props.member.lastName}</span>
+				<span className={"email"}>{this.props.member.email}</span>
+			</div>
 		</div>);
 	}
 

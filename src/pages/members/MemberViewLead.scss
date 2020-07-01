@@ -1,0 +1,79 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+
+@import "../../variables";
+
+.MemberViewLead {
+
+	margin: 20px 0;
+
+	img {
+		width: 100%;
+	}
+
+	.content {
+
+		padding: 10px 0;
+
+		span, p {
+			display: block;
+			margin: 4px 0;
+		}
+
+		.name {
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+
+		.email {
+			font-weight: lighter;
+		}
+
+
+	}
+
+}
+
+@media (min-width: $constraint) {
+	.MemberViewLead {
+
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		background: $background;
+		border-radius: 40px;
+
+		.content {
+			.name {
+				font-size: 2em;
+			}
+
+			span, p {
+				margin: 10px;
+			}
+
+			.email {
+				font-size: 1.25em;
+			}
+
+			.bio {
+				flex-grow: 1;
+			}
+
+		}
+
+
+		img {
+			border-radius: 50%;
+			min-width: 300px;
+			padding: 0 40px;
+		}
+
+
+
+	}
+}

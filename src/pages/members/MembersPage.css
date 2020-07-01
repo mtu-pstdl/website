@@ -4,5 +4,13 @@
  * elijahcobb.com
  * github.com/elijahjcobb
  */
+.MembersPage .MemberSection {
+  margin: 20px 0;
+}
+.MembersPage .MemberSection .members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
 /*# sourceMappingURL=MembersPage.css.map */

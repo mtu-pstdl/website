@@ -15,7 +15,9 @@
     "react-scripts": "3.4.1",
     "typescript": "^3.7.5",
     "react-router-dom": "latest",
-    "@types/react-router-dom": "latest"
+    "@types/react-router-dom": "latest",
+    "@material-ui/icons": "latest",
+    "@material-ui/core": "latest"
   },
   "scripts": {
     "start": "react-scripts start",

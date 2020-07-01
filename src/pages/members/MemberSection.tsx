@@ -29,9 +29,11 @@ export class MemberSection extends React.Component<MemberSectionProps, MemberSec
 	public render(): React.ReactElement {
 		return (<div className={"MemberSection"}>
 			<h3>{this.props.collection.title}</h3>
-			{this.props.collection.members.map((member: Member) => {
-				return this.props.collection.detail ? <MemberViewLead member={member}/> : <MemberView member={member}/>;
-			})}
+			<div className={"members"}>
+				{this.props.collection.members.map((member: Member) => {
+					return this.props.collection.detail ? <MemberViewLead member={member}/> : <MemberView member={member}/>;
+				})}
+			</div>
 		</div>);
 	}
 

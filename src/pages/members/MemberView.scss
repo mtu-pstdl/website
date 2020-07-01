@@ -1,0 +1,52 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+
+@import "../../variables";
+
+.MemberView {
+
+	background: $background;
+	margin: 20px 0;
+	display: flex;
+	border-radius: 20px;
+	overflow: hidden;
+
+	img {
+		width: 40%;
+		max-height: 100px;
+		object-position: top;
+		object-fit: cover;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 20px;
+
+		span {
+			display: block;
+			margin: 4px 0;
+		}
+
+		.name {
+			font-weight: bold;
+			font-size: 1.5em;
+		}
+
+		.email {
+			font-weight: lighter;
+		}
+	}
+}
+
+@media (min-width: $constraint) {
+	.MemberView {
+		width: 30%;
+	}
+}
