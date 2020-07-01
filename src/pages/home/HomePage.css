@@ -34,6 +34,7 @@
   .HomePage .header {
     font-size: 2.5em;
     height: 90vh;
+    max-height: 1000px;
   }
   .HomePage .header span {
     width: 60vw;

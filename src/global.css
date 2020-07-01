@@ -4,11 +4,52 @@
  * elijahcobb.com
  * github.com/elijahjcobb
  */
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
+}
+
+h2 {
+  color: #ffcd00;
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+h3 {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: lighter;
+  margin: 10px 0;
+}
+
+.main {
+  margin: 10px;
+}
+
+@media (min-width: 720px) {
+  .main {
+    margin: 40px;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  h2, h3 {
+    margin: 20px 0;
+  }
 }
 
 /*# sourceMappingURL=global.css.map */

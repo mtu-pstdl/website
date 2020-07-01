@@ -30,11 +30,6 @@ export class HomePage extends React.Component<HomePageProps, HomePageState> {
 				<span className={"title"}>Planetary Surface Technology Development Lab</span>
 				<span className={"subtitle"}>Michigan Technological University</span>
 			</div>
-			<div style={{
-				width: "100%",
-				height: "100vh",
-				background: "gray"
-			}}></div>
 		</div>);
 	}
 
