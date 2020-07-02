@@ -38,6 +38,7 @@
     justify-content: flex-start;
     background: #222;
     border-radius: 40px;
+    padding: 10px;
   }
   .MemberViewLead .content .name {
     font-size: 2em;
@@ -53,7 +54,8 @@
   }
   .MemberViewLead img {
     border-radius: 50%;
-    min-width: 300px;
+    min-width: 100px;
+    max-width: 200px;
     padding: 0 40px;
   }
 }

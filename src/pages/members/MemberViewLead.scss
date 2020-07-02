@@ -46,6 +46,7 @@
 		justify-content: flex-start;
 		background: $background;
 		border-radius: 40px;
+		padding: 10px;
 
 		.content {
 			.name {
@@ -69,7 +70,8 @@
 
 		img {
 			border-radius: 50%;
-			min-width: 300px;
+			min-width: 100px;
+			max-width: 200px;
 			padding: 0 40px;
 		}
 
