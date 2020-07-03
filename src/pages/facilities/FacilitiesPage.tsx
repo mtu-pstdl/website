@@ -27,6 +27,11 @@ export class FacilitiesPage extends React.Component<FacilitiesPageProps, Facilit
 	public render(): React.ReactElement {
 		return (<div className={"FacilitiesPage main"}>
 			<h2>Facilities</h2>
+			<h3>Dusty Thermal Vacuum Chamber (DTVAC)</h3>
+			<h3>Industrial Robotic Arm</h3>
+			<h3>Lunar Regolith Sandbox with Gravity Assist</h3>
+			<h3>Mini Thermal Vacuum Chamber (MTVAC)</h3>
+			<h3>Outdoor Robotic Test Platform</h3>
 		</div>);
 	}
 
