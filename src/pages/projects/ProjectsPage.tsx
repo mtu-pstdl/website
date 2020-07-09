@@ -6,7 +6,8 @@
  */
 
 import * as React from "react";
-import "./ProjectsPage.css"
+import "./ProjectsPage.css";
+import {Link, Switch, Route} from "react-router-dom";
 
 export interface ProjectsPageProps {
 
@@ -26,7 +27,21 @@ export class ProjectsPage extends React.Component<ProjectsPageProps, ProjectsPag
 
 	public render(): React.ReactElement {
 		return (<div className={"ProjectsPage main"}>
-			<h2>Projects</h2>
+			<Switch>
+				<Route path={`/projects/test1`}>test1</Route>
+				<Route path={`/projects/test2`}>test2</Route>
+				<Route path={`/projects`}>
+					<h2>Projects</h2>
+					<ul>
+						<li>
+							<Link to={`/projects/test1`}>Test 1</Link>
+						</li>
+						<li>
+							<Link to={`/projects/test2`}>Test 2</Link>
+						</li>
+					</ul>
+				</Route>
+			</Switch>
 		</div>);
 	}
 
