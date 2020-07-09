@@ -30,16 +30,20 @@ export class PublicationsPage extends React.Component<PublicationsPageProps, Pub
 		return (<div className={"PublicationsPage main"}>
 			<h2>Publications</h2>
 			<table>
-				<tr>
-					<th>Title</th>
-					<th>Year</th>
-					<th>Authors</th>
-					<th>Journal</th>
-					<th className={"iconColumn"}/>
-				</tr>
-				{publications.map((publication: Publication) => {
-					return <PublicationRow publication={publication}/>
-				})}
+				<thead>
+					<tr>
+						<th>Title</th>
+						<th>Year</th>
+						<th>Authors</th>
+						<th>Journal</th>
+						<th className={"iconColumn"}/>
+					</tr>
+				</thead>
+				<tbody>
+					{publications.map((publication: Publication, index: number) => {
+						return <PublicationRow publication={publication} key={index}/>
+					})}
+				</tbody>
 			</table>
 		</div>);
 	}

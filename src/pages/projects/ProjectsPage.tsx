@@ -8,6 +8,8 @@
 import * as React from "react";
 import "./ProjectsPage.css";
 import {Link, Switch, Route} from "react-router-dom";
+import {projects, Project} from "./projects";
+import {ProjectRow} from "./ProjectRow";
 
 export interface ProjectsPageProps {
 
@@ -28,18 +30,22 @@ export class ProjectsPage extends React.Component<ProjectsPageProps, ProjectsPag
 	public render(): React.ReactElement {
 		return (<div className={"ProjectsPage main"}>
 			<Switch>
-				<Route path={`/projects/test1`}>test1</Route>
-				<Route path={`/projects/test2`}>test2</Route>
+				{
+					projects.map((project: Project, index: number) => {
+						return (<Route path={`/projects/${project.url}`} key={index}>{project.component}</Route>);
+					})
+				}
 				<Route path={`/projects`}>
 					<h2>Projects</h2>
-					<ul>
-						<li>
-							<Link to={`/projects/test1`}>Test 1</Link>
-						</li>
-						<li>
-							<Link to={`/projects/test2`}>Test 2</Link>
-						</li>
-					</ul>
+					<div className={"projects"}>
+						{
+							projects.map((project: Project, index: number) => {
+								return (<Link to={"/projects/" + project.url} key={index}>
+									<ProjectRow project={project}/>
+								</Link>);
+							})
+						}
+					</div>
 				</Route>
 			</Switch>
 		</div>);
