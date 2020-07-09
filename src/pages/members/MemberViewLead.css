@@ -37,27 +37,33 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background: #222;
-    border-radius: 40px;
     padding: 10px;
+  }
+  .MemberViewLead .content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 20px;
+    flex-grow: 1;
   }
   .MemberViewLead .content .name {
     font-size: 2em;
+    text-align: right;
   }
   .MemberViewLead .content span, .MemberViewLead .content p {
-    margin: 10px;
+    margin: 8px 0;
   }
   .MemberViewLead .content .email {
     font-size: 1.25em;
+    text-align: right;
   }
-  .MemberViewLead .content .bio {
-    flex-grow: 1;
-  }
-  .MemberViewLead img {
-    width: 200px;
-    padding: 0 40px;
-    height: 100%;
+  .MemberViewLead .content img {
+    width: 100%;
     object-fit: contain;
+  }
+  .MemberViewLead .bio {
+    flex-grow: 2;
   }
 }
 

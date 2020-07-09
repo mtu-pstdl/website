@@ -11,7 +11,7 @@
  * github.com/elijahjcobb
  */
 .MemberView {
-  background: #222;
+  border: solid #222 2px;
   margin: 20px 0;
   display: flex;
   border-radius: 20px;
