@@ -10,6 +10,7 @@ import "./ProjectsPage.css";
 import {Link, Switch, Route} from "react-router-dom";
 import {projects, Project} from "./projects";
 import {ProjectRow} from "./ProjectRow";
+import {ProjectDetail} from "./ProjectDetail";
 
 export interface ProjectsPageProps {
 
@@ -32,7 +33,11 @@ export class ProjectsPage extends React.Component<ProjectsPageProps, ProjectsPag
 			<Switch>
 				{
 					projects.map((project: Project, index: number) => {
-						return (<Route path={`/projects/${project.url}`} key={index}>{project.component}</Route>);
+						return (<Route path={`/projects/${project.url}`} key={index}>
+							<ProjectDetail>
+								{project.component}
+							</ProjectDetail>
+						</Route>);
 					})
 				}
 				<Route path={`/projects`}>
@@ -40,9 +45,7 @@ export class ProjectsPage extends React.Component<ProjectsPageProps, ProjectsPag
 					<div className={"projects"}>
 						{
 							projects.map((project: Project, index: number) => {
-								return (<Link to={"/projects/" + project.url} key={index}>
-									<ProjectRow project={project}/>
-								</Link>);
+								return (<ProjectRow project={project} key={index}/>);
 							})
 						}
 					</div>

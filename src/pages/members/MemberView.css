@@ -11,11 +11,12 @@
  * github.com/elijahjcobb
  */
 .MemberView {
-  border: solid #222 2px;
   margin: 20px 0;
   display: flex;
   border-radius: 20px;
   overflow: hidden;
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 20px #202020;
 }
 .MemberView img {
   width: 40%;

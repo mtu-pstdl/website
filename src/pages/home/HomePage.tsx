@@ -26,7 +26,7 @@ export class HomePage extends React.Component<HomePageProps, HomePageState> {
 
 	public render(): React.ReactElement {
 		return (<div className={"HomePage"}>
-			<div style={{backgroundImage: "url('moon-landscape.jpg')"}} className={"header"}>
+			<div style={{backgroundImage: "url('moon1.png')"}} className={"header"}>
 				<span className={"title"}>Planetary Surface Technology Development Lab</span>
 				<span className={"subtitle"}>Michigan Technological University</span>
 			</div>

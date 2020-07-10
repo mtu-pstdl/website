@@ -4,5 +4,62 @@
  * elijahcobb.com
  * github.com/elijahjcobb
  */
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+.ProjectRow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+.ProjectRow .link {
+  display: block;
+  text-decoration: none;
+  color: black;
+  background: #ffcd00;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+.ProjectRow .text {
+  margin: 8px 0;
+}
+.ProjectRow .image {
+  width: 100%;
+  max-height: 40vh;
+  object-fit: cover;
+}
+
+@media (min-width: 720px) {
+  .ProjectRow {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 0;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 20px #202020;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .ProjectRow .image {
+    width: 0px;
+    flex-grow: 1;
+    display: block;
+  }
+  .ProjectRow .text {
+    margin: 0 20px;
+    width: 0;
+    flex-grow: 1.5;
+  }
+  .ProjectRow .link {
+    transition: transform 250ms ease-in-out;
+  }
+  .ProjectRow .link:hover {
+    transform: scale(1.1);
+  }
+}
 
 /*# sourceMappingURL=ProjectRow.css.map */

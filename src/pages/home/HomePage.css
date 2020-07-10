@@ -22,9 +22,10 @@
   justify-content: center;
   padding: 10px;
   font-size: 1.25em;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: right;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .HomePage .header span {
   display: block;

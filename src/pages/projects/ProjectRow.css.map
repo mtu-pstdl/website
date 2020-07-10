@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["ProjectRow.scss"],"names":[],"mappings":"AAAA;AAAA;AAAA;AAAA;AAAA;AAAA","file":"ProjectRow.css"}
+{"version":3,"sourceRoot":"","sources":["ProjectRow.scss","../../_variables.scss"],"names":[],"mappings":"AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;ACAA;AAAA;AAAA;AAAA;AAAA;AAAA;ADSA;EAEC;EACA;EACA;EACA;;AAEA;EACC;EACA;EACA,OCXS;EDYT,YCbQ;EDcR;EACA;;AAGD;EACC;;AAGD;EACC;EACA;EACA;;;AAKF;EACC;IAEC;IACA;IACA;IACA;IACA,YC9BoB;ID+BpB,YChCmB;IDiCnB;IACA;;EAEA;IACC;IACA;IACA;;EAGD;IACC;IACA;IACA;;EAGD;IACC;;EAGD;IACC","file":"ProjectRow.css"}
