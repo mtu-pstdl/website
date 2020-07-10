@@ -7,6 +7,7 @@
 
 import * as React from "react";
 import "./ContactPage.css"
+import {LoremIpsum} from "../../components/LoremIpsum";
 
 export interface ContactPageProps {
 
@@ -27,6 +28,12 @@ export class ContactPage extends React.Component<ContactPageProps, ContactPageSt
 	public render(): React.ReactElement {
 		return (<div className={"ContactPage main"}>
 			<h2>Contact</h2>
+			<h3>General Inquiries</h3>
+			<LoremIpsum/>
+			<h3>Join</h3>
+			<LoremIpsum/>
+			<h3>Enterprise Application</h3>
+			<LoremIpsum/>
 		</div>);
 	}
 
