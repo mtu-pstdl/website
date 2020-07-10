@@ -20,7 +20,7 @@
   text-align: center;
   padding: 10px;
   font-weight: bold;
-  color: #ffcd00;
+  color: inherit;
 }
 .NavBar a {
   text-decoration: none;
@@ -33,6 +33,10 @@
 @media (min-width: 720px) {
   .NavBar {
     flex-direction: row;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px black;
+    background: black;
   }
   .NavBar li {
     margin-right: 20px;

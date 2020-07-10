@@ -35,15 +35,19 @@ h2, h3 {
 
 @media (min-width: $constraint) {
 
-	//.rootAppContainer {
-	//	display: flex;
-	//	flex-direction: column;
-	//	align-items: center;
-	//}
+	.rootAppContainer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
 	.main {
-		margin: 40px 100px;
-		//max-width: 1000px;
+		width: 80%;
+		margin: 20px;
+		max-width: 800px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
 	}
 
 	h2 {

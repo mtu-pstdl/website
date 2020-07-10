@@ -12,7 +12,6 @@
  */
 .MemberViewLead {
   margin: 20px 0;
-  max-width: 800px;
 }
 .MemberViewLead img {
   width: 100%;
@@ -37,7 +36,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #202020;
+    background: rgba(0, 0, 0, 0.9);
   }
   .MemberViewLead .content {
     padding: 0;
@@ -45,7 +47,7 @@
     flex-direction: column;
     align-items: flex-end;
     margin-right: 20px;
-    flex-grow: 1;
+    width: 30%;
   }
   .MemberViewLead .content .name {
     font-size: 2em;
@@ -63,7 +65,8 @@
     object-fit: contain;
   }
   .MemberViewLead .bio {
-    flex-grow: 2;
+    width: 70%;
+    align-self: flex-start;
   }
 }
 

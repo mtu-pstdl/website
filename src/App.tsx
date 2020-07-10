@@ -14,6 +14,7 @@ import {ProjectsPage} from "./pages/projects/ProjectsPage";
 import {PublicationsPage} from "./pages/publications/PublicationsPage";
 import {FacilitiesPage} from "./pages/facilities/FacilitiesPage";
 import {ContactPage} from "./pages/contact/ContactPage";
+import {AstraBackground} from "./components/stars/AstraBackground";
 
 export interface AppProps {
 
@@ -33,6 +34,7 @@ export class App extends React.Component<AppProps, AppState> {
 
 	public render(): React.ReactElement {
 		return (<div className={"App"}>
+			<AstraBackground/>
 			<Router>
 				<TopBar/>
 				<div className={"rootAppContainer"}>
