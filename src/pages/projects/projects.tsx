@@ -19,38 +19,38 @@ export type Projects = Project[];
 
 export const projects: Projects = [
 	{
-		name: "Test 1",
-		url: "test1",
-		image: "https://via.placeholder.com/300x200.png?text=Test%201",
-		summary: "This is the summary for test 1.",
-		component: <h2>Hello, world 1!</h2>
+		name: "Project 1",
+		url: "project1",
+		image: "https://via.placeholder.com/300x200.png?text=Project%201",
+		summary: "This is the summary for project 1.",
+		component: <h2>Project 1</h2>
 	},
 	{
-		name: "Test 2",
-		url: "test2",
-		image: "https://via.placeholder.com/300x200.png?text=Test%202",
-		summary: "This is the summary for test 2.",
-		component: <h2>Hello, world 2!</h2>
+		name: "Project 2",
+		url: "project2",
+		image: "https://via.placeholder.com/300x200.png?text=Project%202",
+		summary: "This is the summary for project 2.",
+		component: <h2>Project 2</h2>
 	},
 	{
-		name: "Test 3",
-		url: "test3",
-		image: "https://via.placeholder.com/300x200.png?text=Test%203",
-		summary: "This is the summary for test 3.",
-		component: <h2>Hello, world 3!</h2>
+		name: "Project 3",
+		url: "project3",
+		image: "https://via.placeholder.com/300x200.png?text=Project%203",
+		summary: "This is the summary for project 3.",
+		component: <h2>Project 3</h2>
 	},
 	{
-		name: "Test 4",
-		url: "test4",
-		image: "https://via.placeholder.com/300x200.png?text=Test%204",
-		summary: "This is the summary for test 4.",
-		component: <h2>Hello, world 4!</h2>
+		name: "Project 4",
+		url: "project4",
+		image: "https://via.placeholder.com/300x200.png?text=Project%204",
+		summary: "This is the summary for project 4.",
+		component: <h2>Project 4</h2>
 	},
 	{
-		name: "Test 5",
-		url: "test5",
-		image: "https://via.placeholder.com/300x200.png?text=Test%205",
-		summary: "This is the summary for test 5.",
-		component: <h2>Hello, world 5!</h2>
+		name: "Project 5",
+		url: "project5",
+		image: "https://via.placeholder.com/300x200.png?text=Project%205",
+		summary: "This is the summary for project 5.",
+		component: <h2>Project 5</h2>
 	}
 ];
