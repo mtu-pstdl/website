@@ -35,6 +35,29 @@
   font-size: 1.5em;
   margin-bottom: 20px;
 }
+.HomePage .rocket {
+  position: fixed;
+  width: 40px;
+  height: 80px;
+  animation-name: rocket-fly;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
+  transform: scale(0);
+}
+@keyframes rocket-fly {
+  0% {
+    transform: scale(0);
+    top: 40vh;
+    right: 20vw;
+  }
+  100% {
+    transform: scale(8) rotate(35deg);
+    top: -20vh;
+    right: -20vh;
+  }
+}
+
 @media (min-width: 720px) {
   .HomePage .header {
     font-size: 2.5em;
