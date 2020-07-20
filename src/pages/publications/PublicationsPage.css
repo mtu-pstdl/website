@@ -10,6 +10,9 @@
  * elijahcobb.com
  * github.com/elijahjcobb
  */
+.PublicationsPage {
+  max-width: 1920px;
+}
 .PublicationsPage table {
   width: 100%;
   border-collapse: separate;
@@ -29,6 +32,12 @@
 .PublicationsPage table .icon {
   color: #ffcd00;
   font-size: 1.5em;
+}
+.PublicationsPage table .dateColumn {
+  min-width: 100px;
+}
+.PublicationsPage table .authorsColumn {
+  min-width: 140px;
 }
 
 @media (min-width: 720px) {

@@ -23,15 +23,24 @@ export class PublicationRow extends React.Component<PublicationRowProps, Publica
 
 		super(props);
 
+		this.getDateString = this.getDateString.bind(this);
+
+	}
+
+	private getDateString(): string {
+		return this.props.publication.date.toLocaleDateString("en-US", {
+			month: "short",
+			year: "numeric"
+		});
 	}
 
 	public render(): React.ReactElement {
 		return (<tr className={"PublicationRow"}>
 			<td>{this.props.publication.title}</td>
-			<td>{this.props.publication.year}</td>
+			<td>{this.getDateString()}</td>
 			<td>{this.props.publication.authors.join(", ")}</td>
-			<td>{this.props.publication.journal}</td>
-			<td><a href={this.props.publication.url} target={"_blank"} rel={"noopener noreferrer"}><LinkIcon className={"icon"}/></a></td>
+			<td>{this.props.publication.publication}</td>
+			<td>{this.props.publication.url ? <a href={this.props.publication.url} target={"_blank"} rel={"noopener noreferrer"}><LinkIcon className={"icon"}/></a> : <div/>}</td>
 		</tr>);
 	}
 

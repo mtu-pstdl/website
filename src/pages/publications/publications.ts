@@ -7,25 +7,23 @@
 
 export type Publication = {
 	title: string;
-	year: string;
+	date: Date;
 	authors: string[];
-	journal: string;
-	url: string;
+	publication: string;
+	url?: string;
 }
 
-export const publications: Publication[] = [
+const publications: Publication[] = [
 	{
-		title: "Lorem Ipsum",
-		year: "2020",
-		authors: ["Albert Einstein"],
-		journal: "A Good Journal",
-		url: "https://www.google.com"
-	},
-	{
-		title: "Dolor Etea",
-		year: "2018",
-		authors: ["Albert Einstein"],
-		journal: "An Ok Journal",
-		url: "https://www.google.com"
+		title: "Analytical models and laboratory measurements of the soil-tool interaction force to push a narrow tool through JSC-1a lunar simulant and Ottawa sand at different cutting depths.",
+		date: new Date("2010"),
+		authors: ["Paul van Susante"],
+		publication: "Journal of Terramechanics"
 	}
 ];
+
+export function getPublicationsSorted(): Publication[] {
+	return publications.sort((p1, p2) => {
+		return p2.date.getTime() - p1.date.getTime();
+	});
+}

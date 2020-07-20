@@ -7,7 +7,7 @@
 
 import * as React from "react";
 import "./PublicationsPage.css"
-import {Publication, publications} from "./publications";
+import {Publication, getPublicationsSorted} from "./publications";
 import {PublicationRow} from "./PublicationRow";
 
 export interface PublicationsPageProps {
@@ -32,15 +32,15 @@ export class PublicationsPage extends React.Component<PublicationsPageProps, Pub
 			<table>
 				<thead>
 					<tr>
-						<th>Title</th>
-						<th>Year</th>
-						<th>Authors</th>
-						<th>Journal</th>
+						<th className={"titleColumn"}>Title</th>
+						<th className={"dateColumn"}>Date</th>
+						<th className={"authorsColumn"}>Authors</th>
+						<th className={"publicationColumn"}>Publication</th>
 						<th className={"iconColumn"}/>
 					</tr>
 				</thead>
 				<tbody>
-					{publications.map((publication: Publication, index: number) => {
+					{getPublicationsSorted().map((publication: Publication, index: number) => {
 						return <PublicationRow publication={publication} key={index}/>
 					})}
 				</tbody>

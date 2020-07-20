@@ -9,6 +9,8 @@
 
 .PublicationsPage {
 
+	max-width: 1920px;
+
 	table {
 
 		width: 100%;
@@ -32,6 +34,14 @@
 		.icon {
 			color: $mtuGold;
 			font-size: 1.5em;
+		}
+
+		.dateColumn {
+			min-width: 100px;
+		}
+
+		.authorsColumn {
+			min-width: 140px;
 		}
 
 	}
