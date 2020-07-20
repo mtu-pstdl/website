@@ -20,7 +20,6 @@
 }
 .MemberView img {
   width: 40%;
-  max-height: 100px;
   object-position: top;
   object-fit: cover;
 }
@@ -41,11 +40,18 @@
 }
 .MemberView .content .email {
   font-weight: lighter;
+  display: block;
+  transition: color 250ms ease-in-out;
+  color: #fff;
+  text-decoration: none;
 }
 
 @media (min-width: 720px) {
   .MemberView {
-    width: 30%;
+    width: 45%;
+  }
+  .MemberView .email:hover {
+    color: #ffcd00;
   }
 }
 

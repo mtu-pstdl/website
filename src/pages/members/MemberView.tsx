@@ -30,7 +30,7 @@ export class MemberView extends React.Component<MemberViewProps, MemberViewState
 			<img src={this.props.member.profile} alt={this.props.member.firstName + " profile"}/>
 			<div className={"content"}>
 				<span className={"name"}>{this.props.member.firstName + " " + this.props.member.lastName}</span>
-				<span className={"email"}>{this.props.member.email}</span>
+				<a href={this.props.member.email} className={"email"}>{this.props.member.email}</a>
 			</div>
 		</div>);
 	}

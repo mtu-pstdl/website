@@ -18,7 +18,6 @@
 
 	img {
 		width: 40%;
-		max-height: 100px;
 		object-position: top;
 		object-fit: cover;
 	}
@@ -42,12 +41,22 @@
 
 		.email {
 			font-weight: lighter;
+			display: block;
+			transition: color 250ms ease-in-out;
+			color: $white;
+			text-decoration: none;
 		}
+
 	}
 }
 
 @media (min-width: $constraint) {
 	.MemberView {
-		width: 30%;
+		width: 45%;
+
+		.email:hover {
+			color: $mtuGold;
+		}
+
 	}
 }

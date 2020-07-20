@@ -16,57 +16,51 @@
 .MemberViewLead img {
   width: 100%;
 }
-.MemberViewLead .content {
-  padding: 10px 0;
-}
-.MemberViewLead .content span, .MemberViewLead .content p {
+.MemberViewLead span, .MemberViewLead p {
   display: block;
   margin: 4px 0;
 }
-.MemberViewLead .content .name {
+.MemberViewLead .name {
   font-size: 1.5em;
   font-weight: bold;
 }
-.MemberViewLead .content .email {
+.MemberViewLead .email {
   font-weight: lighter;
+  color: #fff;
+  text-decoration: none;
 }
 
 @media (min-width: 720px) {
   .MemberViewLead {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 20px #202020;
     background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 20px #202020;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
   }
-  .MemberViewLead .content {
-    padding: 0;
+  .MemberViewLead .name-split, .MemberViewLead .bio-split, .MemberViewLead .img-split {
     display: flex;
+  }
+  .MemberViewLead .name-split, .MemberViewLead .img-split {
+    align-items: center;
+  }
+  .MemberViewLead .bio-split {
     flex-direction: column;
-    align-items: flex-end;
+  }
+  .MemberViewLead .name-split {
+    justify-content: space-between;
+  }
+  .MemberViewLead .email {
+    display: block;
+    transition: color 250ms ease-in-out;
+  }
+  .MemberViewLead .email:hover {
+    color: #ffcd00;
+  }
+  .MemberViewLead .closeup {
+    display: block;
+    max-width: 200px;
     margin-right: 20px;
-    width: 30%;
-  }
-  .MemberViewLead .content .name {
-    font-size: 2em;
-    text-align: right;
-  }
-  .MemberViewLead .content span, .MemberViewLead .content p {
-    margin: 8px 0;
-  }
-  .MemberViewLead .content .email {
-    font-size: 1.25em;
-    text-align: right;
-  }
-  .MemberViewLead .content img {
-    width: 100%;
-    object-fit: contain;
-  }
-  .MemberViewLead .bio {
-    width: 70%;
-    align-self: flex-start;
   }
 }
 

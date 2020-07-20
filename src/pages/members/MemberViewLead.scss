@@ -15,73 +15,69 @@
 		width: 100%;
 	}
 
-	.content {
-
-		padding: 10px 0;
-
-		span, p {
-			display: block;
-			margin: 4px 0;
-		}
-
-		.name {
-			font-size: 1.5em;
-			font-weight: bold;
-		}
-
-		.email {
-			font-weight: lighter;
-		}
-
-
+	span, p {
+		display: block;
+		margin: 4px 0;
 	}
 
+	.name {
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+
+	.email {
+		font-weight: lighter;
+		color: $white;
+		text-decoration: none;
+	}
 }
 
 @media (min-width: $constraint) {
 	.MemberViewLead {
 
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-		padding: 20px;
-		border-radius: 20px;
-		box-shadow: $antiAstraBoxShadow;
 		background: $antiAstraBackground;
+		box-shadow: $antiAstraBoxShadow;
+		border-radius: 20px;
+		overflow: hidden;
+		padding: 20px;
 
-		.content {
-
-			padding: 0;
+		.name-split, .bio-split, .img-split {
 			display: flex;
+		}
+
+		.name-split, .img-split {
+			align-items: center;
+		}
+
+		.bio-split {
 			flex-direction: column;
-			align-items: flex-end;
-			margin-right: 20px;
-			width: 30%;
+		}
 
-			.name {
-				font-size: 2em;
-				text-align: right;
-			}
+		.name-split {
+			justify-content: space-between;
+		}
 
-			span, p {
-				margin: 8px 0;
-			}
-
-			.email {
-				font-size: 1.25em;
-				text-align: right;
-			}
-
-			img {
-				width: 100%;
-				object-fit: contain;
-			}
+		.name {
 
 		}
 
+		.email {
+			display: block;
+			transition: color 250ms ease-in-out;
+		}
+
+		.email:hover {
+			color: $mtuGold;
+		}
+
+		.closeup {
+			display: block;
+			max-width: 200px;
+			margin-right: 20px;
+		}
+
 		.bio {
-			width: 70%;
-			align-self: flex-start;
+
 		}
 
 	}

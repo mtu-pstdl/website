@@ -19,38 +19,52 @@ export type Projects = Project[];
 
 export const projects: Projects = [
 	{
-		name: "Project 1",
-		url: "project1",
-		image: "https://via.placeholder.com/300x200.png?text=Project%201",
-		summary: "This is the summary for project 1.",
-		component: <h2>Project 1</h2>
+		name: "NASA: T-REX (L-SABRE) Mission",
+		url: "l-sabre",
+		image: "https://via.placeholder.com/300x200.png?text=Project",
+		summary: "NASA BIG Idea Challenge - T-REX (L-SABRE) Robotic Infrastructure Mission",
+		component: <h2>Project Title</h2>
 	},
 	{
-		name: "Project 2",
-		url: "project2",
-		image: "https://via.placeholder.com/300x200.png?text=Project%202",
-		summary: "This is the summary for project 2.",
-		component: <h2>Project 2</h2>
+		name: "NASA: ESI",
+		url: "esi",
+		image: "https://via.placeholder.com/300x200.png?text=Project",
+		summary: "Water Mining Gypsum on Mars",
+		component: <h2>Project Title</h2>
 	},
 	{
-		name: "Project 3",
-		url: "project3",
-		image: "https://via.placeholder.com/300x200.png?text=Project%203",
-		summary: "This is the summary for project 3.",
-		component: <h2>Project 3</h2>
+		name: "NASA: ISRU BAA",
+		url: "irsu-baa",
+		image: "https://via.placeholder.com/300x200.png?text=Project",
+		summary: "Mining Water from Buried Martian Glaciers",
+		component: <h2>Project Title</h2>
 	},
 	{
-		name: "Project 4",
-		url: "project4",
-		image: "https://via.placeholder.com/300x200.png?text=Project%204",
-		summary: "This is the summary for project 4.",
-		component: <h2>Project 4</h2>
+		name: "NASA: Center for Lunar and Asteroid Surface Science",
+		url: "class",
+		image: "https://via.placeholder.com/300x200.png?text=Project",
+		summary: "Lunar Regolith Simulant Development",
+		component: <h2>Project Title</h2>
 	},
 	{
-		name: "Project 5",
-		url: "project5",
-		image: "https://via.placeholder.com/300x200.png?text=Project%205",
-		summary: "This is the summary for project 5.",
-		component: <h2>Project 5</h2>
+		name: "NASA NIAC Phase II",
+		url: "niac-ii",
+		image: "https://via.placeholder.com/300x200.png?text=Project",
+		summary: "Lunar Polar Mining Outpost: Testing Microwave Heating of Lunar Polar Ice for Water Extraction",
+		component: <h2>Project Title</h2>
+	},
+	{
+		name: "UREP",
+		url: "urep",
+		image: "https://via.placeholder.com/300x200.png?text=Project",
+		summary: "Simulating Thermal Shielding of Structures on the Moon",
+		component: <h2>Project Title</h2>
+	},
+	{
+		name: "NASA: Lunabotics",
+		url: "lunabotics",
+		image: "https://via.placeholder.com/300x200.png?text=Project",
+		summary: "Autonomous Bucket Ladder Excavation Rover",
+		component: <h2>Project Title</h2>
 	}
 ];
