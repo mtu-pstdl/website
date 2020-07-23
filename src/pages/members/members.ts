@@ -4,6 +4,7 @@
  * elijahcobb.com
  * github.com/elijahjcobb
  */
+import {LoremIpsum} from "../../components/LoremIpsum";
 
 export type Member = {
 	firstName: string;
@@ -24,7 +25,13 @@ export const members: MemberCollection[] = [
 		title: "Director",
 		detail: true,
 		members: [
-
+			{
+				firstName: "Paul",
+				lastName: "Van Susante",
+				email: "pjvansus@mtu.edu",
+				profile: "https://via.placeholder.com/480x480.png?text=Person",
+				bio: LoremIpsum.generate(80)
+			}
 		]
 	},
 	{
@@ -44,7 +51,13 @@ export const members: MemberCollection[] = [
 		title: "Masters Students",
 		detail: true,
 		members: [
-
+			{
+				firstName: "Travis",
+				lastName: "Wavrunek",
+				email: "tawavrun@mtu.edu",
+				profile: "https://via.placeholder.com/480x480.png?text=Person",
+				bio: "Travis Wavrunek completed his B.S. in Mechanical Engineering at Michigan Tech in Spring 2020 and joined the PSTDL lab the following summer. His work focuses on creating a gravity offloading system for rover testing in the lunar sandbox as well as thermal modeling of the L-SABRE."
+			}
 		]
 	},
 	{
@@ -55,6 +68,30 @@ export const members: MemberCollection[] = [
 				firstName: "Elijah",
 				lastName: "Cobb",
 				email: "ejcobb@mtu.edu",
+				profile: "https://via.placeholder.com/480x480.png?text=Person"
+			},
+			{
+				firstName: "Nicholas",
+				lastName: "Zamora",
+				email: "nzamora@mtu.edu",
+				profile: "https://via.placeholder.com/480x480.png?text=Person"
+			},
+			{
+				firstName: "Wyatt",
+				lastName: "Wagoner",
+				email: "wtwagone@mtu.edu",
+				profile: "https://via.placeholder.com/480x480.png?text=Person"
+			},
+			{
+				firstName: "Collin",
+				lastName: "Miller",
+				email: "collinmi@mtu.edu",
+				profile: "https://via.placeholder.com/480x480.png?text=Person"
+			},
+			{
+				firstName: "Hunter",
+				lastName: "McGillivray",
+				email: "hjmcgill@mtu.edu",
 				profile: "https://via.placeholder.com/480x480.png?text=Person"
 			}
 		]

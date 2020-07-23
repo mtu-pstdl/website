@@ -50,6 +50,9 @@
   .MemberViewLead .name-split {
     justify-content: space-between;
   }
+  .MemberViewLead .name {
+    margin-right: 8px;
+  }
   .MemberViewLead .email {
     display: block;
     transition: color 250ms ease-in-out;

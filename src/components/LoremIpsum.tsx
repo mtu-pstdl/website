@@ -21,11 +21,9 @@ export class LoremIpsum extends React.Component<LoremIpsumProps, LoremIpsumState
 
 		super(props);
 
-		this.words = this.words.bind(this);
-
 	}
 
-	private words(): string[] {
+	private static words(): string[] {
 		return [
 			"lorem",
 			"ipsum",
@@ -148,22 +146,25 @@ export class LoremIpsum extends React.Component<LoremIpsumProps, LoremIpsumState
 	}
 
 	public render(): React.ReactElement {
+		return <p>{LoremIpsum.generate(this.props.words)}</p>;
+	}
 
-		let count: number = this.props.words ?? 100;
-		if (count < 2) count = 2;
-		if (count > 999) return <p>Whoa guy, that's a lot of words. Don't be greedy.</p>
+	public static generate(count?: number): string {
+		let wordCount: number = count ?? 100;
+		if (wordCount < 2) wordCount = 2;
+		if (wordCount > 999) wordCount = 999;
 
-		const words: string[] = this.words();
+		const words: string[] = LoremIpsum.words();
 		let sentences: string[] = [];
 
-		for (let i = 0; i < count; i ++) {
+		for (let i = 0; i < wordCount; i ++) {
 
 			let sentence: string[] = [];
 
 			const sentenceLength = (Math.floor(Math.random() * 8) + 4);
 			for (let j = 0; j < sentenceLength; j++) {
 
-				if (i + j >= count) break;
+				if (i + j >= wordCount) break;
 
 				let word = words[Math.floor(Math.random() * words.length)];
 				if (i === 0) {
@@ -181,7 +182,7 @@ export class LoremIpsum extends React.Component<LoremIpsumProps, LoremIpsumState
 
 		}
 
-		return <p>{sentences.join(" ")}</p>;
+		return sentences.join(" ");
 	}
 
 }
