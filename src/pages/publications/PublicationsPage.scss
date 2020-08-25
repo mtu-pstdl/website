@@ -14,8 +14,6 @@
 	table {
 
 		width: 100%;
-		border-collapse:separate;
-		border-spacing: 8px 10px;
 
 		.iconColumn {
 			width: 10px;
@@ -51,12 +49,17 @@
 @media (min-width: $constraint) {
 	.PublicationsPage {
 		table {
-			border-spacing: 10px 40px;
+
 			th {
 				font-size: 1.5em;
 			}
+
 			tr {
 				font-size: 1.125em;
+			}
+
+			th, td {
+				padding: 20px;
 			}
 
 			.icon {

@@ -8,6 +8,7 @@
 import * as React from "react";
 import {Publication} from "./publications";
 import {Link as LinkIcon} from "@material-ui/icons";
+import "./PublicationRow.css";
 
 export interface PublicationRowProps {
 	publication: Publication;
@@ -36,11 +37,11 @@ export class PublicationRow extends React.Component<PublicationRowProps, Publica
 
 	public render(): React.ReactElement {
 		return (<tr className={"PublicationRow"}>
-			<td>{this.props.publication.title}</td>
-			<td>{this.getDateString()}</td>
-			<td>{this.props.publication.authors.join(", ")}</td>
-			<td>{this.props.publication.publication}</td>
-			<td>{this.props.publication.url ? <a href={this.props.publication.url} target={"_blank"} rel={"noopener noreferrer"}><LinkIcon className={"icon"}/></a> : <div/>}</td>
+			<td className={"title"}>{this.props.publication.title}</td>
+			<td className={"date"}>{this.getDateString()}</td>
+			<td className={"authors"}>{this.props.publication.authors.join(", ")}</td>
+			<td className={"publication"}>{this.props.publication.publication}</td>
+			<td className={"link"}>{this.props.publication.url ? <a href={this.props.publication.url} target={"_blank"} rel={"noopener noreferrer"}><LinkIcon className={"icon"}/></a> : <div/>}</td>
 		</tr>);
 	}
 

@@ -13,7 +13,7 @@
 .MemberViewLead {
   margin: 20px 0;
 }
-.MemberViewLead img {
+.MemberViewLead .headshot {
   width: 100%;
 }
 .MemberViewLead span, .MemberViewLead p {
@@ -37,6 +37,9 @@
     border-radius: 20px;
     overflow: hidden;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .MemberViewLead .name-split, .MemberViewLead .bio-split, .MemberViewLead .img-split {
     display: flex;
@@ -60,10 +63,12 @@
   .MemberViewLead .email:hover {
     color: #ffcd00;
   }
-  .MemberViewLead .closeup {
+  .MemberViewLead .headshot {
     display: block;
-    max-width: 200px;
+    width: 200px;
     margin-right: 20px;
+    flex-shrink: 0;
+    border-radius: 5px;
   }
 }
 

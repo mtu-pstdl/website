@@ -15,8 +15,6 @@
 }
 .PublicationsPage table {
   width: 100%;
-  border-collapse: separate;
-  border-spacing: 8px 10px;
 }
 .PublicationsPage table .iconColumn {
   width: 10px;
@@ -41,14 +39,14 @@
 }
 
 @media (min-width: 720px) {
-  .PublicationsPage table {
-    border-spacing: 10px 40px;
-  }
   .PublicationsPage table th {
     font-size: 1.5em;
   }
   .PublicationsPage table tr {
     font-size: 1.125em;
+  }
+  .PublicationsPage table th, .PublicationsPage table td {
+    padding: 20px;
   }
   .PublicationsPage table .icon {
     transition: transform 250ms ease-in-out;

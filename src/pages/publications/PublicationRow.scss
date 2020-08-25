@@ -1,0 +1,37 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+
+.PublicationRow {
+
+	.title {
+		font-style: italic;
+	}
+
+	.date {
+		width: 15%;
+		font-weight: lighter;
+	}
+
+	.authors {
+		width: 20%;
+	}
+
+	.publication {
+		font-weight: bold;
+		width: 25%;
+	}
+
+	.link {
+		width: 5%;
+	}
+
+	td {
+		text-align: left;
+		vertical-align: top;
+	}
+
+}

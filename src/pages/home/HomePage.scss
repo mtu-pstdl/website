@@ -11,7 +11,7 @@
 
 	width: 100%;
 	max-width: unset;
-	
+
 	.header {
 
 		height: 400px;
@@ -34,6 +34,7 @@
 			font-weight: bold;
 			font-size: 1.5em;
 			margin-bottom: 20px;
+			color: $mtuGold;
 		}
 
 		.subtitle {
@@ -65,7 +66,7 @@
 			right: -20vh;
 		}
 	}
-	
+
 }
 
 @media (min-width: $constraint) {
