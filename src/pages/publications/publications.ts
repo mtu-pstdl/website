@@ -13,18 +13,40 @@ export type Publication = {
 	url?: string;
 }
 
-const publications: Publication[] = [
-	{
+
+export const publications: { [sectionTitle: string]: Publication[] } = {
+	"Journal Articles": [{
+			title: "Analytical models and laboratory measurements of the soil-tool interaction force to push a narrow tool through JSC-1a lunar simulant and Ottawa sand at different cutting depths.",
+			date: new Date("2010"),
+			authors: ["Paul van Susante"],
+			publication: "Journal of Terramechanics",
+			url: "google.com"
+	}],
+	"Dissertations": [{
 		title: "Analytical models and laboratory measurements of the soil-tool interaction force to push a narrow tool through JSC-1a lunar simulant and Ottawa sand at different cutting depths.",
 		date: new Date("2010"),
 		authors: ["Paul van Susante"],
 		publication: "Journal of Terramechanics",
 		url: "google.com"
-	}
-];
+	}],
+	"Theses": [{
+		title: "Analytical models and laboratory measurements of the soil-tool interaction force to push a narrow tool through JSC-1a lunar simulant and Ottawa sand at different cutting depths.",
+		date: new Date("2010"),
+		authors: ["Paul van Susante"],
+		publication: "Journal of Terramechanics",
+		url: "google.com"
+	}],
+	"Conference Proceedings": [{
+		title: "Analytical models and laboratory measurements of the soil-tool interaction force to push a narrow tool through JSC-1a lunar simulant and Ottawa sand at different cutting depths.",
+		date: new Date("2010"),
+		authors: ["Paul van Susante"],
+		publication: "Journal of Terramechanics",
+		url: "google.com"
+	}]
+};
 
-export function getPublicationsSorted(): Publication[] {
-	return publications.sort((p1, p2) => {
+export function getPublicationsSorted(pubs: Publication[]): Publication[] {
+	return pubs.sort((p1, p2) => {
 		return p2.date.getTime() - p1.date.getTime();
 	});
 }

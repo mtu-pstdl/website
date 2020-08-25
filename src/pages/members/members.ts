@@ -93,6 +93,36 @@ export const members: MemberCollection[] = [
 				lastName: "McGillivray",
 				email: "hjmcgill@mtu.edu",
 				profile: "https://via.placeholder.com/480x480.png?text=Person"
+			},
+			{
+				firstName: "Erik",
+				lastName: "VanHorn",
+				email: "user@mtu.edu",
+				profile: "https://via.placeholder.com/480x480.png?text=Person"
+			},
+			{
+				firstName: "Ted",
+				lastName: "Gronda",
+				email: "user@mtu.edu",
+				profile: "https://via.placeholder.com/480x480.png?text=Person"
+			},
+			{
+				firstName: "Austen",
+				lastName: "Goddu",
+				email: "user@mtu.edu",
+				profile: "https://via.placeholder.com/480x480.png?text=Person"
+			},
+			{
+				firstName: "Eric",
+				lastName: "Mosner",
+				email: "user@mtu.edu",
+				profile: "https://via.placeholder.com/480x480.png?text=Person"
+			},
+			{
+				firstName: "George",
+				lastName: "Johnson",
+				email: "user@mtu.edu",
+				profile: "https://via.placeholder.com/480x480.png?text=Person"
 			}
 		]
 	}
