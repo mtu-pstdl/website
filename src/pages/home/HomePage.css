@@ -58,6 +58,18 @@
     right: -20vh;
   }
 }
+.HomePage section {
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
 
 @media (min-width: 720px) {
   .HomePage .header {
@@ -68,6 +80,11 @@
   .HomePage .header span {
     width: 60vw;
     margin-left: 100px;
+  }
+  .HomePage section {
+    height: 110vh;
+    justify-content: flex-start;
+    padding: 240px 80px 80px;
   }
 }
 
