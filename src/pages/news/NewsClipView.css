@@ -1,0 +1,42 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+.NewsClipView {
+  margin-top: 20px;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 20px #202020;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: all 250ms ease-in-out;
+}
+.NewsClipView .top {
+  display: flex;
+  margin-bottom: 8px;
+}
+.NewsClipView .title {
+  color: #ffcd00;
+  font-weight: bold;
+  font-size: 1.5em;
+  flex-grow: 1;
+}
+.NewsClipView .date {
+  font-weight: lighter;
+  font-size: 1.125em;
+}
+.NewsClipView .icon {
+  color: #ffcd00;
+}
+
+.NewsClipView-link:hover {
+  transform: scale(1.125);
+  box-shadow: 0 0 20px #ffcd00;
+}
+
+/*# sourceMappingURL=NewsClipView.css.map */

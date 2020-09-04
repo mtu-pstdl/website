@@ -4,23 +4,26 @@
  * elijahcobb.com
  * github.com/elijahjcobb
  */
-
-import * as React from "react";
+import {LoremIpsum} from "../../components/LoremIpsum";
 
 export interface News {
 	title: string;
-	subtitle: string;
 	date: {
-		month?: number;
+		month: number;
 		day?: number;
 		year: number;
 	};
 	link?: string;
-	content?: React.ReactElement;
+	content?: string;
 }
 
 const news: News[] = [
-
+	{
+		title: "Lorem Ipsum",
+		content: LoremIpsum.generate(20),
+		date: {year: 2020, month: 9},
+		link: "https://google.com"
+	}
 ];
 
 function getDateStamp(news: News): number {

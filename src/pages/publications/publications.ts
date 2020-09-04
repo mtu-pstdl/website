@@ -24,36 +24,42 @@ export const publications: { [sectionTitle: string]: Publication[] } = {
 			date: {year: 2010},
 			authors: ["Paul van Susante"],
 			publication: "Journal of Terramechanics",
+			url: "https://www.sciencedirect.com/science/article/abs/pii/S0022489810000595?via%3Dihub"
 		},
 		{
 			title: "Influence of Rocking Motion on Vibratory Roller-Based Measurement of Soil Stiffness",
 			date: {year: 2010, month: 7},
 			authors: ["Paul van Susante"],
-			publication: "Journal of Engineering Mechanics"
+			publication: "Journal of Engineering Mechanics",
+			url: "https://ascelibrary.org/doi/abs/10.1061/%28ASCE%29EM.1943-7889.0000132"
 		},
 		{
 			title: "A Cryogenic, Liquid-mirror Telescope on the Moon, to Study the Early Universe",
 			date: {year: 2008},
 			authors: ["Paul van Susante"],
-			publication: "The Astrophysical Journal"
+			publication: "The Astrophysical Journal",
+			url: "https://iopscience.iop.org/article/10.1086/588034/meta"
 		},
 		{
 			title: "Nonlinear Lumped Parameter Modeling of Vibratory Roller Compactor",
 			date: {year: 2008, month: 8},
 			authors: ["Paul van Susante"],
-			publication: "Journal of Engineering Mechanics"
+			publication: "Journal of Engineering Mechanics",
+			url: "https://ascelibrary.org/doi/abs/10.1061/%28ASCE%290733-9399%282008%29134%3A8%28684%29"
 		},
 		{
 			title: "A condominium of observatories on the Moon, considerations of an integrated approach.",
 			date: {year: 2005, month: 7},
 			authors: ["Paul van Susante"],
-			publication: "Journal of the Washington Academy of Science"
+			publication: "Journal of the Washington Academy of Science",
+			url: "https://www.jstor.org/stable/24531184"
 		},
 		{
 			title: "Study towards construction and operations of large lunar telescopes.",
 			date: {year: 2003},
 			authors: ["Paul van Susante"],
-			publication: "Advances in Space Research"
+			publication: "Advances in Space Research",
+			url: "https://www.sciencedirect.com/science/article/abs/pii/S0273117703005635"
 		}
 	],
 	"Dissertations": [

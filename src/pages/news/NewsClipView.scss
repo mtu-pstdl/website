@@ -1,0 +1,46 @@
+@import "../../variables";
+
+.NewsClipView {
+
+	margin-top: 20px;
+	color: $white;
+	text-decoration: none;
+	background: $antiAstraBackground;
+	box-shadow: $antiAstraBoxShadow;
+	padding: 40px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	transition: all 250ms ease-in-out;
+
+	.top {
+		display: flex;
+		margin-bottom: 8px;
+	}
+
+	.title {
+		color: $mtuGold;
+		font-weight: bold;
+		font-size: 1.5em;
+		flex-grow: 1;
+	}
+
+	.date {
+		font-weight: lighter;
+		font-size: 1.125em;
+	}
+
+	.content {
+
+	}
+
+	.icon {
+		color: $mtuGold;
+	}
+
+}
+
+.NewsClipView-link:hover {
+	transform: scale(1.125);
+	box-shadow: 0 0 20px $mtuGold;
+}
