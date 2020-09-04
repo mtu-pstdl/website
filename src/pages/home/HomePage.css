@@ -27,6 +27,9 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.HomePage .header .logo {
+  display: none;
+}
 .HomePage .header span {
   display: block;
 }
@@ -35,28 +38,6 @@
   font-size: 1.5em;
   margin-bottom: 20px;
   color: #ffcd00;
-}
-.HomePage .rocket {
-  position: fixed;
-  width: 40px;
-  height: 80px;
-  animation-name: rocket-fly;
-  animation-duration: 5s;
-  animation-delay: 2s;
-  animation-timing-function: ease-in-out;
-  transform: scale(0);
-}
-@keyframes rocket-fly {
-  0% {
-    transform: scale(0);
-    top: 40vh;
-    right: 20vw;
-  }
-  100% {
-    transform: scale(8) rotate(35deg);
-    top: -20vh;
-    right: -20vh;
-  }
 }
 .HomePage section {
   height: 300px;
@@ -75,14 +56,35 @@
   .HomePage .header {
     font-size: 2.5em;
     height: 90vh;
-    max-height: 1000px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   .HomePage .header span {
     width: 60vw;
     margin-left: 100px;
   }
+  .HomePage .header .titleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+  .HomePage .header .logo {
+    display: block;
+    width: 300px;
+  }
+  .HomePage .header .title, .HomePage .header .subtitle, .HomePage .header .mtu {
+    margin: 0;
+    padding: 0;
+  }
+  .HomePage .header .mtu {
+    font-size: 0.85em;
+  }
   .HomePage section {
-    height: 110vh;
+    height: 100vh;
+    max-height: 1000px;
     justify-content: flex-start;
     padding: 240px 80px 80px;
   }

@@ -27,9 +27,13 @@ export class HomePage extends React.Component<HomePageProps, HomePageState> {
 	public render(): React.ReactElement {
 		return (<div className={"HomePage"}>
 			<div className={"header"}>
-				<span className={"title"}>Husky Works</span>
-				<span className={"subtitle"}>Michigan Technological University</span>
-				{/*<img src={"./rocket.svg"} className={"rocket"} alt={"rocket"}/>*/}
+				<img src={"./logo.png"} alt={"logo"} className={"logo"}/>
+				<div className={"titleContainer"}>
+					<span className={"title"}>Husky Works</span>
+					<span className={"subtitle"}>Planetary Surface Technology Development Lab</span>
+					<span className={"mtu"}>Michigan Technological University</span>
+					{/*<img src={"./rocket.svg"} className={"rocket"} alt={"rocket"}/>*/}
+				</div>
 			</div>
 			<section style={{backgroundImage: "url(\"./render1.png\")"}}>
 				<h2>Lorem Ipsum Dolor</h2>
