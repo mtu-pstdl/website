@@ -30,7 +30,7 @@ export const members: MemberCollection[] = [
 				lastName: "Van Susante",
 				email: "pjvansus@mtu.edu",
 				profile: "./paul.webp",
-				bio: LoremIpsum.generate(80)
+				bio: "Dr. van Susante grew up in The Netherlands, received a Master of Science from Delft University of Technology in 2001 in Civil Engineering with an emphasis on Building Engineering. He then went to the Colorado School of Mines (CSM) to participate in NASA research and received a Master of Science in Engineering Systems from CSM in 2004 followed by a Ph.D in Engineering Systems from CSM in 2011. Dr. van Susante taught Freshman, Sophomore and Senior Design as well as Mechanics of Materials for five years at CSM before coming to Michigan Technological University in 2012. He was a NASA Faculty Fellow in 2010 and consulted for a variety of companies on SBIR or STTR projects such as University of Arizona, Sysrand Corporation, Energid, HoneyBee Robotics and others. He has been involved in research projects for many customers including Lockheed Martin, DARPA, NASA KSC, JPL, Bechtel, Caterpillar, NCHRP, NSF and others."
 			}
 		]
 	},
