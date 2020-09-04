@@ -18,7 +18,7 @@ export type Publication = {
 
 
 export const publications: { [sectionTitle: string]: Publication[] } = {
-	"Journal Articles": [
+	"Journal Papers": [
 		{
 			title: "Analytical models and laboratory measurements of the soil-tool interaction force to push a narrow tool through JSC-1a lunar simulant and Ottawa sand at different cutting depths.",
 			date: {year: 2010},
@@ -62,7 +62,7 @@ export const publications: { [sectionTitle: string]: Publication[] } = {
 	"Theses": [
 
 	],
-	"Conference Proceedings": [
+	"Conference Proceedings & Other Publications": [
 		{
 			title: "Research results and prototype development and testing for water extraction from polyhydrated sulphate rock on Mars",
 			date: {year: 2020, month: 11},
@@ -178,244 +178,377 @@ export const publications: { [sectionTitle: string]: Publication[] } = {
 			publication: "ASCE"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Robotic Mars and Lunar Landing Pad Construction Using In-Situ Rocks",
+			date: {year: 2018, month: 4},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "ASCE"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Earth & Space 2016 Conference Proceedings",
+			date: {year: 2016, month: 4},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "ASCE"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Long Term Environmental Monitoring: Necessary Strategy and Integrated Technologies to Ensure Successful Science, Resource Utilization, and Planetary Protection during Human Exploration",
+			date: {year: 2017, month: 3},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "Planetary Science Vision 2050 workshop"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "The Possible Strategic Significance of Mid-Latitude Ice Deposits to a Potential Future Human Mission to Mars",
+			date: {year: 2017, month: 9},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "Sixth International Conference on Mars Polar Science and Exploration"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Engineering Sensitivities to Ore Characteristics for Water Resources on Mars and Implications for Resource Exploration Approaches: M-WIP Study, Part 3.",
+			date: {year: 2016, month: 6},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "Space Resources Roundtable and Planetary and Terrestrial Mining Sciences Symposium"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Engineering Analysis of Candidate Ore Cases for ISRU Water Production on Mars: The M-WIP Study, Part 2",
+			date: {year: 2016, month: 6},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "Space Resources Roundtable and Planetary and Terrestrial Mining Sciences Symposium"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Description of Water Resources on Mars that have the Potential to Become Reserves as Part of a Human Exploration Zone, The M-WIP Study, Part 1.",
+			date: {year: 2016, month: 6},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "Space Resources Roundtable and Planetary and Terrestrial Mining Sciences Symposium"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Report of the Mars Water In-Situ Resource Utilization (ISRU) Planning (M-WIP) Study",
+			date: {year: 2016, month: 4},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "NASA",
+			url: "http://mepag.nasa.gov/reports.cfm"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Successes and Challenges in Implementation and Running of the First ME-Practice Class in the 2nd Undergraduate Year as Part of a Curriculum Revision",
+			date: {year: 2016, month: 6},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "ASEE"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Design, Test and Simulation of Lunar and Mars Landing Pad Soil Stabilization Built with In-Situ Rock Utilization",
+			date: {year: 2016},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "Earth & Space 2016 Conference, ASCE"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Environmental Dynamics of the EZ: A Measurement Priority for Science and Resource Exploration",
+			date: {year: 2015, month: 10},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "Landing Site/Exploration Zone Workshop for Human Missions to the surface of Mars"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Using Direct Information Literacy Assessment to Improve Mechanical Engineering Student Learning - A Report on Rubric Analysis of Student Research Assignments",
+			date: {year: 2015, month: 6},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "ASEE"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Curriculum Revision to Better Integrate Mechanical Engineering Science and Practice in the 2nd and 3rd Undergraduate Years",
+			date: {year: 2014},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "ASEE Annual Conference"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Parametric Optimization and Prediction Software for Excavation and Prospecting Tasks",
+			date: {year: 2013},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "AIAA Space 2013 Conference and Exposition"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Landing Pad Construction Rover Attachment Development",
+			date: {year: 2012},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "Earth & Space 2012 conference, ASCE"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "A Review of Extra-Terrestrial Mining Robot Concepts",
+			date: {year: 2012},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "Earth & Space 2012 conference, ASCE"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "A Review of Lunar Regolith Excavation Robotic Device Prototypes",
+			date: {year: 2011},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "AIAA Space 2011 conference"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Case Studies in Application of System Engineering Practices to Capstone Projects",
+			date: {year: 2011},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "ASEE conference"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Lunar Landing Pad Construction Technologies Mounted on Rovers",
+			date: {year: 2011},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "2nd Workshop on Lunar and Martian Plume Effects and Mitigation"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Lunar Excavation Systems at the Colorado School of Mines",
+			date: {year: 2010, month: 10},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "Workshop for the Lunar Applications of Mining and Mineral Beneficiation"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Lunar and Planetary Excavation Systems: Lessons Learned at the Colorado School of Mines",
+			date: {year: 2010, month: 6},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "First Joint Space Resources Roundtable and Planetary and Terrestrial Mining Sciences Symposium"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Comparing Blade/Soil Interaction Models in a Matlab Program to Measurements of Forces to Push Narrow Rods Through Sand and Simulant Materials for Design of Extraterrestrial Soil Handling Machines",
+			date: {year: 2010, month: 6},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "First Joint Space Resources Roundtable and Planetary and Terrestrial Mining Sciences Symposium"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Comparison of Lance Blade Data and Analytical Force Models",
+			date: {year: 2010, month: 6},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "First Joint Space Resources Roundtable and Planetary and Terrestrial Mining Sciences Symposium"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Finite Element Method to Calculate Forces and Stresses on Blades Excavating Lunar Simulants",
+			date: {year: 2010, month: 6},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "First Joint Space Resources Roundtable and Planetary and Terrestrial Mining Sciences Symposium"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Lunar and Planetary Excavation Prototype Development and Testing at the Colorado School of Mines",
+			date: {year: 2010},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "Earth and Space 2010, Engineering, Science, Construction, and Operations in Challenging Environments"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Lunar Excavator Validation",
+			date: {year: 2009},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "Energid Technologies Corporation"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "In-Situ Geotechnical Measurement Evaluation – RESOLVE year 2 final report",
+			date: {year: 2008, month: 4},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "NASA / CSM"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Geotechnical Properties of the JSC1-A Lunar Simulant",
+			date: {year: 2007, month: 6},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "PTMSS"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Final Report, NIAC Phase II, A Deepfield Infrared Observatory Near the Lunar Pole",
+			date: {year: 2007, month: 8},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "NASA NIAC"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "MPED: An ISRU Bucket Ladder Excavator Demonstrator System",
+			date: {year: 2007, month: 7},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "NASA JSC"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Lunar Frontier Transport System",
+			date: {year: 2007, month: 6},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "Rutgers Symposium on Lunar Settlements"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Intelligent Soil Compaction Systems, Interim Report",
+			date: {year: 2007, month: 2},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "NCHRP Transportation Research Board of The National Academies"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Excavation System Comparison: Bucket Wheel vs. Bucket Ladder",
+			date: {year: 2006},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "Space Resources Roundtable VIII"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Development of a Lunar Water Astroparticle Observatory Using In Situ Resources",
+			date: {year: 2006},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "Space Resources Roundtable VIII"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "A lunar liquid mirror telescope (LLMT) for deep-field infrared observations near the lunar pole",
+			date: {year: 2006},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "SPIE"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "ISRU-Based Development of a Lunar Water Astroparticle Observatory",
+			date: {year: 2006, month: 10},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "International Astronautical Conference"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "ISRU-Based Development of a Lunar Water Astroparticle Observatory",
+			date: {year: 2006},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "PTMSS 2006"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Wave-propagation and lumped-mass modeling of a vibratory rigid drum on an elastic half-space",
+			date: {year: 2006},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "USNCTAM 2006"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "The Influence of Heterogeneity on Vibratory Roller Response",
+			date: {year: 2005},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "GeoCongress 2006"
 		},
 		{
-			title: "",
-			date: {year: 0},
+			title: "Modeling Vibratory Roller Compaction of Soil Using a Two-DOF Nonlinear Lumped Parameter Model",
+			date: {year: 2005},
 			authors: ["Paul van Susante"],
-			publication: ""
+			publication: "McMath 2005, Section 4 of Session 98: \"Nonlinear Soil-Structure Interaction and Soil Dynamics: Testing and Simulation\""
+		},
+		{
+			title: "Human aided construction of a large lunar telescope",
+			date: {year: 2004},
+			authors: ["Paul van Susante"],
+			publication: "CCACS, NASA"
+		},
+		{
+			title: "Economic Rationale for Lunar Exploration",
+			date: {year: 2003, month: 10},
+			authors: ["Paul van Susante"],
+			publication: "Space Resources Roundtable V"
+		},
+		{
+			title: "Large Lunar Telescope Construction, An Example",
+			date: {year: 2003},
+			authors: ["Paul van Susante"],
+			publication: " ILC2003 / ILEWG 5"
+		},
+		{
+			title: "Lunar Propellants And \"Gateway\" Space Transportation Architectures",
+			date: {year: 2003},
+			authors: ["Paul van Susante"],
+			publication: "ILC2003 / ILEWG 5"
+		},
+		{
+			title: "Moon base design concepts for lunar exploration and resource utilization",
+			date: {year: 2003, month: 10},
+			authors: ["Paul van Susante"],
+			publication: "54th International Astronautical Congress of the International Astronautical Federation, the International Academy of Astronautics, and the International Institute of Space Law"
+		},
+		{
+			title: "New Concepts for Permanently Manned Lunar Bases, Report of the Lunar Base Design Workshop, held in Noordwijk, The Netherlands from 10–21 June 2002",
+			date: {year: 2003, month: 1},
+			authors: ["Paul van Susante"],
+			publication: "AIP"
+		},
+		{
+			title: "European Lunar Base Concepts",
+			date: {year: 2003},
+			authors: ["Paul van Susante"],
+			publication: "International Conference On Environmental Systems - Aerospace Architecture II: Habitats, Hardware, and Philosophy"
+		},
+		{
+			title: "Lunar South Pole Infrared Telescope Facility",
+			date: {year: 2002, month: 10},
+			authors: ["Paul van Susante"],
+			publication: "COSPAR Scientific Assembly, The Second World Space Congress"
+		},
+		{
+			title: "Study towards construction and operations of large lunar telescopes",
+			date: {year: 2002, month: 10},
+			authors: ["Paul van Susante"],
+			publication: "34th COSPAR Scientific Assembly, The Second World Space Congress"
+		},
+		{
+			title: "Design and Construction of a Lunar South Pole Infrared Telescope (LSPIRT)",
+			date: {year: 2002, month: 10},
+			authors: ["Paul van Susante"],
+			publication: "34th COSPAR Scientific Assembly, The Second World Space Congress"
+		},
+		{
+			title: "Lunar Base Design and Operation Study (LB-DAOS 1)",
+			date: {year: 2002, month: 6},
+			authors: ["Paul van Susante"],
+			publication: "Earth-Like Planets and Moons, Proceedings of the 36th ESLAB Symposium"
+		},
+		{
+			title: "Scenario description of the construction of a Lunar South Pole Infrared Telescope (LSPIRT)",
+			date: {year: 2002, month: 6},
+			authors: ["Paul van Susante"],
+			publication: "Earth-like planets and moons, Proceedings of the 36th ESLAB Symposium"
+		},
+		{
+			title: "Study Towards Human Aided Construction of Large Lunar Telescopes",
+			date: {year: 2002},
+			authors: ["Paul van Susante"],
+			publication: "The Moon Beyond 2002: Next Steps in Lunar Science and Exploration"
+		},
+		{
+			title: "Design and construction of a lunar south pole infrared telescope",
+			date: {year: 2002},
+			authors: ["Paul van Susante"],
+			publication: "ISDC 2002"
+		},
+		{
+			title: "Scenario Description of the Construction of a Lunar South Pole Infrared Telescope (LSPIRT)",
+			date: {year: 2002},
+			authors: ["Paul van Susante"],
+			publication: "Space 2002 and Robotics 2002 conference"
+		},
+		{
+			title: "Outreach and Education from ESA's SMART-1 Mission to the Moon",
+			date: {year: 2001},
+			authors: ["Paul van Susante"],
+			publication: "32nd Annual Lunar and Planetary Science Conference"
+		},
+		{
+			title: "Results and Recommendations from the International Conference on the Exploration and Utilisation of the Moon 4 (ICEUM4)",
+			date: {year: 2001, month: 3},
+			authors: ["Paul van Susante"],
+			publication: "32nd Annual Lunar and Planetary Science Conference"
+		},
+		{
+			title: "Lunar Explorers Society: Goals And Activities",
+			date: {year: 2001},
+			authors: ["Paul van Susante"],
+			publication: "Earth, Moon, and Planets, Vol. 85/86, p. 533-538, KLUWER"
+		},
+		{
+			title: "The Highlights from ICEUM4, the 4th International Conference on the Exploration and Utilisation of the Moon",
+			date: {year: 2001},
+			authors: ["Paul van Susante"],
+			publication: "Earth, Moon, and Planets, Vol. 85/86, p. 533-538, KLUWER"
+		},
+		{
+			title: "Design and construction study of a Lunar South Pole Infrared Telescope (LSPIRT)",
+			date: {year: 2001},
+			authors: ["Paul van Susante"],
+			publication: "TU-Delft and the European Space Agency"
+		},
+		{
+			title: "Earthrise 1, building a stripmining base on the moon",
+			date: {year: 2000},
+			authors: ["Paul van Susante"],
+			publication: "Space 2000 and Robotics 2000 Conference"
+		},
+		{
+			title: "Earthrise I, Design of a stripmining base on the Moon",
+			date: {year: 1999},
+			authors: ["Paul van Susante"],
+			publication: "TU-Delft. Civil Engineering Project Education final report."
 		}
 	]
 };
