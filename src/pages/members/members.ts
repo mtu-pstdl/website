@@ -104,7 +104,7 @@ export const members: MemberCollection[] = [
 				firstName: "Ted",
 				lastName: "Gronda",
 				email: "user@mtu.edu",
-				profile: "https://via.placeholder.com/480x480.png?text=Person"
+				profile: "./ted.png"
 			},
 			{
 				firstName: "Austen",
