@@ -35,15 +35,14 @@ export class HomePage extends React.Component<HomePageProps, HomePageState> {
 					{/*<img src={"./rocket.svg"} className={"rocket"} alt={"rocket"}/>*/}
 				</div>
 			</div>
-			<section style={{backgroundImage: "url(\"./render1.png\")"}}>
-				<h2>Lorem Ipsum Dolor</h2>
-			</section>
-			<section style={{backgroundImage: "url(\"./render2.png\")"}}>
-				<h2>Lorem Ipsum Dolor</h2>
-			</section>
-			<section>
-				<h2>Lorem Ipsum Dolor</h2>
-			</section>
+			<div className={"sections"}>
+				<section style={{backgroundImage: "url(\"./render1.png\")"}}>
+					<h2>Lorem Ipsum Dolor</h2>
+				</section>
+				<section style={{backgroundImage: "url(\"./render2.png\")"}}>
+					<h2>Lorem Ipsum Dolor</h2>
+				</section>
+			</div>
 		</div>);
 	}
 

@@ -49,13 +49,18 @@
   align-items: flex-start;
   justify-content: center;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 4px;
 }
 
 @media (min-width: 720px) {
+  .HomePage .sections {
+    background: #ffcd00;
+    padding-top: 4px;
+  }
   .HomePage .header {
     font-size: 2.5em;
     height: 90vh;
+    max-height: 800px;
     flex-direction: row;
     align-items: center;
     justify-content: center;

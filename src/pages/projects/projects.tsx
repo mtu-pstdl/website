@@ -21,50 +21,50 @@ export const projects: Projects = [
 	{
 		name: "NASA: T-REX (L-SABRE) Mission",
 		url: "l-sabre",
-		image: "https://via.placeholder.com/300x200.png?text=Project",
+		image: "./render1.png",
 		summary: "NASA BIG Idea Challenge - T-REX (L-SABRE) Robotic Infrastructure Mission",
-		component: <h2>Project Title</h2>
+		component: <div/>
 	},
 	{
 		name: "NASA: ESI",
 		url: "esi",
 		image: "https://via.placeholder.com/300x200.png?text=Project",
 		summary: "Water Mining Gypsum on Mars",
-		component: <h2>Project Title</h2>
+		component: <div/>
 	},
 	{
 		name: "NASA: ISRU BAA",
 		url: "irsu-baa",
 		image: "https://via.placeholder.com/300x200.png?text=Project",
 		summary: "Mining Water from Buried Martian Glaciers",
-		component: <h2>Project Title</h2>
+		component: <div/>
 	},
 	{
 		name: "NASA: Center for Lunar and Asteroid Surface Science",
 		url: "class",
 		image: "https://via.placeholder.com/300x200.png?text=Project",
 		summary: "Lunar Regolith Simulant Development",
-		component: <h2>Project Title</h2>
+		component: <div/>
 	},
 	{
 		name: "NASA NIAC Phase II",
 		url: "niac-ii",
 		image: "https://via.placeholder.com/300x200.png?text=Project",
 		summary: "Lunar Polar Mining Outpost: Testing Microwave Heating of Lunar Polar Ice for Water Extraction",
-		component: <h2>Project Title</h2>
+		component: <div/>
 	},
 	{
 		name: "UREP",
 		url: "urep",
 		image: "https://via.placeholder.com/300x200.png?text=Project",
 		summary: "Simulating Thermal Shielding of Structures on the Moon",
-		component: <h2>Project Title</h2>
+		component: <div/>
 	},
 	{
 		name: "NASA: Lunabotics",
 		url: "lunabotics",
 		image: "https://via.placeholder.com/300x200.png?text=Project",
 		summary: "Autonomous Bucket Ladder Excavation Rover",
-		component: <h2>Project Title</h2>
+		component: <div/>
 	}
 ];

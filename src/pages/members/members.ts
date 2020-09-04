@@ -55,7 +55,7 @@ export const members: MemberCollection[] = [
 				firstName: "Travis",
 				lastName: "Wavrunek",
 				email: "tawavrun@mtu.edu",
-				profile: "https://via.placeholder.com/480x480.png?text=Person",
+				profile: "https://media-exp1.licdn.com/dms/image/C4E03AQF64hrFwQ-35A/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=t3YAACvw_BB8ML1lS3YFfM239BxZx8TIhqZmrZl-UXc",
 				bio: "Travis Wavrunek completed his B.S. in Mechanical Engineering at Michigan Tech in Spring 2020 and joined the PSTDL lab the following summer. His work focuses on creating a gravity offloading system for rover testing in the lunar sandbox as well as thermal modeling of the L-SABRE."
 			}
 		]
@@ -74,13 +74,13 @@ export const members: MemberCollection[] = [
 				firstName: "Nicholas",
 				lastName: "Zamora",
 				email: "nzamora@mtu.edu",
-				profile: "https://via.placeholder.com/480x480.png?text=Person"
+				profile: "https://media-exp1.licdn.com/dms/image/C5603AQEkESFnE-cNiw/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=YYMCtt1gX3gC70YAvjopmWFLxg5GTOR4HhGG7LGRgCg"
 			},
 			{
 				firstName: "Wyatt",
 				lastName: "Wagoner",
 				email: "wtwagone@mtu.edu",
-				profile: "https://via.placeholder.com/480x480.png?text=Person"
+				profile: "https://media-exp1.licdn.com/dms/image/C4E03AQFh_oYQcg_gsg/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=TTXrCoVs7HD8it1C5mStWI9kPdDQQijPlAHSspJMugs"
 			},
 			{
 				firstName: "Collin",
@@ -92,13 +92,13 @@ export const members: MemberCollection[] = [
 				firstName: "Hunter",
 				lastName: "McGillivray",
 				email: "hjmcgill@mtu.edu",
-				profile: "https://via.placeholder.com/480x480.png?text=Person"
+				profile: "https://media-exp1.licdn.com/dms/image/C4D03AQFIkrCdsvgAGw/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=k1oaA_p3yILbH_ARWug9KHFubtETWVEGf8pvwpVt1dk"
 			},
 			{
 				firstName: "Erik",
 				lastName: "VanHorn",
 				email: "user@mtu.edu",
-				profile: "https://via.placeholder.com/480x480.png?text=Person"
+				profile: "https://media-exp1.licdn.com/dms/image/C4E03AQEo3iEbirwsRg/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=IyzpGQas49b1VSXhfRPvRf7BE24YrDiEMUIKxUJPaPA"
 			},
 			{
 				firstName: "Ted",
@@ -110,7 +110,7 @@ export const members: MemberCollection[] = [
 				firstName: "Austen",
 				lastName: "Goddu",
 				email: "user@mtu.edu",
-				profile: "https://via.placeholder.com/480x480.png?text=Person"
+				profile: "https://media-exp1.licdn.com/dms/image/C4E03AQH2TQBsKhY-iQ/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=HqToExPcP2KD8wO22Y7J7hwBq9-mdVViMLyXsNpjI8w"
 			},
 			{
 				firstName: "Eric",
@@ -122,7 +122,7 @@ export const members: MemberCollection[] = [
 				firstName: "George",
 				lastName: "Johnson",
 				email: "user@mtu.edu",
-				profile: "https://via.placeholder.com/480x480.png?text=Person"
+				profile: "https://media-exp1.licdn.com/dms/image/C4E03AQH5sOJ9gtvecA/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=gcpOPcLq2qAjq-_KLuRvwyzrLc9j_quZuRvD_7wtgqA"
 			}
 		]
 	}
