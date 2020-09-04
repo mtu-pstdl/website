@@ -7,4 +7,19 @@
 
 .FacilitiesPage {
 
+	p {
+		margin: 10px 0;
+	}
+
+	.img-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	img {
+		max-width: 300px;
+		margin: 10px 0;
+	}
+
 }

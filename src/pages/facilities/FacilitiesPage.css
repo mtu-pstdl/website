@@ -4,5 +4,17 @@
  * elijahcobb.com
  * github.com/elijahjcobb
  */
+.FacilitiesPage p {
+  margin: 10px 0;
+}
+.FacilitiesPage .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.FacilitiesPage img {
+  max-width: 300px;
+  margin: 10px 0;
+}
 
 /*# sourceMappingURL=FacilitiesPage.css.map */
