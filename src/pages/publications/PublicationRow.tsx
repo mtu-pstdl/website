@@ -6,7 +6,7 @@
  */
 
 import * as React from "react";
-import {Publication} from "./publications";
+import {labPublicationAuthors, Publication} from "./publications";
 import {Link as LinkIcon} from "@material-ui/icons";
 import "./PublicationRow.css";
 
