@@ -22,7 +22,7 @@ const news: News[] = [
 		title: "Lorem Ipsum",
 		content: LoremIpsum.generate(20),
 		date: {year: 2020, month: 9},
-		link: "https://google.com"
+		link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO"
 	}
 ];
 
