@@ -85,7 +85,7 @@ export const members: MemberCollection[] = [
 			{
 				firstName: "Erik",
 				lastName: "VanHorn",
-				email: "user@mtu.edu",
+				email: "eavanhor@mtu.edu",
 				profile: "https://media-exp1.licdn.com/dms/image/C4E03AQEo3iEbirwsRg/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=IyzpGQas49b1VSXhfRPvRf7BE24YrDiEMUIKxUJPaPA"
 			},
 			{
