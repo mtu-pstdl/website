@@ -18,7 +18,12 @@ export interface News {
 }
 
 const news: News[] = [
-
+	{
+		title: "Artemis Student Challenge: NASA Selects University Teams to Build Technologies for the Moon’s Darkest Areas",
+		date: {month: 2, year: 2020, day: 14},
+		content: "Almost a quarter of a million miles away from home, the Moon’s permanently shadowed regions are the closest extraterrestrial water source. These craters have remained dark for billions of years, but student-developed technologies can help shine light on all they have to offer.",
+		link: "https://www.nasa.gov/feature/langley/artemis-student-challenge-nasa-selects-university-teams-to-build-technologies-for-the-moon-s/"
+	}
 ];
 
 function getDateStamp(news: News): number {
