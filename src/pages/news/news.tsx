@@ -21,7 +21,7 @@ const news: News[] = [
 	{
 		title: "Artemis Student Challenge: NASA Selects University Teams to Build Technologies for the Moon’s Darkest Areas",
 		date: {month: 2, year: 2020, day: 14},
-		content: "Almost a quarter of a million miles away from home, the Moon’s permanently shadowed regions are the closest extraterrestrial water source. These craters have remained dark for billions of years, but student-developed technologies can help shine light on all they have to offer.",
+		content: "MTU was awarded a grand to develop a small rover to lay lightweight, superconducting cable that tethers to a lander as it traverses craters in permanently shadowed regions. Once in its final destination, the rover acts as a recharging hub and communication relay for other robots working in the area, providing continuous power without requiring direct sunlight.",
 		link: "https://www.nasa.gov/feature/langley/artemis-student-challenge-nasa-selects-university-teams-to-build-technologies-for-the-moon-s/"
 	}
 ];
