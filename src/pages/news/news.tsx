@@ -19,11 +19,29 @@ export interface News {
 
 const news: News[] = [
 	{
-		title: "Lorem Ipsum",
+		title: "Never Gonna",
 		content: LoremIpsum.generate(20),
 		date: {year: 2020, month: 9},
 		link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO"
-	}
+	},
+	{
+		title: "Flight of the Parrot",
+		content: LoremIpsum.generate(20),
+		date: {year: 2020, month: 9},
+		link: "https://youtu.be/v2SL5_9yxYQ?t=56"
+	},
+	{
+		title: "Zebediah",
+		content: LoremIpsum.generate(20),
+		date: {year: 2020, month: 9},
+		link: "https://www.youtube.com/watch?v=lOfZLb33uCg&amp;ab_channel=alyankovicVEVO"
+	},
+	{
+		title: "Nice",
+		content: LoremIpsum.generate(20),
+		date: {year: 2020, month: 9},
+		link: "https://www.youtube.com/watch?v=IJNR2EpS0jw&amp;ab_channel=DumbWays2Die&ab_channel=DumbWays2Die"
+	},
 ];
 
 function getDateStamp(news: News): number {
