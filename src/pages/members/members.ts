@@ -71,18 +71,6 @@ export const members: MemberCollection[] = [
 				profile: "./elijah.jpg"
 			},
 			{
-				firstName: "Nicholas",
-				lastName: "Zamora",
-				email: "nzamora@mtu.edu",
-				profile: "https://media-exp1.licdn.com/dms/image/C5603AQEkESFnE-cNiw/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=YYMCtt1gX3gC70YAvjopmWFLxg5GTOR4HhGG7LGRgCg"
-			},
-			{
-				firstName: "Wyatt",
-				lastName: "Wagoner",
-				email: "wtwagone@mtu.edu",
-				profile: "https://media-exp1.licdn.com/dms/image/C4E03AQFh_oYQcg_gsg/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=TTXrCoVs7HD8it1C5mStWI9kPdDQQijPlAHSspJMugs"
-			},
-			{
 				firstName: "Collin",
 				lastName: "Miller",
 				email: "collinmi@mtu.edu",
@@ -116,13 +104,31 @@ export const members: MemberCollection[] = [
 				firstName: "Eric",
 				lastName: "Mosner",
 				email: "user@mtu.edu",
-				profile: "https://via.placeholder.com/480x480.png?text=Person"
+				profile: "https://wiki.kerbalspaceprogram.com/images/thumb/e/ee/Happy_kerbal.jpg/300px-Happy_kerbal.jpg"
 			},
 			{
 				firstName: "George",
 				lastName: "Johnson",
 				email: "user@mtu.edu",
 				profile: "https://media-exp1.licdn.com/dms/image/C4E03AQH5sOJ9gtvecA/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=gcpOPcLq2qAjq-_KLuRvwyzrLc9j_quZuRvD_7wtgqA"
+			}
+		]
+	},
+	{
+		title: "Alumni",
+		detail: false,
+		members: [
+			{
+				firstName: "Nicholas",
+				lastName: "Zamora",
+				email: "nzamora@mtu.edu",
+				profile: "https://media-exp1.licdn.com/dms/image/C5603AQEkESFnE-cNiw/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=YYMCtt1gX3gC70YAvjopmWFLxg5GTOR4HhGG7LGRgCg"
+			},
+			{
+				firstName: "Wyatt",
+				lastName: "Wagoner",
+				email: "wtwagone@mtu.edu",
+				profile: "https://media-exp1.licdn.com/dms/image/C4E03AQFh_oYQcg_gsg/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=TTXrCoVs7HD8it1C5mStWI9kPdDQQijPlAHSspJMugs"
 			}
 		]
 	}
