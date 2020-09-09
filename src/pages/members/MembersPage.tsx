@@ -7,7 +7,7 @@
 
 import * as React from "react";
 import "./MembersPage.css"
-import {MemberCollection, members} from "./members";
+import {alumni, MemberCollection, members} from "./members";
 import {MemberSection} from "./MemberSection";
 
 export interface MembersPageProps {
@@ -30,6 +30,10 @@ export class MembersPage extends React.Component<MembersPageProps, MembersPageSt
 		return (<div className={"MembersPage main"}>
 			<h2>Members</h2>
 			{members.map((memberCollection: MemberCollection) => {
+				return <MemberSection collection={memberCollection}/>
+			})}
+			<h2>Alumni</h2>
+			{alumni.map((memberCollection: MemberCollection) => {
 				return <MemberSection collection={memberCollection}/>
 			})}
 		</div>);

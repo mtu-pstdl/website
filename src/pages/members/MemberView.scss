@@ -29,6 +29,8 @@
 		justify-content: center;
 		align-items: flex-start;
 		padding: 20px;
+		z-index: 1;
+		background: black;
 
 		span {
 			display: block;
@@ -48,6 +50,22 @@
 			text-decoration: none;
 		}
 
+		.links {
+			display: flex;
+
+			a {
+				margin-right: 8px;
+				margin-top: 8px;
+				transition: transform 250ms ease-in-out, color 250ms ease-in-out;
+				color: white;
+			}
+
+			a:hover {
+				transform: scale(1.5);
+				color: $mtuGold;
+			}
+		}
+
 	}
 }
 
@@ -55,9 +73,14 @@
 	.MemberView {
 		width: 45%;
 
-		.email:hover {
-			color: $mtuGold;
+		img {
+			width: 40%;
+			height: 160px;
+			transition: transform 250ms ease-in-out;
 		}
 
+		img:hover {
+			transform: scale(1.5);
+		}
 	}
 }

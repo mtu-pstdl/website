@@ -56,16 +56,24 @@
   .MemberViewLead .name {
     margin-right: 8px;
   }
-  .MemberViewLead .email {
-    display: block;
-    transition: color 250ms ease-in-out;
+  .MemberViewLead .links {
+    display: flex;
   }
-  .MemberViewLead .email:hover {
+  .MemberViewLead .links a {
+    margin-right: 8px;
+    margin-top: 8px;
+    transition: transform 250ms ease-in-out, color 250ms ease-in-out;
+    color: white;
+  }
+  .MemberViewLead .links a:hover {
+    transform: scale(1.5);
     color: #ffcd00;
   }
   .MemberViewLead .headshot {
     display: block;
     width: 200px;
+    height: 280px;
+    object-fit: cover;
     margin-right: 20px;
     flex-shrink: 0;
     border-radius: 5px;

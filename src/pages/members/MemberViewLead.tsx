@@ -8,6 +8,7 @@
 import * as React from "react";
 import {Member} from "./members";
 import "./MemberViewLead.css"
+import {Link, LinkedIn, Mail} from "@material-ui/icons";
 
 export interface MemberViewLeadProps {
 	member: Member;
@@ -31,9 +32,14 @@ export class MemberViewLead extends React.Component<MemberViewLeadProps, MemberV
 			<div className={"bio-split"}>
 				<div className={"name-split"}>
 					<span className={"name"}>{this.props.member.firstName} {this.props.member.lastName}</span>
-					<a className={"email"} href={"mailto:" + this.props.member.email}>{this.props.member.email}</a>
+					<span className={"email"}>{this.props.member.email}</span>
 				</div>
 				<p className={"bio"}>{this.props.member.bio}</p>
+				<div className={"links"}>
+					<a href={"mailto:" + this.props.member.email} target={"_blank"} ref={"norefferer noopener"}><Mail/></a>
+					{this.props.member.linkedIn ? <a href={this.props.member.linkedIn} target={"_blank"} ref={"norefferer noopener"}><LinkedIn/></a> : <div/>}
+					{this.props.member.link ? <a href={this.props.member.link} target={"_blank"} ref={"norefferer noopener"}><Link/></a> : <div/>}
+				</div>
 			</div>
 		</div>);
 	}

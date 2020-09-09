@@ -64,18 +64,27 @@
 			margin-right: 8px;
 		}
 
-		.email {
-			display: block;
-			transition: color 250ms ease-in-out;
-		}
+		.links {
+			display: flex;
 
-		.email:hover {
-			color: $mtuGold;
+			a {
+				margin-right: 8px;
+				margin-top: 8px;
+				transition: transform 250ms ease-in-out, color 250ms ease-in-out;
+				color: white;
+			}
+
+			a:hover {
+				transform: scale(1.5);
+				color: $mtuGold;
+			}
 		}
 
 		.headshot {
 			display: block;
 			width: 200px;
+			height: 280px;
+			object-fit: cover;
 			margin-right: 20px;
 			flex-shrink: 0;
 			border-radius: 5px;
