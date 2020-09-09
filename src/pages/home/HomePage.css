@@ -83,6 +83,7 @@
   .HomePage .header .title {
     font-size: 2em;
     font-family: Nasa, Roboto, sans-serif;
+    text-transform: uppercase;
   }
   .HomePage .header .title, .HomePage .header .subtitle, .HomePage .header .mtu {
     margin: 0;
