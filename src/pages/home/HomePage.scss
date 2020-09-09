@@ -120,9 +120,18 @@
 				width: 300px;
 			}
 
+			.title {
+				font-size: 2em;
+				font-family: Nasa, Roboto, sans-serif;
+			}
+
 			.title, .subtitle, .mtu {
 				margin: 0;
 				padding: 0;
+			}
+
+			.subtitle, .mtu {
+				font-size: 1em;
 			}
 
 			.mtu {
@@ -133,7 +142,7 @@
 
 		section {
 			height: 100vh;
-			max-height: 1000px;
+			max-height: 1800px;
 			justify-content: flex-start;
 			padding: 240px 80px 80px;
 		}

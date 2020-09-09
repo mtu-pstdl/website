@@ -80,16 +80,23 @@
     display: block;
     width: 300px;
   }
+  .HomePage .header .title {
+    font-size: 2em;
+    font-family: Nasa, Roboto, sans-serif;
+  }
   .HomePage .header .title, .HomePage .header .subtitle, .HomePage .header .mtu {
     margin: 0;
     padding: 0;
+  }
+  .HomePage .header .subtitle, .HomePage .header .mtu {
+    font-size: 1em;
   }
   .HomePage .header .mtu {
     font-size: 0.85em;
   }
   .HomePage section {
     height: 100vh;
-    max-height: 1000px;
+    max-height: 1800px;
     justify-content: flex-start;
     padding: 240px 80px 80px;
   }
