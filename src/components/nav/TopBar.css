@@ -18,6 +18,9 @@
   width: 100%;
   max-height: 100px;
   object-fit: contain;
+  background: black;
+  padding: 8px;
+  border-radius: 20px;
 }
 
 @media (min-width: 720px) {
@@ -32,7 +35,7 @@
     background: none;
   }
   .TopBar .logo {
-    width: 340px;
+    width: 380px;
     max-height: 100px;
   }
 }
