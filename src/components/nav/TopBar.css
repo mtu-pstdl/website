@@ -13,6 +13,7 @@
 .TopBar {
   display: flex;
   flex-direction: column;
+  z-index: 8;
 }
 .TopBar .logo {
   width: 100%;
