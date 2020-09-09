@@ -8,7 +8,7 @@
 import * as React from "react";
 import {News} from "./news";
 import "./NewsClipView.css";
-import {Link as LinkIcon} from "@material-ui/icons";
+import {OpenInNew} from "@material-ui/icons";
 
 export interface NewsClipViewProps {
 	news: News;
@@ -43,7 +43,10 @@ export class NewsClipView extends React.Component<NewsClipViewProps, NewsClipVie
 				<span className={"title"}>{this.props.news.title}</span>
 				<span className={"date"}>{this.getDateString()}</span>
 			</div>
-			<span className={"content"}>{this.props.news.content}</span>
+			<div className={"container"}>
+				<span className={"content"}>{this.props.news.content}</span>
+				<OpenInNew className={"button"}/>
+			</div>
 		</a>);
 	}
 

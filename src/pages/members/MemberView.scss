@@ -75,12 +75,12 @@
 
 		img {
 			width: 40%;
-			height: 160px;
+			height: 100%;
 			transition: transform 250ms ease-in-out;
 		}
 
 		img:hover {
-			transform: scale(1.5);
+			transform: scale(1.5) rotate(5deg);
 		}
 	}
 }

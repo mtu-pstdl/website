@@ -16,8 +16,13 @@
   flex-direction: column;
   transition: all 250ms ease-in-out;
 }
+.NewsClipView .container {
+  display: flex;
+  flex-direction: row;
+}
 .NewsClipView .top {
   display: flex;
+  flex-direction: row;
   margin-bottom: 8px;
 }
 .NewsClipView .title {
@@ -29,9 +34,16 @@
 .NewsClipView .date {
   font-weight: lighter;
   font-size: 1.125em;
+  padding-left: 16px;
 }
 .NewsClipView .icon {
   color: #ffcd00;
+}
+.NewsClipView .button {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  align-self: center;
 }
 
 .NewsClipView-link:hover {

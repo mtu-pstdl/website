@@ -14,6 +14,7 @@ export type Member = {
 	link?: string;
 	profile?: string;
 	bio?: string;
+	key?: number;
 }
 
 export type MemberCollection = {
@@ -33,7 +34,8 @@ export const members: MemberCollection[] = [
 				email: "pjvansus@mtu.edu",
 				profile: "https://media-exp1.licdn.com/dms/image/C5103AQHLU_yQeqn9Eg/profile-displayphoto-shrink_800_800/0?e=1605139200&v=beta&t=0A6znP3pWwONKQcaocvUzWQsT8lY0pEy3NTkBq6xdFg",
 				bio: "Dr. van Susante grew up in The Netherlands, received a Master of Science from Delft University of Technology in 2001 in Civil Engineering with an emphasis on Building Engineering. He then went to the Colorado School of Mines (CSM) to participate in NASA research and received a Master of Science in Engineering Systems from CSM in 2004 followed by a Ph.D in Engineering Systems from CSM in 2011. Dr. van Susante taught Freshman, Sophomore and Senior Design as well as Mechanics of Materials for five years at CSM before coming to Michigan Technological University in 2012. He was a NASA Faculty Fellow in 2010 and consulted for a variety of companies on SBIR or STTR projects such as University of Arizona, Sysrand Corporation, Energid, HoneyBee Robotics and others. He has been involved in research projects for many customers including Lockheed Martin, DARPA, NASA KSC, JPL, Bechtel, Caterpillar, NCHRP, NSF and others.",
-				linkedIn: "https://www.linkedin.com/in/paul-van-susante-ph-d-6612271/"
+				linkedIn: "https://www.linkedin.com/in/paul-van-susante-ph-d-6612271/",
+				key: 1000000
 			}
 		]
 	},
@@ -47,7 +49,15 @@ export const members: MemberCollection[] = [
 				email: "mcguadag@mtu.edu",
 				profile: "./marcello.jpg",
 				bio: "Marcello Guadagno (Chell) has a Bachelor's in Mechanical Engineering with minors in Aerospace Engineering, Electrical Engineering, and International Leadership (MTU 2019). He has 5 years of end-to-end spacecraft engineering and program management experience. Marcello began his work in the PSTDL in the Spring of 2020. His graduate work focuses on developing In-Situ Lunar robotic mining missions. ",
-				linkedIn: "https://www.linkedin.com/in/marcelloguadagno/"
+				linkedIn: "https://www.linkedin.com/in/marcelloguadagno/",
+				key: 100
+			},
+			{
+				firstName: "Ben",
+				lastName: "Chaffee",
+				email: "brchaffe@mtu.edu",
+				bio: "Ben Chaffee received a Bachelor's of Science in Mechanical Engineering from the University of Akron in 2014 and a Master’s in Robotic Systems Development from Carnegie Mellon in 2015. He is now a Senior Engineer at Wecall Inc. in Chardon, OH, a company that fabricates fasteners used on buildings and bridges throughout the US and Canada. At Wecall, Ben leads projects in designing and testing new fasteners to meet customer needs. He also works on developing new machines and processes to increase efficiency and throughput. Ben is now pursuing a ME-EM PhD at MTU and joined the PSTDL in the Fall of 2020. He is looking forward to bringing his collegiate and industry experience to the team to assist with the development of future lunar robots.",
+				linkedIn: "https://www.linkedin.com/in/ben-chaffee-464453101/"
 			}
 		]
 	},
@@ -115,8 +125,7 @@ export const members: MemberCollection[] = [
 			{
 				firstName: "Eric",
 				lastName: "Mosner",
-				email: "emmossne@mtu.edu",
-				profile: "https://wiki.kerbalspaceprogram.com/images/thumb/e/ee/Happy_kerbal.jpg/300px-Happy_kerbal.jpg"
+				email: "emmossne@mtu.edu"
 			},
 			{
 				firstName: "George",

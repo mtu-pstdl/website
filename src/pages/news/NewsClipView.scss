@@ -13,8 +13,14 @@
 	flex-direction: column;
 	transition: all 250ms ease-in-out;
 
+	.container {
+		display: flex;
+		flex-direction: row;
+	}
+
 	.top {
 		display: flex;
+		flex-direction: row;
 		margin-bottom: 8px;
 	}
 
@@ -28,6 +34,7 @@
 	.date {
 		font-weight: lighter;
 		font-size: 1.125em;
+		padding-left: 16px;
 	}
 
 	.content {
@@ -36,6 +43,13 @@
 
 	.icon {
 		color: $mtuGold;
+	}
+
+	.button {
+		width: 40px;
+		height: 40px;
+		margin-left: 20px;
+		align-self: center;
 	}
 
 }
