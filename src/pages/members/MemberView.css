@@ -30,8 +30,7 @@
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
-  z-index: 1;
-  background: black;
+  background: none;
 }
 .MemberView .content span {
   display: block;
@@ -61,6 +60,76 @@
   transform: scale(1.5);
   color: #ffcd00;
 }
+.MemberView .content .bioButtonContainer {
+  margin-top: 8px;
+  padding: 4px 20px 4px 4px;
+  border: solid #fff 2px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: background 250ms ease-in-out;
+}
+.MemberView .content .bioButtonContainer span {
+  margin-left: 4px;
+}
+.MemberView .content .bioButtonContainer > * {
+  transition: all 250ms ease-in-out;
+}
+.MemberView .content .bioButtonContainer:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+.MemberView .content .bioContainer {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.MemberView .content .bioContainer .modal {
+  margin-top: 30vh;
+  width: 80vw;
+  position: relative;
+  max-width: 800px;
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px black;
+  background: #ffcd00;
+  color: black;
+  overflow: hidden;
+  z-index: 3;
+}
+.MemberView .content .bioContainer .modal .closeContainer {
+  background: black;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 30px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 250ms ease-in-out;
+}
+.MemberView .content .bioContainer .modal .closeContainer .closeImage {
+  color: #ffcd00;
+  width: 40px;
+  height: 40px;
+}
+.MemberView .content .bioContainer .modal .closeContainer:hover {
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+.MemberView .content .bioContainer .modal .bio {
+  font-size: 1.5em;
+}
 
 @media (min-width: 720px) {
   .MemberView {
@@ -70,9 +139,6 @@
     width: 40%;
     height: 100%;
     transition: transform 250ms ease-in-out;
-  }
-  .MemberView img:hover {
-    transform: scale(1.5) rotate(5deg);
   }
 }
 

@@ -41,7 +41,7 @@ export const members: MemberCollection[] = [
 	},
 	{
 		title: "PhD Students",
-		detail: true,
+		detail: false,
 		members: [
 			{
 				firstName: "Marcello",
@@ -49,8 +49,7 @@ export const members: MemberCollection[] = [
 				email: "mcguadag@mtu.edu",
 				profile: "./marcello.jpg",
 				bio: "Marcello Guadagno (Chell) has a Bachelor's in Mechanical Engineering with minors in Aerospace Engineering, Electrical Engineering, and International Leadership (MTU 2019). He has 5 years of end-to-end spacecraft engineering and program management experience. Marcello began his work in the PSTDL in the Spring of 2020. His graduate work focuses on developing In-Situ Lunar robotic mining missions. ",
-				linkedIn: "https://www.linkedin.com/in/marcelloguadagno/",
-				key: 100
+				linkedIn: "https://www.linkedin.com/in/marcelloguadagno/"
 			},
 			{
 				firstName: "Ben",
@@ -63,7 +62,7 @@ export const members: MemberCollection[] = [
 	},
 	{
 		title: "Masters Students",
-		detail: true,
+		detail: false,
 		members: [
 			{
 				firstName: "Travis",
@@ -72,6 +71,14 @@ export const members: MemberCollection[] = [
 				profile: "https://media-exp1.licdn.com/dms/image/C4E03AQF64hrFwQ-35A/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=t3YAACvw_BB8ML1lS3YFfM239BxZx8TIhqZmrZl-UXc",
 				bio: "Travis Wavrunek completed his B.S. in Mechanical Engineering at Michigan Tech in Spring 2020 and joined the PSTDL lab the following summer. His work focuses on creating a gravity offloading system for rover testing in the lunar sandbox as well as thermal modeling of the L-SABRE.",
 				linkedIn: "https://www.linkedin.com/in/travis-wavrunek/"
+			},
+			{
+				firstName: "Ben",
+				lastName: "Wiegand",
+				email: "bdwiegan@mtu.edu",
+				profile: "./ben.jpg",
+				linkedIn: "https://www.linkedin.com/in/benjamin-w-48378b175/",
+				bio: "Ben Wiegand received his B.S. in mechanical engineering from Michigan Tech in the spring of 2020. He is currently pursuing his master’s degree at Michigan Tech and is expected to graduate in the fall of 2021. His past experiences include robotics and controls for 3D motion platforms, algorithms for plastics manufacturing, and 3D simulations for military vehicles. Ben joined the PSTDL lab in the fall of 2020, and is currently exploring the use of open-source spectrometers for lunar trenchers."
 			}
 		]
 	},
@@ -85,7 +92,8 @@ export const members: MemberCollection[] = [
 				email: "ejcobb@mtu.edu",
 				profile: "./elijah.jpg",
 				link: "https://elijahcobb.com",
-				linkedIn: "https://www.linkedin.com/in/elijahjcobb/"
+				linkedIn: "https://www.linkedin.com/in/elijahjcobb/",
+				bio: "Elijah Cobb is a fourth year Computer Science student. Elijah works with the L-SABRE team developing the ground control software and communication between the rover and other subsystems. Elijah also works with facilities developing the gravity offloading system."
 			},
 			{
 				firstName: "Collin",

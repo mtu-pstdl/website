@@ -29,8 +29,7 @@
 		justify-content: center;
 		align-items: flex-start;
 		padding: 20px;
-		z-index: 1;
-		background: black;
+		background: none;
 
 		span {
 			display: block;
@@ -66,6 +65,88 @@
 			}
 		}
 
+		.bioButtonContainer {
+			margin-top: 8px;
+			padding: 4px 20px 4px 4px;
+			border: solid $white 2px;
+			border-radius: 8px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			transition: background 250ms ease-in-out;
+
+			span {
+				margin-left: 4px;
+			}
+		}
+
+		.bioButtonContainer > * {
+			transition: all 250ms ease-in-out;
+		}
+
+		.bioButtonContainer:hover {
+			background: white;
+			color: black;
+			cursor: pointer;
+		}
+
+		.bioContainer {
+			background: rgba(0,0,0,0.8);
+			width: 100vw;
+			height: 100vh;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 3;
+			align-items: center;
+			justify-content: flex-start;
+			flex-direction: column;
+
+			.modal {
+
+				margin-top: 30vh;
+				width: 80vw;
+				position: relative;
+				max-width: 800px;
+				padding: 60px;
+				border-radius: 20px;
+				box-shadow: 0 0 20px black;
+				background: $mtuGold;
+				color: $mtuBlack;
+				overflow: hidden;
+				z-index: 3;
+
+				.closeContainer {
+					background: black;
+					position: absolute;
+					top: 20px;
+					right: 20px;
+					border-radius: 30px;
+					padding: 10px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					transition: transform 250ms ease-in-out;
+
+					.closeImage {
+						color: $mtuGold;
+						width: 40px;
+						height: 40px;
+
+					}
+				}
+
+				.closeContainer:hover {
+					cursor: pointer;
+					transform: rotate(90deg);
+				}
+
+				.bio {
+					font-size: 1.5em;
+				}
+			}
+		}
+
 	}
 }
 
@@ -79,8 +160,8 @@
 			transition: transform 250ms ease-in-out;
 		}
 
-		img:hover {
-			transform: scale(1.5) rotate(5deg);
-		}
+		//img:hover {
+		//	transform: scale(1.5) rotate(5deg);
+		//}
 	}
 }

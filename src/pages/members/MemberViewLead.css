@@ -12,6 +12,7 @@
  */
 .MemberViewLead {
   margin: 20px 0;
+  z-index: 1;
 }
 .MemberViewLead .headshot {
   width: 100%;
