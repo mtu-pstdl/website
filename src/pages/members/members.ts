@@ -33,7 +33,7 @@ export const members: MemberCollection[] = [
 				lastName: "Van Susante",
 				email: "pjvansus@mtu.edu",
 				profile: "https://media-exp1.licdn.com/dms/image/C5103AQHLU_yQeqn9Eg/profile-displayphoto-shrink_800_800/0?e=1605139200&v=beta&t=0A6znP3pWwONKQcaocvUzWQsT8lY0pEy3NTkBq6xdFg",
-				bio: "Dr. van Susante grew up in The Netherlands, received a Master of Science from Delft University of Technology in 2001 in Civil Engineering with an emphasis on Building Engineering. He then went to the Colorado School of Mines (CSM) to participate in NASA research and received a Master of Science in Engineering Systems from CSM in 2004 followed by a Ph.D in Engineering Systems from CSM in 2011. Dr. van Susante taught Freshman, Sophomore and Senior Design as well as Mechanics of Materials for five years at CSM before coming to Michigan Technological University in 2012. He was a NASA Faculty Fellow in 2010 and consulted for a variety of companies on SBIR or STTR projects such as University of Arizona, Sysrand Corporation, Energid, HoneyBee Robotics and others. He has been involved in research projects for many customers including Lockheed Martin, DARPA, NASA KSC, JPL, Bechtel, Caterpillar, NCHRP, NSF and others.",
+				bio: "Dr. van Susante grew up in The Netherlands. He graduated with a MSc in Civil Engineering from Delft University of Technology in 2001 with a thesis topic of building large telescopes in the permanently shaded lunar polar craters. He did his internship at the European Space Agency in Noordwijk (ESTEC), The Netherlands, and led his award winning senior design team with a lunar base design for lunar He 3 surface mining. In 2002 he started at the Colorado School of Mines at the invitation of Mike Duke to continue lunar telescope work and received a MSc in Engineering Systems in 2004. Since 2003 he has been involved with in-situ Resource Utilization studies and hardware development and testing, he led the development of a first prototype of a lunar bucket ladder, backhoe and performed regolith simulant property testing for RESOLVE. He was faculty advisor for 5 student teams participating in the centennial excavation challenge and lunabotics mining competition from 2008-2012 and now a 6 th team at MTU. In 2010 he was a National Space Grant Faculty Fellow at NASA Kennedy Space Center working on lunar landing pad construction methods and testing. His PhD from CSM in 2011 included modeling of lunar regolith excavation forces. He has worked on numerous SBIR/STTR/NIAC and other grants with numerous aerospace companies and NASA centers on ISRU related research, Lunar and Martian economics and architecture studies. After 7 years as a senior lecturer, he is now an assistant professor at MTU and performs research in the areas of In-situ resource utilization (ISRU) for space exploration and surface operations on the Moon, Mars and Asteroids. His Planetary Surface Technology Development Lab includes simulation, prototype development and test facilities. His research group and Mining Innovation Enterprise perform research in collaboration with several companies for several funded multi-year NASA grants such as extracting water from gypsum rock and buried glaciers on Mars and water extraction from ice in permanently shadowed craters on the Moon. Other aspects of the research include study and prototyping and testing robotic systems for excavation and construction for infrastructure placement such as trenching, roads, landing pads, bulk material movement and beneficiation of source material.",
 				linkedIn: "https://www.linkedin.com/in/paul-van-susante-ph-d-6612271/",
 				key: 1000000
 			}
@@ -79,6 +79,14 @@ export const members: MemberCollection[] = [
 				profile: "./ben.jpg",
 				linkedIn: "https://www.linkedin.com/in/benjamin-w-48378b175/",
 				bio: "Ben Wiegand received his B.S. in mechanical engineering from Michigan Tech in the spring of 2020. He is currently pursuing his master’s degree at Michigan Tech and is expected to graduate in the fall of 2021. His past experiences include robotics and controls for 3D motion platforms, algorithms for plastics manufacturing, and 3D simulations for military vehicles. Ben joined the PSTDL lab in the fall of 2020, and is currently exploring the use of open-source spectrometers for lunar trenchers."
+			},
+			{
+				firstName: "Dante",
+				lastName: "Paglia",
+				linkedIn: "https://www.linkedin.com/in/dante-paglia/",
+				profile: "https://media-exp1.licdn.com/dms/image/C5603AQECuHVbVQYxaQ/profile-displayphoto-shrink_800_800/0?e=1605744000&v=beta&t=6ELGMHhOX8SsXaYLttaj0MQg6L2eKzCg5TwVYUQ45BA",
+				email: "dfpaglia@mtu.edu",
+				bio: "Dante Paglia received his B.S. in computer science from Michigan Technological University in the spring of 2020. He is continuing on his education to pursue an accelerated M.S. in computer science at Michigan Tech and will be graduating in the spring of 2021. His experience comes from his past internship at Space Dynamics Laboratory and his time leading the software team of Michigan Tech’s Aerospace Enterprise. Dante joined the PSTDL in the fall of 2020 and is working on adding an augmented reality sandbox to the lab's facilities."
 			}
 		]
 	},
@@ -86,6 +94,14 @@ export const members: MemberCollection[] = [
 		title: "Undergraduate Students",
 		detail: false,
 		members: [
+			{
+				firstName: "Robert",
+				lastName: "Lawrence",
+				bio: "Robert Lawrence is finishing up his Senior year B.S. in Chemical Engineering this Academic Year. With plans to graduate in the Spring of 2021. Past experience include rock crushing laboratories, benedict lab research, and a minor in mineral processing. Robert Joined the PSTDL during the summer of 2020, and is presently working on developing a low cost- high volume lunar highland simulant for the testing beds.",
+				profile: "https://media-exp1.licdn.com/dms/image/C4E03AQHspWo19PzDug/profile-displayphoto-shrink_800_800/0?e=1605744000&v=beta&t=UEK-AM5oQV0hBIsIpfB0PkNlddagW4sxU5rnadjbtcU",
+				linkedIn: "https://www.linkedin.com/in/robert-lawrence-380bbb1a3/",
+				email: "ralawren@mtu.edu"
+			},
 			{
 				firstName: "Elijah",
 				lastName: "Cobb",
@@ -107,7 +123,8 @@ export const members: MemberCollection[] = [
 				lastName: "McGillivray",
 				email: "hjmcgill@mtu.edu",
 				profile: "https://media-exp1.licdn.com/dms/image/C4D03AQFIkrCdsvgAGw/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=k1oaA_p3yILbH_ARWug9KHFubtETWVEGf8pvwpVt1dk",
-				linkedIn: "https://www.linkedin.com/in/hunter-mcgillivray-31ba051b4/"
+				linkedIn: "https://www.linkedin.com/in/hunter-mcgillivray-31ba051b4/",
+				bio: "I am an undergraduate student at Michigan Tech with research experience for the NASA BIG Ideas challenge where our team developed a tethered lunar rover capable of exploring and providing infrastructure to the moon's permanently shaded regions. I did the design and testing for a number of mechanical subsystems, most notably the system that managed the tension and deployment of our superconducting tether. I am also a FIRST robotics alumni with 2 world championship wins and an eagle scout."
 			},
 			{
 				firstName: "Erik",
@@ -131,16 +148,12 @@ export const members: MemberCollection[] = [
 				linkedIn: "https://www.linkedin.com/in/austen-g-83a639bb/"
 			},
 			{
-				firstName: "Eric",
-				lastName: "Mosner",
-				email: "emmossne@mtu.edu"
-			},
-			{
 				firstName: "George",
 				lastName: "Johnson",
 				email: "georgejo@mtu.edu",
 				profile: "https://media-exp1.licdn.com/dms/image/C4E03AQH5sOJ9gtvecA/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=gcpOPcLq2qAjq-_KLuRvwyzrLc9j_quZuRvD_7wtgqA",
-				linkedIn: "https://www.linkedin.com/in/george-johnson-a05328195/"
+				linkedIn: "https://www.linkedin.com/in/george-johnson-a05328195/",
+				bio: "George Johnson is finishing his senior year B.S. in Mechanical Engineering and Minoring in Manufacturing. Planning to graduate in the Spring of 2021, George is also considering enrolling in graduate school to obtain his M.S. in Mechanical Engineering. His past experience comes from a summer internship at Woodward Inc, Managing the MTU Lunabotics Competition Team, conducting undergraduate research for the PSTDL and Honeybee robotics on the RedWater project. George joined the PSTDL in the summer of 2020 and is continuing research on the RedWater project as well as completing a Lunar Trenching project for his Senior Capstone project."
 			}
 		]
 	}
@@ -164,6 +177,11 @@ export const alumni: MemberCollection[] = [
 				email: "wtwagone@mtu.edu",
 				profile: "https://media-exp1.licdn.com/dms/image/C4E03AQFh_oYQcg_gsg/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=TTXrCoVs7HD8it1C5mStWI9kPdDQQijPlAHSspJMugs",
 				linkedIn: "https://www.linkedin.com/in/wyatt-wagoner/"
+			},
+			{
+				firstName: "Eric",
+				lastName: "Mosner",
+				email: "emmossne@mtu.edu"
 			}
 		]
 	}

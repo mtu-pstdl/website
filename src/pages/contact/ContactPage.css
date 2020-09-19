@@ -4,8 +4,44 @@
  * elijahcobb.com
  * github.com/elijahjcobb
  */
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
 .ContactPage p {
   margin: 10px 0;
+}
+.ContactPage .link {
+  color: #ffcd00;
+  border-bottom: solid black 2px;
+  text-decoration: none;
+  transition: border-bottom-color 250ms ease-in-out;
+}
+.ContactPage ol {
+  margin-left: 40px;
+}
+.ContactPage ol li {
+  margin: 8px;
+}
+.ContactPage .button {
+  display: block;
+  background: #ffcd00;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1.125em;
+  margin: 10px 0;
+  transition: transform 250ms ease-in-out;
+}
+.ContactPage .button:hover {
+  transform: scale(1.125);
+  cursor: pointer;
+}
+.ContactPage .link:hover {
+  border-bottom-color: #ffcd00;
 }
 
 /*# sourceMappingURL=ContactPage.css.map */
