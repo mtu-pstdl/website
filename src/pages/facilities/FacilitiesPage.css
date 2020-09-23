@@ -24,8 +24,13 @@
   padding-bottom: 16px;
 }
 .FacilitiesPage img {
-  max-width: 240px;
-  margin: 10px 0;
+  max-width: 380px;
+  margin: 10px;
+  transition: transform 250ms ease-in-out;
+  border-radius: 20px;
+}
+.FacilitiesPage img:hover {
+  transform: scale(2);
 }
 .FacilitiesPage h4 {
   color: #ffcd00;

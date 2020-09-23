@@ -29,7 +29,7 @@ export const members: MemberCollection[] = [
 		detail: true,
 		members: [
 			{
-				firstName: "Paul",
+				firstName: "Dr. Paul",
 				lastName: "Van Susante",
 				email: "pjvansus@mtu.edu",
 				profile: "https://media-exp1.licdn.com/dms/image/C5103AQHLU_yQeqn9Eg/profile-displayphoto-shrink_800_800/0?e=1605139200&v=beta&t=0A6znP3pWwONKQcaocvUzWQsT8lY0pEy3NTkBq6xdFg",
@@ -109,7 +109,7 @@ export const members: MemberCollection[] = [
 				profile: "./elijah.jpg",
 				link: "https://elijahcobb.com",
 				linkedIn: "https://www.linkedin.com/in/elijahjcobb/",
-				bio: "Elijah Cobb is in his senior year of a B.S. in Computer Science from MTU with plans to continue on with a M.S. the following year. Elijah got his start with software development working for a start-up out of high school and joined Husky Works the summer of 2020 to develop ground control software for the L-SABRE mission. Elijah has since developed control software for the PSTDL's Gravity Offloading system and continues to work on the L-SABRE mission working on COM, CDH, and Ground Control systems. Elijah is also a member of the MTU Aerospace Enterprise Software team and is doing original research as an Undergraduate Fellow through the College of Computing under the direction of Dr. Charles Wallace."
+				bio: "Elijah Cobb is in his senior year of a B.S. in Computer Science from Michigan Technological University with plans to continue on with a M.S. the following year. Elijah got his start with software development working for a startup out of high school and joined the Planetary Surface Technology Development Lab at MTU the summer of 2020 to develop ground control software for the ongoing L-SABRE mission. Elijah has since developed control software for the PSTDL's Gravity Offloading system and continues to work on the L-SABRE mission working on COM, CDH, and Ground Control systems. Elijah is also a member of the MTU Aerospace Enterprise Software team and is doing original research as an Undergraduate Fellow through the College of Computing under the direction of Dr. Charles Wallace."
 			},
 			{
 				firstName: "Collin",

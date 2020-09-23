@@ -1,0 +1,50 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+
+@import "../../variables";
+
+.ProjectDetail {
+
+	h3 {
+
+	}
+
+	li {
+		margin: 4px 20px;
+	}
+
+	p {
+		margin: 20px 0;
+		font-size: 1.25em;
+	}
+
+	img {
+		display: block;
+		width: 100%;
+		margin: 20px 0;
+		max-height: 800px;
+		object-fit: contain;
+	}
+
+	.button {
+		display: block;
+		color: black;
+		background: $mtuGold;
+		text-align: center;
+		padding: 8px 16px;
+		width: 140px;
+		font-weight: bold;
+		text-decoration: none;
+		border-radius: 8px;
+		transition: transform 250ms ease-in-out;
+	}
+
+	.button:hover {
+		transform: scale(1.25);
+	}
+
+}
