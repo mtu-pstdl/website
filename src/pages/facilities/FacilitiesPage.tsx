@@ -28,24 +28,69 @@ export class FacilitiesPage extends React.Component<FacilitiesPageProps, Facilit
 	public render(): React.ReactElement {
 		return (<div className={"FacilitiesPage main"}>
 			<h2>Facilities</h2>
-			<h3>Dusty Thermal Vacuum Chamber (DTVAC)</h3>
-			<p>TRL6 testing of the L-SABRE rover will be completed at state-of-the art facilities located here on the Michigan Technological University campus in the Planetary Surface Technology Development Lab (PSTDL), including a dusty thermal vacuum chamber that can simulate the lunar environment by reaching temperatures near 77 K in a vacuum, with a bed of lunar simulant. The DTVAC is designed to house a simulant bin with a bed depth of 15cm. There are two simulant bins to choose from for testing purposes. One bin contains a lunar Highlands simulant, and the other is filled with a lunar Maria simulant. Both simulants bins are precisely prepared before each test using a method of incremental filling and compaction to achieve a test bed that replicates the densely packed soil properties found on the moon. Additionally, for certain tests water may be added to the simulant in measured quantities before compaction. This is done to simulate certain soils on the moon where water ice is present such as in PSR craters.</p>
-			<p>To accomplish the task of cryogenic cooling inside the DTVAC, an inner thermal shroud is used with liquid nitrogen cooling coils located on the bottom and sides of the shroud. In addition to cooling capabilities, the thermal shroud also has the ability to be heated to 473.15 K on both the sides and ceiling. There are 16 QF and ISO style vacuum ports located on the right side wall of the DTVAC. These ports can be configured in many ways and outfitted with different adapters to allow different test setups to be configured inside the DTVAC. The primary vacuum test ports that L-SABRE will use are the power feed through and data feed through ports. Using these ports we are able to pass 4 lines of power (700A max) and 25 lines of data communication into the chamber during thermal vacuum tests.</p>
-			<div className={"img-container"}>
-				<img src={"./dtvac-1.png"} alt={"dtvac"}/>
-				<img src={"./dtvac-2.png"} alt={"dtvac"}/>
-				<img src={"./dtvac-3.png"} alt={"dtvac"}/>
-			</div>
-			<h3>Industrial Robotic Arm</h3>
-			<LoremIpsum/>
-			<h3>Lunar Regolith Sandbox with Gravity Assist</h3>
-			<LoremIpsum/>
-			<img src={"./gravity-assist.png"} alt={"gravity-assist"}/>
-			<h3>Mini Thermal Vacuum Chamber (MTVAC)</h3>
-			<p>Further data collection for NASA’s RedWater project will utilize a Martian pressure rated vacuum chamber located in the Planetary Surface Technology Development Lab. The MTVAC has been designed to operate within a range of 7 Torr to 10-2 Torr, and features a LN2 feedthrough port to allow tests to be conducted at cryogenic temperatures. The internal dimensions of this chamber make up an 18” cube, and allows for smaller tests, with reduced pump downtime. This test setup specifically seeks to gather information about the energy required to melt through cryogenic ice within a lower pressure atmosphere. The MTVAC will likely also be used in preliminary testing and validation of vacuum and temperature rated hardware.</p>
-			<img src={"./mtvac.png"} alt={"mtvac"}/>
-			<h3>Outdoor Robotic Test Platform</h3>
-			<LoremIpsum/>
+			<section>
+				<h3>Dusty Thermal Vacuum Chamber (DTVAC)</h3>
+				<p>The Dusty Thermal Vacuum Chamber (DTVAC) is a new environmental facility whose purpose is to perform rapid testing of lunar surface systems and science instruments. This facility consists of a thermal vacuum chamber, removable regolith beds, and supporting equipment.</p>
+				<h4>Specifications</h4>
+				<ul>
+					<li>The chamber has an internal volume of 127x127x178 cm and is loaded from the side for ease of access. A 22in flange on top of the chamber enables future expansions to support large-scale drilling tests.</li>
+					<li>This facility is cooled by a 3125 gallon LN2 tank and warmed by internal heaters to produce operating temperatures between  -196°C and 200°C. This range is able to simulate temperatures found in most illuminated and shaded areas of the Moon.</li>
+					<li>Rough vacuum is reached with a roughing pump and is then taken to 5x10^-5 Torr using a turbopump.</li>
+					<li>The DTVAC has 2 light sources and 6 mounting points internally placed on the chamber ceiling.</li>
+					<li>The facility is currently configured to support power lines rated for 700A, a 25pin data connection, and 2X 5-pair thermocouple feedthroughs.</li>
+					<li>
+						<span>16 total viewports and feedthroughs are available for configuration:</span>
+						<table>
+							<tr>
+								<th>Name</th>
+								<th>Qty</th>
+							</tr>
+							<tr>
+								<td>ISO-LF DN160 (NW160)</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>ISO-LF DN63 (NW63)</td>
+								<td>4</td>
+							</tr>
+							<tr>
+								<td>KF/QF40-100-LF (NW40)</td>
+								<td>4</td>
+							</tr>
+							<tr>
+								<td>KF/QF25-100-LF (NW25)</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>KF/QF16-100-LF (NW16)</td>
+								<td>4</td>
+							</tr>
+						</table>
+					</li>
+				</ul>
+				<h4>Regolith Cart</h4>
+				<ul>
+					<li>2X rectangular metal carts that roll into the vacuum facility from an enclosed loading area.</li>
+					<li>Each cart has an Internal volume of 60x116x167 cm.</li>
+					<li>Carts are capable of holding up to 60 cm of dry and or icy regolith mixtures.</li>
+					<li>MTU-LHT-1A simulant for the regolith carts is produced in house.</li>
+					<li>80/20 rails line all sides of the cart lip for equipment mounting.</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Industrial Robotic Arm</h3>
+				<LoremIpsum/>
+			</section>
+			<section>
+				<h3>Lunar Regolith Sandbox with Gravity Assist</h3>
+				<LoremIpsum/>
+			</section>
+			<section>
+				<h3>MTVAC</h3>
+				<p>Further data collection for NASA’s RedWater project will utilize a Martian pressure rated vacuum chamber located in the Planetary Surface Technology Development Lab. The MTVAC has been designed to operate within a range of 7 Torr to 10-2 Torr, and features a LN2 feedthrough port to allow tests to be conducted at cryogenic temperatures. The internal dimensions of this chamber make up an 18” cube, and allows for smaller tests, with reduced pump downtime.</p>
+				<p>This test setup specifically seeks to gather information about the energy required to melt through cryogenic ice within a lower pressure atmosphere. The MTVAC will likely also be used in preliminary testing   and validation of vacuum and temperature rated hardware.</p>
+
+			</section>
 		</div>);
 	}
 

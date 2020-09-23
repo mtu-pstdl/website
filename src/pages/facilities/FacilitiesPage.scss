@@ -5,6 +5,8 @@
  * github.com/elijahjcobb
  */
 
+@import "../../variables";
+
 .FacilitiesPage {
 
 	p {
@@ -18,9 +20,33 @@
 		flex-wrap: wrap;
 	}
 
+	h3 {
+		border-bottom: solid 2px $mtuGold;
+		padding-bottom: 16px;
+	}
 	img {
 		max-width: 240px;
 		margin: 10px 0;
+	}
+
+	h4 {
+		color: $mtuGold;
+		font-weight: normal;
+		font-size: 1.25em;
+		margin-top: 20px;
+	}
+
+	th, td {
+		padding: 4px;
+		text-align: left;
+	}
+
+	li {
+		margin: 8px 20px;
+	}
+
+	section {
+		margin-top: 40px;
 	}
 
 }

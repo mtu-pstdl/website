@@ -4,6 +4,12 @@
  * elijahcobb.com
  * github.com/elijahjcobb
  */
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
 .FacilitiesPage p {
   margin: 10px 0;
 }
@@ -13,9 +19,29 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+.FacilitiesPage h3 {
+  border-bottom: solid 2px #ffcd00;
+  padding-bottom: 16px;
+}
 .FacilitiesPage img {
   max-width: 240px;
   margin: 10px 0;
+}
+.FacilitiesPage h4 {
+  color: #ffcd00;
+  font-weight: normal;
+  font-size: 1.25em;
+  margin-top: 20px;
+}
+.FacilitiesPage th, .FacilitiesPage td {
+  padding: 4px;
+  text-align: left;
+}
+.FacilitiesPage li {
+  margin: 8px 20px;
+}
+.FacilitiesPage section {
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=FacilitiesPage.css.map */

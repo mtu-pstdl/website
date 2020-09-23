@@ -68,7 +68,7 @@ export const members: MemberCollection[] = [
 				firstName: "Travis",
 				lastName: "Wavrunek",
 				email: "tawavrun@mtu.edu",
-				profile: "https://media-exp1.licdn.com/dms/image/C4E03AQF64hrFwQ-35A/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=t3YAACvw_BB8ML1lS3YFfM239BxZx8TIhqZmrZl-UXc",
+				profile: "https://media-exp1.licdn.com/dms/image/C5603AQHsZRyJRuoFLg/profile-displayphoto-shrink_800_800/0?e=1606348800&v=beta&t=Pl4GM2QiNPLK5WgUNMLSAqzNqWG6qCP9PkLUZowHRPA",
 				bio: "Travis Wavrunek completed his B.S. in Mechanical Engineering at Michigan Tech in Spring 2020 and joined the PSTDL lab the following summer. His work focuses on creating a gravity offloading system for rover testing in the lunar sandbox as well as thermal modeling of the L-SABRE.",
 				linkedIn: "https://www.linkedin.com/in/travis-wavrunek/"
 			},
@@ -109,7 +109,7 @@ export const members: MemberCollection[] = [
 				profile: "./elijah.jpg",
 				link: "https://elijahcobb.com",
 				linkedIn: "https://www.linkedin.com/in/elijahjcobb/",
-				bio: "Elijah Cobb is a fourth year Computer Science student. Elijah works with the L-SABRE team developing the ground control software and communication between the rover and other subsystems. Elijah also works with facilities developing the gravity offloading system."
+				bio: "Elijah Cobb is in his senior year of a B.S. in Computer Science from MTU with plans to continue on with a M.S. the following year. Elijah got his start with software development working for a start-up out of high school and joined Husky Works the summer of 2020 to develop ground control software for the L-SABRE mission. Elijah has since developed control software for the PSTDL's Gravity Offloading system and continues to work on the L-SABRE mission working on COM, CDH, and Ground Control systems. Elijah is also a member of the MTU Aerospace Enterprise Software team and is doing original research as an Undergraduate Fellow through the College of Computing under the direction of Dr. Charles Wallace."
 			},
 			{
 				firstName: "Collin",
@@ -145,7 +145,8 @@ export const members: MemberCollection[] = [
 				lastName: "Goddu",
 				email: "ajgoddu@mtu.edu",
 				profile: "https://media-exp1.licdn.com/dms/image/C4E03AQH2TQBsKhY-iQ/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=HqToExPcP2KD8wO22Y7J7hwBq9-mdVViMLyXsNpjI8w",
-				linkedIn: "https://www.linkedin.com/in/austen-g-83a639bb/"
+				linkedIn: "https://www.linkedin.com/in/austen-g-83a639bb/",
+				bio: "Austen Goddu is a 5th year Computer Engineering student here at Michigan Tech. Austen joined the Planetary Surface Technology Development Lab after spending several years on the leadership team in Michigan Tech's Aerospace Enterprise. There, Austen gained experience in Systems Engineering and Flight Software Design. Working on the L-SABRE development team, Austen works to design and build L-SABRE's computer system and flight software, assists with the systems engineering and mission design, and performs testing of specific elements of customer hardware."
 			},
 			{
 				firstName: "George",
