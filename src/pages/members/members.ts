@@ -56,7 +56,8 @@ export const members: MemberCollection[] = [
 				lastName: "Chaffee",
 				email: "brchaffe@mtu.edu",
 				bio: "Ben Chaffee received a Bachelor's of Science in Mechanical Engineering from the University of Akron in 2014 and a Master’s in Robotic Systems Development from Carnegie Mellon in 2015. He is now a Senior Engineer at Wecall Inc. in Chardon, OH, a company that fabricates fasteners used on buildings and bridges throughout the US and Canada. At Wecall, Ben leads projects in designing and testing new fasteners to meet customer needs. He also works on developing new machines and processes to increase efficiency and throughput. Ben is now pursuing a ME-EM PhD at MTU and joined the PSTDL in the Fall of 2020. He is looking forward to bringing his collegiate and industry experience to the team to assist with the development of future lunar robots.",
-				linkedIn: "https://www.linkedin.com/in/ben-chaffee-464453101/"
+				linkedIn: "https://www.linkedin.com/in/ben-chaffee-464453101/",
+				profile: "https://media-exp1.licdn.com/dms/image/C4E03AQHcEdBl0VJfKw/profile-displayphoto-shrink_800_800/0?e=1608163200&v=beta&t=YuS48RsV7DvFNEwfyiWCJHDgbtAroQ-WCGE8YCa4aJs"
 			}
 		]
 	},

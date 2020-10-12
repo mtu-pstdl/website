@@ -104,6 +104,7 @@ export class FacilitiesPage extends React.Component<FacilitiesPageProps, Facilit
 			<section>
 				<h3>Industrial Robotic Arm</h3>
 				<LoremIpsum/>
+				<img alt={"arm"} ref={"norefferrer noopener"} src={"./arm.jpg"}/>
 			</section>
 		</div>);
 	}
