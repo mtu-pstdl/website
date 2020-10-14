@@ -29,11 +29,11 @@ export class ContactPage extends React.Component<ContactPageProps, ContactPageSt
 		return (<div className={"ContactPage main"}>
 			<h2>Contact</h2>
 			<h3>General Inquiries</h3>
-			<p>Please direct general inquiries to Dr. Paul van Susante at <a className={"link"} href={"mailto:pavansus@mtu.edu"}>pavansus@mtu.edu</a></p>
+			<p>Please direct general inquiries to Dr. Paul van Susante at <a className={"link"} href={"mailto:pjvansus@mtu.edu"}>pjvansus@mtu.edu</a></p>
 			<h3>Join</h3>
 			<ol>
 				<li>Fill out <a className={"link"}>this application</a> to apply to join our lab as a graduate or undergraduate researcher (US citizenship is required).</li>
-				<li>Email Dr. Paul van Susante at <a className={"link"} href={"mailto:pavansus@mtu.edu"}>pavansus@mtu.edu</a> with notification of completion of the application form and introduction.</li>
+				<li>Email Dr. Paul van Susante at <a className={"link"} href={"mailto:pjvansus@mtu.edu"}>pjvansus@mtu.edu</a> with notification of completion of the application form and introduction.</li>
 				<li>Applications will be reviewed on a rolling basis enterprise application and information.</li>
 			</ol>
 			<a className={"button"}>Apply</a>
