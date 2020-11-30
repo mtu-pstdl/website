@@ -14,13 +14,16 @@
 
 	.headshot {
 		width: 100%;
-		max-height: 600px;
+		max-height: 400px;
 		object-fit: cover;
+		object-position: top;
 	}
 
 	span, p {
 		display: block;
 		margin: 4px 0;
+		font-size: 1.125em;
+		text-align: justify;
 	}
 
 	.name {
