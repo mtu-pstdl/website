@@ -7,7 +7,7 @@
 
 import * as React from "react";
 import "./ProjectsPage.css";
-import {Link, Switch, Route} from "react-router-dom";
+import {Switch, Route} from "react-router-dom";
 import {projects, Project} from "./projects";
 import {ProjectRow} from "./ProjectRow";
 import {ProjectDetail} from "./ProjectDetail";

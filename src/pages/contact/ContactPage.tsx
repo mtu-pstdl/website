@@ -6,8 +6,7 @@
  */
 
 import * as React from "react";
-import "./ContactPage.css"
-import {LoremIpsum} from "../../components/LoremIpsum";
+import "./ContactPage.css";
 
 export interface ContactPageProps {
 
