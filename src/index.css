@@ -20,11 +20,6 @@ body {
 a {
   color: #ffcd00;
   text-decoration: none;
-  transition: font-size 250ms ease-in-out;
-}
-
-a:hover {
-  font-size: 1.125em;
 }
 
 /*# sourceMappingURL=index.css.map */
