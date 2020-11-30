@@ -16,6 +16,8 @@
 }
 .MemberViewLead .headshot {
   width: 100%;
+  max-height: 600px;
+  object-fit: cover;
 }
 .MemberViewLead span, .MemberViewLead p {
   display: block;
