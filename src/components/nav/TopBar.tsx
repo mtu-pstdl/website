@@ -5,6 +5,7 @@
  * github.com/elijahjcobb
  */
 
+import {NavLink} from "react-router-dom";
 import * as React from "react";
 import "./TopBar.css"
 import {NavBar} from "./NavBar";
@@ -27,10 +28,14 @@ export class TopBar extends React.Component<TopBarProps, TopBarState> {
 
 	public render(): React.ReactElement {
 		return (<div className={"TopBar"}>
-			<div className={"title"}>
+			<NavLink to={"/"} className={"title"}>
 				<img className={"logo"} src={"./logo.png"} alt={"pstdl logo"}/>
-				<h1>PSTDL</h1>
-			</div>
+				<div className={"labels"}>
+					<h1>PSTDL</h1>
+					<span>Planetary Surface Technology Development Lab</span>
+					<span>Michigan Technological University</span>
+				</div>
+			</NavLink>
 			<NavBar/>
 		</div>);
 	}

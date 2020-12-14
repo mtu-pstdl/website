@@ -16,6 +16,9 @@
   list-style: none;
   overflow-x: scroll;
   overflow-y: hidden;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
   padding-bottom: 20px;
   margin-bottom: -20px;
 }
@@ -25,20 +28,18 @@
   font-weight: bold;
   color: black;
   background: #ffcd00;
-  margin-left: 12px;
+  margin-right: 12px;
   padding: 8px 16px;
   border-radius: 8px;
-}
-.NavBar a {
   text-decoration: none;
-  color: inherit;
   outline: none;
+  display: block;
 }
 .NavBar .active {
   color: #fff;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 900px) {
   .NavBar {
     align-items: center;
     justify-content: flex-end;
@@ -46,16 +47,21 @@
     overflow: hidden;
     background: #ffcd00;
     padding: 20px;
+    flex-wrap: wrap;
   }
   .NavBar a {
-    margin: 0 20px 0 0;
-    background: black;
-    padding: 16px 24px;
-    font-size: 22px;
-    color: #ffcd00;
-    transition: all 250ms;
+    margin: 12px;
+    padding: 8px 16px;
+    font-size: 18px;
+    border-bottom: solid #ffcd00 4px;
+    transition: all 250ms ease-in-out;
+    border-radius: 8px;
   }
-  .NavBar a:hover {
+  .NavBar .active {
+    color: black;
+  }
+  .NavBar a:hover, .NavBar .active {
+    box-shadow: 0 0 20px #b08e00;
     transform: scale(1.1);
   }
 }

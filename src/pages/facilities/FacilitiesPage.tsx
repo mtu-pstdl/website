@@ -77,18 +77,18 @@ export class FacilitiesPage extends React.Component<FacilitiesPageProps, Facilit
 					<li>80/20 rails line all sides of the cart lip for equipment mounting.</li>
 				</ul>
 				<div className={"img-container"}>
-					<img alt={"dtvac"} ref={"norefferrer noopener"} src={"./dtvac1.png"}/>
-					<img alt={"dtvac"} ref={"norefferrer noopener"} src={"./dtvac2.png"}/>
-					<img alt={"dtvac"} ref={"norefferrer noopener"} src={"./dtvac3.png"}/>
-					<img alt={"dtvac"} ref={"norefferrer noopener"} src={"./dtvac4.png"}/>
-					<img alt={"dtvac"} ref={"norefferrer noopener"} src={"./dtvac5.png"}/>
+					<img alt={"dtvac"} ref={"norefferrer noopener"} src={"./fac/dtvac1.png"}/>
+					<img alt={"dtvac"} ref={"norefferrer noopener"} src={"./fac/dtvac2.png"}/>
+					<img alt={"dtvac"} ref={"norefferrer noopener"} src={"./fac/dtvac3.png"}/>
+					<img alt={"dtvac"} ref={"norefferrer noopener"} src={"./fac/dtvac4.png"}/>
+					<img alt={"dtvac"} ref={"norefferrer noopener"} src={"./fac/dtvac5.png"}/>
 				</div>
 			</section>
 			<section>
 				<h3>Lunar Regolith Sandbox with Gravity Assist</h3>
 				<p></p>
 				<div className={"img-container"}>
-					<img alt={"gravity-offload"} ref={"norefferrer noopener"} src={"./gravity-offload.png"}/>
+					<img alt={"gravity-offload"} ref={"norefferrer noopener"} src={"./fac/gravity-offload.png"}/>
 				</div>
 			</section>
 			<section>
@@ -96,15 +96,15 @@ export class FacilitiesPage extends React.Component<FacilitiesPageProps, Facilit
 				<p>Further data collection for NASA’s RedWater project will utilize a Martian pressure rated vacuum chamber located in the Planetary Surface Technology Development Lab. The MTVAC has been designed to operate within a range of 7 Torr to 10-2 Torr, and features a LN2 feedthrough port to allow tests to be conducted at cryogenic temperatures. The internal dimensions of this chamber make up an 18” cube, and allows for smaller tests, with reduced pump downtime.</p>
 				<p>This test setup specifically seeks to gather information about the energy required to melt through cryogenic ice within a lower pressure atmosphere. The MTVAC will likely also be used in preliminary testing   and validation of vacuum and temperature rated hardware.</p>
 				<div className={"img-container"}>
-					<img alt={"mtvac"} ref={"norefferrer noopener"} src={"./mtvac1.jpg"}/>
-					<img alt={"mtvac"} ref={"norefferrer noopener"} src={"./mtvac2.jpg"}/>
-					<img alt={"mtvac"} ref={"norefferrer noopener"} src={"./mtvac3.jpg"}/>
+					<img alt={"mtvac"} ref={"norefferrer noopener"} src={"./fac/mtvac1.jpg"}/>
+					<img alt={"mtvac"} ref={"norefferrer noopener"} src={"./fac/mtvac2.jpg"}/>
+					<img alt={"mtvac"} ref={"norefferrer noopener"} src={"./fac/mtvac3.jpg"}/>
 				</div>
 			</section>
 			<section>
 				<h3>Industrial Robotic Arm</h3>
 				<LoremIpsum/>
-				<img alt={"arm"} ref={"norefferrer noopener"} src={"./arm.jpg"}/>
+				<img alt={"arm"} ref={"norefferrer noopener"} src={"./fac/arm.jpg"}/>
 			</section>
 		</div>);
 	}

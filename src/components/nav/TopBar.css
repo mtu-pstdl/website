@@ -16,12 +16,15 @@
   z-index: 8;
   overflow: hidden;
   width: 100vw;
+  padding: 12px;
+  align-items: center;
 }
 .TopBar .title {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 12px;
+  text-decoration: none;
 }
 .TopBar .logo {
   width: 60px;
@@ -30,8 +33,11 @@
   margin-right: 12px;
   display: block;
 }
+.TopBar .labels span {
+  display: none;
+}
 
-@media (min-width: 720px) {
+@media (min-width: 900px) {
   .TopBar {
     flex-direction: row;
     background: #ffcd00;
@@ -41,12 +47,22 @@
     position: sticky;
   }
   .TopBar .logo {
-    width: 80px;
+    width: 60px;
     margin-right: 20px;
   }
-  .TopBar .title {
+  .TopBar .labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     color: black;
-    font-size: 2em;
+  }
+  .TopBar .labels span {
+    font-size: 16px;
+    font-weight: lighter;
+  }
+  .TopBar .labels h1 {
+    font-size: 48px;
   }
 }
 

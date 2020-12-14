@@ -33,7 +33,7 @@
   object-fit: cover;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 900px) {
   .ProjectRow {
     flex-direction: row;
     align-items: center;

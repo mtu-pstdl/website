@@ -49,7 +49,7 @@
   color: #ffcd00;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 900px) {
   .MemberViewLead {
     background: rgba(0, 0, 0, 0.9);
     box-shadow: 0 0 20px #202020;

@@ -29,7 +29,7 @@ export class MemberViewLead extends React.Component<MemberViewLeadProps, MemberV
 	public render(): React.ReactElement {
 		return (<div className={"MemberViewLead"}>
 			<div className={"img-split"}>
-				<img className={"headshot"} src={this.props.member.profile || "https://via.placeholder.com/300x300.png?text=Profile"} alt={`${this.props.member.firstName} closeup`}/>
+				<img className={"headshot"} src={this.props.member.profile ? ("../members/" + this.props.member.profile) : "https://via.placeholder.com/300x300.png?text=Profile"} alt={`${this.props.member.firstName} closeup`}/>
 				<div className={"name-split"}>
 					<span className={"name"}>{this.props.member.firstName} {this.props.member.lastName}</span>
 					<span className={"email"}>{this.props.member.email}</span>

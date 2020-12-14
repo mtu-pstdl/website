@@ -38,7 +38,7 @@
   min-width: 140px;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 900px) {
   .PublicationsPage .publicationSection {
     margin-top: 100px;
   }

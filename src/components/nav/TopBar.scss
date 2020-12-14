@@ -14,12 +14,15 @@
 	z-index: 8;
 	overflow: hidden;
 	width: 100vw;
+	padding: 12px;
+	align-items: center;
 
 	.title {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		padding: 12px;
+		text-decoration: none;
 	}
 
 	.logo {
@@ -28,6 +31,10 @@
 		border-radius: 20px;
 		margin-right: 12px;
 		display: block;
+	}
+
+	.labels span {
+		display: none;
 	}
 
 }
@@ -42,13 +49,26 @@
 		position: sticky;
 
 		.logo {
-			width: 80px;
+			width: 60px;
 			margin-right: 20px;
 		}
 
-		.title {
+		.labels {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
 			color: black;
-			font-size: 2em;
+
+			span {
+				font-size: 16px;
+				font-weight: lighter;
+				//display: block;
+			}
+
+			h1 {
+				font-size: 48px;
+			}
 		}
 	}
 }
