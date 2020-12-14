@@ -10,20 +10,28 @@
 .NavBar {
 
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	list-style: none;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	padding-bottom: 20px;
+	margin-bottom: -20px;
 
-	li {
+	a {
 		text-transform: uppercase;
 		text-align: center;
-		padding: 10px;
 		font-weight: bold;
-		color: inherit;
+		color: black;
+		background: $mtuGold;
+		margin-left: 12px;
+		padding: 8px 16px;
+		border-radius: 8px;
 	}
 
 	a {
 		text-decoration: none;
 		color: inherit;
+		outline: none;
 	}
 
 	.active {
@@ -34,20 +42,25 @@
 
 @media(min-width: $constraint) {
 	.NavBar {
-		flex-direction: row;
-		padding: 20px;
-		border-radius: 20px;
-		box-shadow: 0 0 40px black;
+		align-items: center;
+		justify-content: flex-end;
+		margin: 0;
+		overflow: hidden;
 		background: $mtuGold;
-		color: $mtuBlack;
+		padding: 20px;
 
-		li {
-			margin-right: 20px;
-			transition: transform 250ms ease-in-out;
+		a {
+			margin: 0 20px 0 0;
+			background: $mtuBlack;
+			padding: 16px 24px;
+			font-size: 22px;
+			color: $mtuGold;
+			transition: all 250ms;
 		}
 
-		li:hover {
-			transform: scale(1.25);
+		a:hover {
+			transform: scale(1.1);
 		}
+
 	}
 }

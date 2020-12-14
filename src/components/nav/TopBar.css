@@ -14,30 +14,39 @@
   display: flex;
   flex-direction: column;
   z-index: 8;
+  overflow: hidden;
+  width: 100vw;
+}
+.TopBar .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
 }
 .TopBar .logo {
-  width: 100%;
-  max-height: 100px;
+  width: 60px;
   object-fit: contain;
-  background: black;
-  padding: 8px;
   border-radius: 20px;
+  margin-right: 12px;
+  display: block;
 }
 
 @media (min-width: 720px) {
   .TopBar {
     flex-direction: row;
-    align-items: center;
+    background: #ffcd00;
     justify-content: space-between;
-    padding: 20px;
-    position: sticky;
     top: 0;
-    color: #ffcd00;
-    background: none;
+    left: 0;
+    position: sticky;
   }
   .TopBar .logo {
-    width: 380px;
-    max-height: 100px;
+    width: 80px;
+    margin-right: 20px;
+  }
+  .TopBar .title {
+    color: black;
+    font-size: 2em;
   }
 }
 

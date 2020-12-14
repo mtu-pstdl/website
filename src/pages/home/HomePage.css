@@ -53,14 +53,9 @@
 }
 
 @media (min-width: 720px) {
-  .HomePage .sections {
-    background: #ffcd00;
-    padding-top: 4px;
-  }
   .HomePage .header {
     font-size: 2.5em;
-    height: 90vh;
-    max-height: 800px;
+    height: 100vh;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -94,12 +89,6 @@
   }
   .HomePage .header .mtu {
     font-size: 0.85em;
-  }
-  .HomePage section {
-    height: 100vh;
-    max-height: 1800px;
-    justify-content: flex-start;
-    padding: 240px 80px 80px;
   }
 }
 

@@ -13,6 +13,8 @@
 	box-sizing: border-box;
 	outline: none;
 	//border: solid red 1px;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-moz-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 @font-face {
@@ -53,7 +55,7 @@ h2, h3 {
 
 	.main {
 		width: 80%;
-		margin: 20px;
+		margin: 16vh 20px 20px;
 		max-width: 800px;
 		display: flex;
 		flex-direction: column;

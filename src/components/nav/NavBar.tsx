@@ -34,6 +34,7 @@ export class NavBar extends React.Component<NavBarProps, NavBarState> {
 			<li><NavLink activeClassName={"active"} to="/publications">publications</NavLink></li>
 			<li><NavLink activeClassName={"active"} to="/facilities">facilities</NavLink></li>
 			<li><NavLink activeClassName={"active"} to="/contact">contact</NavLink></li>
+			<li><NavLink activeClassName={"active"} to="/t">t</NavLink></li>
 		</ul>);
 	}
 

@@ -27,7 +27,10 @@ export class TopBar extends React.Component<TopBarProps, TopBarState> {
 
 	public render(): React.ReactElement {
 		return (<div className={"TopBar"}>
-			<img className={"logo"} src={"./swoosh.png"} alt={"pstdl logo"}/>
+			<div className={"title"}>
+				<img className={"logo"} src={"./logo.png"} alt={"pstdl logo"}/>
+				<h1>PSTDL</h1>
+			</div>
 			<NavBar/>
 		</div>);
 	}

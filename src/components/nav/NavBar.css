@@ -12,19 +12,27 @@
  */
 .NavBar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   list-style: none;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-bottom: 20px;
+  margin-bottom: -20px;
 }
-.NavBar li {
+.NavBar a {
   text-transform: uppercase;
   text-align: center;
-  padding: 10px;
   font-weight: bold;
-  color: inherit;
+  color: black;
+  background: #ffcd00;
+  margin-left: 12px;
+  padding: 8px 16px;
+  border-radius: 8px;
 }
 .NavBar a {
   text-decoration: none;
   color: inherit;
+  outline: none;
 }
 .NavBar .active {
   color: #fff;
@@ -32,19 +40,23 @@
 
 @media (min-width: 720px) {
   .NavBar {
-    flex-direction: row;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 40px black;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    overflow: hidden;
     background: #ffcd00;
-    color: black;
+    padding: 20px;
   }
-  .NavBar li {
-    margin-right: 20px;
-    transition: transform 250ms ease-in-out;
+  .NavBar a {
+    margin: 0 20px 0 0;
+    background: black;
+    padding: 16px 24px;
+    font-size: 22px;
+    color: #ffcd00;
+    transition: all 250ms;
   }
-  .NavBar li:hover {
-    transform: scale(1.25);
+  .NavBar a:hover {
+    transform: scale(1.1);
   }
 }
 
