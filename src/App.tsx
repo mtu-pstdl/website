@@ -6,7 +6,7 @@
  */
 
 import * as React from "react";
-import {TopBar} from "./components/nav/TopBar";
+import {TopBar} from "./pages/nav/TopBar";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import {HomePage} from "./pages/home/HomePage";
 import {MembersPage} from "./pages/members/MembersPage";
@@ -16,6 +16,7 @@ import {FacilitiesPage} from "./pages/facilities/FacilitiesPage";
 import {ContactPage} from "./pages/contact/ContactPage";
 import {AstraBackground} from "./components/stars/AstraBackground";
 import {NewsPage} from "./pages/news/NewsPage";
+import {PartnershipsPage} from "./pages/partnerships/PartnershipsPage";
 
 export interface AppProps {
 
@@ -46,6 +47,7 @@ export class App extends React.Component<AppProps, AppState> {
 						<Route path="/facilities"><FacilitiesPage/></Route>
 						<Route path="/contact"><ContactPage/></Route>
 						<Route path="/news"><NewsPage/></Route>
+						<Route path="/partnerships"><PartnershipsPage/></Route>
 						<Route path="/"><HomePage/></Route>
 					</Switch>
 				</div>

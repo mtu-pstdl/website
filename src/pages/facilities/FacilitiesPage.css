@@ -10,43 +10,5 @@
  * elijahcobb.com
  * github.com/elijahjcobb
  */
-.FacilitiesPage p {
-  margin: 10px 0;
-}
-.FacilitiesPage .img-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.FacilitiesPage h3 {
-  border-bottom: solid 2px #ffcd00;
-  padding-bottom: 16px;
-}
-.FacilitiesPage img {
-  max-width: 380px;
-  margin: 10px;
-  transition: transform 250ms ease-in-out;
-  border-radius: 20px;
-}
-.FacilitiesPage img:hover {
-  transform: scale(2);
-}
-.FacilitiesPage h4 {
-  color: #ffcd00;
-  font-weight: normal;
-  font-size: 1.25em;
-  margin-top: 20px;
-}
-.FacilitiesPage th, .FacilitiesPage td {
-  padding: 4px;
-  text-align: left;
-}
-.FacilitiesPage li {
-  margin: 8px 20px;
-}
-.FacilitiesPage section {
-  margin-top: 40px;
-}
 
 /*# sourceMappingURL=FacilitiesPage.css.map */

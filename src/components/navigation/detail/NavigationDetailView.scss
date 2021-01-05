@@ -5,9 +5,9 @@
  * github.com/elijahjcobb
  */
 
-@import "../../variables";
+@import "../../../variables";
 
-.ProjectDetail {
+.NavigationDetailView {
 	.link {
 		display: flex;
 		align-items: center;
@@ -31,4 +31,3 @@
 		transform: scale(1.25) rotate(90deg);
 	}
 }
-

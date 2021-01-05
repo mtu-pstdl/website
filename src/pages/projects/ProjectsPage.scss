@@ -5,6 +5,8 @@
  * github.com/elijahjcobb
  */
 
+@import "../../variables";
+
 .ProjectsPage {
 
 	.projects {
@@ -12,3 +14,19 @@
 	}
 
 }
+
+//
+//@media (min-width: 1080px) {
+//	.ProjectsPage {
+//		display: flex;
+//		flex-direction: row;
+//		justify-content: space-between;
+//		width: 80%;
+//		margin: min(10vh, 100px) 20px 20px;
+//		align-items: flex-start;
+//
+//		.projects {
+//			margin: 0 40px;
+//		}
+//	}
+//}

@@ -5,9 +5,9 @@
  * github.com/elijahjcobb
  */
 
-@import "../../variables";
+@import "../../../variables";
 
-.ProjectRow {
+.FancyRowView {
 
 	display: flex;
 	flex-direction: column;
@@ -27,7 +27,7 @@
 }
 
 @media (min-width: $constraint) {
-	.ProjectRow {
+	.FancyRowView {
 		flex-direction: row;
 		align-items: center;
 

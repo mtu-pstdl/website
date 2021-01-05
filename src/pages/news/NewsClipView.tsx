@@ -9,7 +9,7 @@ import * as React from "react";
 import {News} from "./news";
 import "./NewsClipView.css";
 import {OpenInNew} from "@material-ui/icons";
-import {NavigationRowView} from "../../components/nav-row/NavigationRowView";
+import {NavigationRowView} from "../../components/navigation/row/NavigationRowView";
 
 export interface NewsClipViewProps {
 	news: News;
