@@ -18,10 +18,11 @@ export type Publication = {
 
 const PAUL = "van Susante P";
 const MARCELLO = "Guadagno M";
+
 export const labPublicationAuthors: string[] = [PAUL, MARCELLO];
 
 export const publications: { [sectionTitle: string]: Publication[] } = {
-	"Journal Papers": [
+	"Publications": [
 		{
 			title: "Analytical models and laboratory measurements of the soil-tool interaction force to push a narrow tool through JSC-1a lunar simulant and Ottawa sand at different cutting depths",
 			date: {year: 2010},
@@ -63,15 +64,7 @@ export const publications: { [sectionTitle: string]: Publication[] } = {
 			authors: [PAUL],
 			publication: "Advances in Space Research",
 			url: "https://wwwsciencedirectcom/science/article/abs/pii/S0273117703005635"
-		}
-	],
-	"Dissertations": [
-
-	],
-	"Theses": [
-
-	],
-	"Conference Proceedings & Other Publications": [
+		},
 		{
 			title: "Research results and prototype development and testing for water extraction from polyhydrated sulphate rock on Mars",
 			date: {year: 2020, month: 11},
@@ -559,6 +552,15 @@ export const publications: { [sectionTitle: string]: Publication[] } = {
 			authors: [PAUL],
 			publication: "TU-Delft Civil Engineering Project Education final report"
 		}
+	],
+	"Dissertations": [
+
+	],
+	"Theses": [
+
+	],
+	"Conference Proceedings & Other Publications": [
+
 	]
 };
 

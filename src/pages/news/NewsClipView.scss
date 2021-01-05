@@ -2,22 +2,6 @@
 
 .NewsClipView {
 
-	margin-top: 20px;
-	color: $white;
-	text-decoration: none;
-	background: $antiAstraBackground;
-	box-shadow: $antiAstraBoxShadow;
-	padding: 40px;
-	border-radius: 20px;
-	display: flex;
-	flex-direction: column;
-	transition: all 250ms ease-in-out;
-
-	.container {
-		display: flex;
-		flex-direction: row;
-	}
-
 	.top {
 		display: flex;
 		flex-direction: row;
@@ -37,24 +21,6 @@
 		padding-left: 16px;
 	}
 
-	.content {
-
-	}
-
-	.icon {
-		color: $mtuGold;
-	}
-
-	.button {
-		width: 40px;
-		height: 40px;
-		margin-left: 20px;
-		align-self: center;
-	}
-
 }
 
-.NewsClipView-link:hover {
-	transform: scale(1.125);
-	box-shadow: 0 0 20px $mtuGold;
-}
+

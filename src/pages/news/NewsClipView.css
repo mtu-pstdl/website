@@ -4,22 +4,6 @@
  * elijahcobb.com
  * github.com/elijahjcobb
  */
-.NewsClipView {
-  margin-top: 20px;
-  color: #fff;
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0.9);
-  box-shadow: 0 0 20px #202020;
-  padding: 40px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  transition: all 250ms ease-in-out;
-}
-.NewsClipView .container {
-  display: flex;
-  flex-direction: row;
-}
 .NewsClipView .top {
   display: flex;
   flex-direction: row;
@@ -35,20 +19,6 @@
   font-weight: lighter;
   font-size: 1.125em;
   padding-left: 16px;
-}
-.NewsClipView .icon {
-  color: #ffcd00;
-}
-.NewsClipView .button {
-  width: 40px;
-  height: 40px;
-  margin-left: 20px;
-  align-self: center;
-}
-
-.NewsClipView-link:hover {
-  transform: scale(1.125);
-  box-shadow: 0 0 20px #ffcd00;
 }
 
 /*# sourceMappingURL=NewsClipView.css.map */

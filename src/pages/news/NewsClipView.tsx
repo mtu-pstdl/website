@@ -9,6 +9,7 @@ import * as React from "react";
 import {News} from "./news";
 import "./NewsClipView.css";
 import {OpenInNew} from "@material-ui/icons";
+import {NavigationRowView} from "../../components/nav-row/NavigationRowView";
 
 export interface NewsClipViewProps {
 	news: News;
@@ -38,16 +39,15 @@ export class NewsClipView extends React.Component<NewsClipViewProps, NewsClipVie
 	}
 
 	public render(): React.ReactElement {
-		return (<a className={"NewsClipView" + (this.props.news.link ? " NewsClipView-link" : "")} href={this.props.news.link || ""} target={"_blank"} rel={"noopener noreferrer"}>
+		return (<NavigationRowView className={"NewsClipView"} url={this.props.news.link || ""} newTab isExternal>
 			<div className={"top"}>
 				<span className={"title"}>{this.props.news.title}</span>
 				<span className={"date"}>{this.getDateString()}</span>
 			</div>
 			<div className={"container"}>
 				<span className={"content"}>{this.props.news.content}</span>
-				<OpenInNew className={"button"}/>
 			</div>
-		</a>);
+		</NavigationRowView>);
 	}
 
 }
