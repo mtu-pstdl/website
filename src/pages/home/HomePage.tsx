@@ -7,7 +7,6 @@
 
 import * as React from "react";
 import "./HomePage.css"
-import {Button} from "../../components/buttons/Button";
 
 export interface HomePageProps {
 

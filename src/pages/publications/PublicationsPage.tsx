@@ -31,7 +31,7 @@ export class PublicationsPage extends React.Component<PublicationsPageProps, Pub
 			{
 				Object.keys(publications).map(section => {
 					const pubsInSection = publications[section];
-					if (pubsInSection.length === 0) return;
+					if (pubsInSection.length === 0) return undefined;
 					const elements = getPublicationsSorted(pubsInSection).map((publication: Publication, index: number) => {
 						return <PublicationRow publication={publication} key={index}/>
 					})

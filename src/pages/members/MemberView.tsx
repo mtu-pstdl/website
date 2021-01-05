@@ -39,9 +39,9 @@ export class MemberView extends React.Component<MemberViewProps, MemberViewState
 				<span className={"name"}>{this.props.member.firstName + " " + this.props.member.lastName}</span>
 				<span className={"email"}>{this.props.member.email}</span>
 				<div className={"links"}>
-					<a href={"mailto:" + this.props.member.email} target={"_blank"} ref={"norefferer noopener"}><Mail/></a>
-					{this.props.member.linkedIn ? <a href={this.props.member.linkedIn} target={"_blank"} ref={"norefferer noopener"}><LinkedIn/></a> : <div/>}
-					{this.props.member.link ? <a href={this.props.member.link} target={"_blank"} ref={"norefferer noopener"}><Link/></a> : <div/>}
+					<a href={"mailto:" + this.props.member.email} target={"_blank"} rel={"noopener noreferrer"}><Mail/></a>
+					{this.props.member.linkedIn ? <a href={this.props.member.linkedIn} target={"_blank"} rel={"noopener noreferrer"}><LinkedIn/></a> : <div/>}
+					{this.props.member.link ? <a href={this.props.member.link} target={"_blank"} rel={"noopener noreferrer"}><Link/></a> : <div/>}
 				</div>
 				{this.props.member.bio ? (
 					<div onClick={this.showBioContainer} className={"bioButtonContainer"}>

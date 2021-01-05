@@ -28,7 +28,7 @@ export class ProjectRow extends React.Component<ProjectRowProps, ProjectRowState
 
 	public render(): React.ReactElement {
 		return (<div className={"ProjectRow"}>
-			<img className={"image"} alt={"project image"} src={this.props.project.image}/>
+			<img className={"image"} alt={"project"} src={this.props.project.image}/>
 			<div className={"text"}>
 				<h3>{this.props.project.name}</h3>
 				<span>{this.props.project.summary}</span>

@@ -4,7 +4,6 @@
  * elijahcobb.com
  * github.com/elijahjcobb
  */
-import {LoremIpsum} from "../../components/LoremIpsum";
 
 export type Member = {
 	firstName: string;
