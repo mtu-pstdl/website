@@ -16,7 +16,6 @@ import {FacilitiesPage} from "./pages/facilities/FacilitiesPage";
 import {ContactPage} from "./pages/contact/ContactPage";
 import {AstraBackground} from "./components/stars/AstraBackground";
 import {NewsPage} from "./pages/news/NewsPage";
-import {PagePicker} from "./components/page-picker/PagePicker";
 
 export interface AppProps {
 
@@ -47,7 +46,6 @@ export class App extends React.Component<AppProps, AppState> {
 						<Route path="/facilities"><FacilitiesPage/></Route>
 						<Route path="/contact"><ContactPage/></Route>
 						<Route path="/news"><NewsPage/></Route>
-						<Route path="/t"><PagePicker title={"Test Page"}/></Route>
 						<Route path="/"><HomePage/></Route>
 					</Switch>
 				</div>
