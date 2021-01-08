@@ -33,10 +33,11 @@ export class ProjectsPage extends React.Component<ProjectsPageProps, ProjectsPag
 			<Switch>
 				{Object.keys(projects).map((key) => {
 					const section = projects[key];
-					return section.projects.map((project: Project, index: number) => {
-						return (<Route path={`/projects/${section.url}/${project.url}`} key={index}>
+					return section.map((project: Project, index: number) => {
+						if (project.url.length === 0) throw new Error("URL cannot be empty.");
+						return (<Route path={`/projects/${project.url}`} key={index}>
 							<NavigationDetailView link={"/projects"}>
-								{project.component}
+								{project.component === undefined ? <p>Detailed information coming soon!</p> : project.component}
 							</NavigationDetailView>
 						</Route>);
 					});
@@ -47,8 +48,8 @@ export class ProjectsPage extends React.Component<ProjectsPageProps, ProjectsPag
 							const section = projects[key];
 							return (<div className={"projects"} key={index}>
 								<h2>{key}</h2>
-								{section.projects.map((project: Project, index: number) => {
-									return (<FancyRowView baseUrl={"/projects/" + section.url} value={project} key={index}/>);
+								{section.map((project: Project, index: number) => {
+									return (<FancyRowView baseUrl={"/projects"} value={project} key={index}/>);
 								})}
 							</div>);
 						})

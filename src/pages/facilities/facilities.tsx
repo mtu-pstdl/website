@@ -12,6 +12,7 @@ export interface Facility {
 	url: string;
 	image: string;
 	summary: string;
+	external?: boolean;
 	component: React.Component | React.ReactElement
 }
 

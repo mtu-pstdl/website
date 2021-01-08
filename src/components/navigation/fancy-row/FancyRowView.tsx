@@ -31,8 +31,8 @@ export class FancyRowView extends React.Component<FancyRowViewProps, FancyRowVie
 	}
 
 	public render(): React.ReactElement {
-		return (<NavigationRowView className={"FancyRowView"} url={this.props.baseUrl + "/" + this.props.value.url}>
-			<img className={"image"} alt={"value"} src={this.props.value.image}/>
+		return (<NavigationRowView className={"FancyRowView"} url={this.props.value.external ? (this.props.value.url) : (this.props.baseUrl + "/" + this.props.value.url)} newTab={this.props.value.external} isExternal={this.props.value.external}>
+			{this.props.value.image !== undefined ? (<img className={"image"} alt={"value"} src={this.props.value.image}/>) : <div/>}
 			<div className={"text"}>
 				<h3>{this.props.value.name}</h3>
 				<span>{this.props.value.summary}</span>
