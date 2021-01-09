@@ -73,27 +73,5 @@ export const projects: { [key: string]: Project[] } = {
 			summary: "Autonomous Bucket Ladder Excavation Rover",
 			component: <Lunabotics/>
 		}
-	],
-	"Submitted Proposals": [
-		{
-			name: "NASA BIG IDEA 2021: ",
-			url: "big-2021",
-			summary: "The Lunar Armor Stone Protection In-Situ Surfacing (ASPIS) Rover."
-		},
-		{
-			name: "XCALIBiR",
-			url: "xcalibir",
-			summary: "eXtreme Construction thru Additive-manufacturing of Lunar Infrastructure with a Binder - Regolith composite (XCALIBiR)"
-		},
-		{
-			name: "NASA LuSTR - I",
-			url: "lustr-1",
-			summary: "Percussive Hot Cone Penetrometer and GPR for Geotechnical and Volatiles Mapping"
-		},
-		{
-			name: "NASA LuSTR - II",
-			url: "lustr-2",
-			summary: "SPICE (Shadowed Polar ICE) Harvester: Research and Development to Advance the Technology Readiness of Extraction and Collection of Water from Lunar Polar Regolith."
-		}
 	]
 };
