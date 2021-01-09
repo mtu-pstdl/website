@@ -1,0 +1,46 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+.NavigationDetailView {
+  font-size: 1.25em;
+}
+.NavigationDetailView img {
+  width: 100%;
+}
+.NavigationDetailView li {
+  margin-left: 20px;
+}
+.NavigationDetailView p, .NavigationDetailView ul, .NavigationDetailView img {
+  margin: 20px 0;
+}
+.NavigationDetailView .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffcd00;
+  color: black;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  width: 50px;
+  height: 50px;
+  transition: transform 250ms ease-in-out;
+}
+.NavigationDetailView .link .icon {
+  width: 60%;
+  height: 60%;
+}
+.NavigationDetailView .link:hover {
+  transform: scale(1.25) rotate(90deg);
+}
+
+/*# sourceMappingURL=NavigationDetailView.css.map */

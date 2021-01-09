@@ -1,0 +1,25 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+.CardView {
+  margin-top: 20px;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 20px #202020;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+/*# sourceMappingURL=CardView.css.map */
