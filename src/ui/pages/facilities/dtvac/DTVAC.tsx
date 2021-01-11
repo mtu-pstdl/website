@@ -28,7 +28,7 @@ export class DTVAC extends React.Component<DTVACProps, DTVACState> {
 	public render(): React.ReactElement {
 		return (<div className={"DTVAC"}>
 			<h2>Dusty Thermal Vacuum Chamber (DTVAC)</h2>
-			<img alt={"dtvac"} ref={"norefferrer noopener"} src={"../fac/dtvac1.png"}/>
+			<img alt={"dtvac"} src={"../fac/dtvac-real2.jpg"}/>
 			<p>The Dusty Thermal Vacuum Chamber (DTVAC) is a new environmental facility whose purpose is to perform rapid testing of lunar surface systems and science instruments. This facility consists of a thermal vacuum chamber, removable regolith beds, and supporting equipment.</p>
 			<h3>Specifications</h3>
 			<ul>
@@ -76,10 +76,10 @@ export class DTVAC extends React.Component<DTVACProps, DTVACState> {
 				<li>80/20 rails line all sides of the cart lip for equipment mounting.</li>
 			</ul>
 			<div className={"img-container"}>
-				<img alt={"dtvac"} ref={"norefferrer noopener"} src={"../fac/dtvac2.png"}/>
-				<img alt={"dtvac"} ref={"norefferrer noopener"} src={"../fac/dtvac3.png"}/>
-				<img alt={"dtvac"} ref={"norefferrer noopener"} src={"../fac/dtvac4.png"}/>
-				<img alt={"dtvac"} ref={"norefferrer noopener"} src={"../fac/dtvac5.png"}/>
+				<img alt={"dtvac"} src={"../fac/dtvac2.png"}/>
+				<img alt={"dtvac"} src={"../fac/dtvac3.png"}/>
+				<img alt={"dtvac"} src={"../fac/dtvac4.png"}/>
+				<img alt={"dtvac"} src={"../fac/dtvac5.png"}/>
 			</div>
 		</div>);
 	}

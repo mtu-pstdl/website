@@ -8,6 +8,7 @@
 import * as React from "react";
 import {DTVAC} from "../ui/pages/facilities/dtvac/DTVAC";
 import {MTVAC} from "../ui/pages/facilities/mtvac/MTVAC";
+import {GravityOffloading} from "../ui/pages/facilities/gravity-offloading/GravityOffloading";
 
 export interface Facility {
 	name: string;
@@ -27,10 +28,11 @@ export const facilities: Facility[] = [
 		component: <DTVAC/>
 	},
 	{
-		name: "Gravity Offloading Sandbox",
-		url: "gravity-offload",
+		name: "Gravity Offloading Lunar Simulant Sandbox",
+		url: "sandbox",
 		image: "fac/gravity-offload.png",
-		summary: "Lunar Regolith Sandbox with Autonomous Gravity Offloading",
+		summary: "'Airlocked' lunar simulant chamber with autonomous gravity offloading.",
+		component: <GravityOffloading/>
 	},
 	{
 		name: "Mini Thermal Vacuum Chamber (MTVAC)",

@@ -47,7 +47,7 @@ export const members: MemberCollection[] = [
 				lastName: "Guadagno",
 				email: "mcguadag@mtu.edu",
 				profile: "marcello.jpg",
-				bio: "Marcello Guadagno (Chell) has a Bachelor's in Mechanical Engineering with minors in Aerospace Engineering, Electrical Engineering, and International Leadership (MTU 2019). He has 5 years of end-to-end spacecraft engineering and program management experience. Marcello began his work in the PSTDL in the Spring of 2020. His graduate work focuses on developing In-Situ Lunar robotic mining missions. ",
+				bio: "Marcello Guadagno (Chell) has a Bachelor's in Mechanical Engineering with minors in Aerospace Engineering, Electrical Engineering, and International Leadership (MTU 2019). He has 5 years of end-to-end space mission engineering and program management experience. During his undergrad, Marcello led the development of several smallsat missions while at Michigan Tech and worked on the OCULUS-ASR mission launched in 2019. He has previously worked at the Space Dynamics Laboratory and NASA as a Guidance, Navigation & Control systems engineer. Marcello began his work in the PSTDL in the Spring of 2020. His graduate work focuses on developing In-Situ Lunar robotic mining missions.",
 				linkedIn: "https://www.linkedin.com/in/marcelloguadagno/"
 			},
 			{
@@ -100,7 +100,7 @@ export const members: MemberCollection[] = [
 				profile: "elijah.jpg",
 				link: "https://elijahcobb.com",
 				linkedIn: "https://www.linkedin.com/in/elijahjcobb/",
-				bio: "Elijah Cobb is in his senior year of a B.S. in Computer Science from Michigan Technological University with plans to continue on with a PhD. the following year. Elijah got his start with software development working for a startup out of high school and joined the Planetary Surface Technology Development Lab at MTU the summer of 2020 to develop ground control software for the ongoing L-SABRE mission. Elijah has since developed control software for the PSTDL's Gravity Offloading system and continues to work on the L-SABRE mission working on COM, CDH, and Ground Control systems. Elijah is also a member of the MTU Aerospace Enterprise Software team and is doing original research as an Undergraduate Fellow through the College of Computing under the direction of Dr. Charles Wallace."
+				bio: "Elijah Cobb is in his senior year of a B.S. in Computer Science from Michigan Technological University with plans to continue on with a PhD. the following year. Elijah got his start with software development working for a startup out of high school and joined the Planetary Surface Technology Development Lab at MTU the summer of 2020 to develop ground control software for the ongoing T-REX (L-SABRE) mission. Elijah has since developed control software for the PSTDL's Gravity Offloading system and continues to work on the T-REX mission working on COM, CDH, and Ground Control systems. Elijah is also a member of the MTU Aerospace Enterprise Software team and is doing original research as an Undergraduate Fellow through the College of Computing."
 			},
 			{
 				firstName: "Robert",

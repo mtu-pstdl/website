@@ -33,7 +33,7 @@ export class ContactPage extends React.Component<ContactPageProps, ContactPageSt
 			<ol>
 				<li>To apply to join our lab as a graduate or undergraduate researcher (US citizenship is required).</li>
 				<li>Email Dr. Paul van Susante at <a className={"link"} href={"mailto:pjvansus@mtu.edu"}>pjvansus@mtu.edu</a> with notification of completion of the application form and introduction.</li>
-				<li>Applications will be reviewed on a rolling basis enterprise application and information.</li>
+				<li>Applications will be reviewed on a rolling basis.</li>
 			</ol>
 			<a href={"mailto:pjvansus@mtu.edu"} className={"button"}>Apply</a>
 			<h3>Enterprise Application</h3>

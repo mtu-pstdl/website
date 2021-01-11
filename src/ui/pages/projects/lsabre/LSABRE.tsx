@@ -27,10 +27,10 @@ export class LSABRE extends React.Component<LSABREProps, LSABREState> {
 
 	public render(): React.ReactElement {
 		return (<div className={"LSABRE"}>
-			<h2>L-SABRE (T-REX)</h2>
+			<h2>T-REX (L-SABRE)</h2>
 			<img alt={"lsabre"} src={"../render1.png"}/>
 			<h3>Mission Summary</h3>
-			<p>The Lunar Superconducting Access Beacon and Relay (L-SABRE) is a mission that provides power and data to rovers within Permanently Shadowed Regions (PSRs) of the Moon, where conventional line-of-sight communications and solar power generation is limited.</p>
+			<p>The Lunar Superconducting Access Beacon and Relay T-REX (L-SABRE) is a mission that provides power and data to rovers within Permanently Shadowed Regions (PSRs) of the Moon, where conventional line-of-sight communications and solar power generation is limited.</p>
 			<p>Development of technologies as precursors to / in support of future Artemis missions. These developments are to revolve around operation within Permanently Shadowed Regions (PSRs) at the lunar poles. As one of eight universities selected and funded, our goal is to develop and demonstrate technologies that can be used in future missions, and to achieve TRL 6 by the end of this project.</p>
 			<h3>Objectives</h3>
 			<ul>
@@ -50,6 +50,10 @@ export class LSABRE extends React.Component<LSABREProps, LSABREState> {
 				<li>System Engineering (SYS)</li>
 			</ul>
 			<img alt={"lsabre"} src={"../render2.png"}/>
+			<h3>Presentation at NASA BIG IDEA 2020</h3>
+			<iframe width="100%" height="360" src="https://www.youtube-nocookie.com/embed/mXg53kBUfXE" frameBorder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowFullScreen/>
 		</div>);
 	}
 
