@@ -10,12 +10,17 @@
 .NavigationDetailView {
 
 
+	h2, h3 {
+		margin-top: 40px;
+	}
+
 	img {
 		width: 100%;
 	}
 
 	li {
-		margin-left: 20px;
+		margin-left: 40px;
+		margin-top: 4px;
 	}
 
 	p, ul, img {
@@ -45,5 +50,14 @@
 
 	.link:hover {
 		transform: scale(1.25) rotate(90deg);
+	}
+
+	.button {
+		border-bottom: solid black 2px;
+		transition: border-bottom-color 250ms ease-in-out;
+	}
+
+	.button:hover {
+		border-bottom-color: $mtuGold;
 	}
 }

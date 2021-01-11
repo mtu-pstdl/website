@@ -31,7 +31,7 @@ export class ESI extends React.Component<ESIProps, ESIState> {
 			<h2>NASA Early Stage Innovation: No Wear Extraterrestrial Hydrate Mining</h2>
 			<p>Development of a mining system with no wear for extraterrestrial mining of hydrated minerals, like gypsum, and ice-cemented soils. The end goal of which is to be sent to Mars or the Moon to begin extraction of water hydrated soil or gypsum hydrate for rocket propellant. The system has gone through multiple iterations to its current design at 34MPa. This pressure was designed to exceed the unconfined compressive strength of the hardest form of gypsum.</p>
 			<img src={"../esi.png"} alt={"esi"}/>
-			<b>Supporters</b>
+			<h3>Supporters</h3>
 			<div className={"supporters"}>
 				<img src={"../nasa.png"} alt={'nasa'}/>
 				<img src={"../honeybee.png"} alt={'honeybee'}/>

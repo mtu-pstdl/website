@@ -13,11 +13,15 @@
 .NavigationDetailView {
   font-size: 1.25em;
 }
+.NavigationDetailView h2, .NavigationDetailView h3 {
+  margin-top: 40px;
+}
 .NavigationDetailView img {
   width: 100%;
 }
 .NavigationDetailView li {
-  margin-left: 20px;
+  margin-left: 40px;
+  margin-top: 4px;
 }
 .NavigationDetailView p, .NavigationDetailView ul, .NavigationDetailView img {
   margin: 20px 0;
@@ -41,6 +45,13 @@
 }
 .NavigationDetailView .link:hover {
   transform: scale(1.25) rotate(90deg);
+}
+.NavigationDetailView .button {
+  border-bottom: solid black 2px;
+  transition: border-bottom-color 250ms ease-in-out;
+}
+.NavigationDetailView .button:hover {
+  border-bottom-color: #ffcd00;
 }
 
 /*# sourceMappingURL=NavigationDetailView.css.map */

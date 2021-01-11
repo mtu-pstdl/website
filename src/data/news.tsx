@@ -23,7 +23,7 @@ const news: News[] = [
 		title: "PSTDL T-REX Team Presents at NASA BIG IDEA 2020",
 		date: {month: 1, day: 6, year: 2021},
 		content: <p>The T-REX presented at the BIG IDEA 2020 conference. Following their presentation, the T-REX team had a Q&A with NASA scientists and the public.</p>,
-		link: "https://livestream.com/accounts/7167144/events/8067615/videos/215627765"
+		link: "https://youtu.be/mXg53kBUfXE"
 	},
 	{
 		title: "Podcast: Humanity and Beyond",
