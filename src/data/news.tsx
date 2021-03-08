@@ -20,6 +20,12 @@ export interface News {
 
 const news: News[] = [
 	{
+		title: "PSTDL T-REX Team Receives Artemis Award",
+		date: {month: 1, day: 11, year: 2021},
+		content: <p>The T-REX team received the Artemis Award from Director of NASA, Jim Bridenstine. The team won the Artemis award for presenting at the NASA BIG Idea 2020 conference.</p>,
+		link: "https://www.nasa.gov/feature/langley/tech-designed-by-university-students-could-shine-light-on-extreme-lunar-environmentsgit"
+	},
+	{
 		title: "PSTDL T-REX Team Presents at NASA BIG IDEA 2020",
 		date: {month: 1, day: 6, year: 2021},
 		content: <p>The T-REX presented at the BIG IDEA 2020 conference. Following their presentation, the T-REX team had a Q&A with NASA scientists and the public.</p>,
