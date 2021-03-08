@@ -32,6 +32,7 @@ export class PartnershipsPage extends React.Component<PartnershipsPageProps, Par
 			<div className={"grid"}>
 				<img src={"nasa.png"} alt={"nasa"}/>
 				<img src={"honeybee.png"} alt={"honeybee"}/>
+				<img src={"mtu.png"} alt={"mtu"}/>
 			</div>
 		</div>);
 	}

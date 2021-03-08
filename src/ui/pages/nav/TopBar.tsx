@@ -29,6 +29,7 @@ export class TopBar extends React.Component<TopBarProps, TopBarState> {
 	public render(): React.ReactElement {
 		return (<div className={"TopBar"}>
 			<NavLink to={"/"} className={"title"}>
+				<img className={"logo"} src={"/mtu.png"} alt={"mtu logo"}/>
 				<img className={"logo"} src={"/logo.png"} alt={"pstdl logo"}/>
 				<div className={"labels"}>
 					<h1>PSTDL</h1>

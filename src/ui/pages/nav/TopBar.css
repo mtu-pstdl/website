@@ -29,7 +29,6 @@
 .TopBar .logo {
   width: 60px;
   object-fit: contain;
-  border-radius: 20px;
   margin-right: 12px;
   display: block;
 }
