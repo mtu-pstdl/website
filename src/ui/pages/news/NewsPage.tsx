@@ -28,9 +28,14 @@ export class NewsPage extends React.Component<NewsPageProps, NewsPageState> {
 
 	}
 
+	private handleSave(): void {
+
+	}
+
 	public render(): React.ReactElement {
 		return (<div className={"NewsPage main"}>
 			<h2>News</h2>
+			<button>save</button>
 			<div className={"container"}>
 				{getSortedNews().map(news => {
 					return <NewsClipView news={news}/>;
