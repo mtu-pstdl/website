@@ -8,6 +8,17 @@
 import {default as firebase} from 'firebase/app';
 import 'firebase/firestore';
 
+export interface Member {
+	bio?: string;
+	email: string;
+	firstName: string;
+	lastName: string;
+	linkedIn?: string;
+	profile?: string;
+	type: "bs" | "ms" | "phd" | "pi";
+	alumni?: boolean;
+}
+
 export abstract class Firebase {
 
 	public static firestore: firebase.firestore.Firestore;
