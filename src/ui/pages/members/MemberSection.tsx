@@ -30,10 +30,7 @@ export class MemberSection extends React.Component<MemberSectionProps, MemberSec
 		return (<div className={"MemberSection"}>
 			<h3>{this.props.collection.title}</h3>
 			<div className={"members"}>
-				{this.props.collection.members.sort((a: Member, b: Member) => {
-					if (a.key !== undefined || b.key !== undefined) return (a.key ?? 0) > (b.key ?? 0) ? -1 : 1;
-					return (a.lastName < b.lastName) ? -1 : 1;
-				}).map((member: Member) => {
+				{this.props.collection.members.map((member: Member) => {
 					return this.props.collection.detail ? <MemberViewLead member={member}/> : <MemberView member={member}/>;
 				})}
 			</div>

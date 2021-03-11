@@ -5,38 +5,47 @@
  * github.com/elijahjcobb
  */
 
-import * as React from "react";
-import "./MembersPage.css"
-import {alumni, MemberCollection, members} from "../../../data/members";
+import React, {ReactElement, PropsWithChildren} from "react";
+import {Firebase} from "../../../data/Firebase";
+import {useAsync} from "react-async-hook";
+import "./MembersPage.css";
+import {MemberCollection} from "../../../data/members";
 import {MemberSection} from "./MemberSection";
+import firebase from "firebase";
 
 export interface MembersPageProps {
 
 }
 
-export interface MembersPageState {
+async function getMembers(): Promise<{ members: MemberCollection[], alumni: MemberCollection[] }> {
+	const collection = Firebase.firestore.collection("members");
+	const all = (await collection.get()).docs;
+	const members: MemberCollection[] = [];
+	const alumni: MemberCollection[] = [];
+	for (const member of all) {
 
+	}
+	return {};
 }
 
-export class MembersPage extends React.Component<MembersPageProps, MembersPageState> {
+export function MembersPage(props: PropsWithChildren<MembersPageProps>): ReactElement {
 
-	public constructor(props: MembersPageProps) {
+	const handler = useAsync(getMembers, []);
 
-		super(props);
-
-	}
-
-	public render(): React.ReactElement {
-		return (<div className={"MembersPage main"}>
-			<h2>Members</h2>
-			{members.map((memberCollection: MemberCollection) => {
-				return <MemberSection collection={memberCollection}/>
-			})}
-			<h2>Alumni</h2>
-			{alumni.map((memberCollection: MemberCollection) => {
-				return <MemberSection collection={memberCollection}/>
-			})}
-		</div>);
-	}
-
+	return (<div>
+		{handler.loading && <div/>}
+		{handler.error && <p>Error: {handler.error.message}</p>}
+		{handler.result && (
+			<div className={"MembersPage main"}>
+				<h2>Members</h2>
+				{handler.result.members.map((memberCollection: MemberCollection) => {
+					return <MemberSection collection={memberCollection}/>
+				})}
+				<h2>Alumni</h2>
+				{handler.result.alumni.map((memberCollection: MemberCollection) => {
+					return <MemberSection collection={memberCollection}/>
+				})}
+			</div>
+		)}
+	</div>);
 }

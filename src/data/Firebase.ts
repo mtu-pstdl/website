@@ -24,4 +24,8 @@ export abstract class Firebase {
 		});
 		this.firestore = firebase.firestore();
 	}
+
+	public static formatDate(date: {month?: number, day?: number, year?: number}): firebase.firestore.Timestamp {
+		return firebase.firestore.Timestamp.fromDate(new Date(`${date.month ?? 1}/${date.day ?? 1}/${date.year ?? 2021}`))
+	}
 }

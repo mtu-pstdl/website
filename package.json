@@ -18,7 +18,9 @@
     "@types/react-router-dom": "latest",
     "@material-ui/icons": "latest",
     "@material-ui/core": "latest",
-    "firebase": "latest"
+    "firebase": "latest",
+    "react-markdown": "latest",
+    "react-async-hook": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
