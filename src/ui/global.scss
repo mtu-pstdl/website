@@ -19,6 +19,7 @@
 
 body {
 	background: black;
+	color: white;
 }
 
 @font-face {
@@ -45,27 +46,12 @@ h2, h3 {
 	margin: 10px 0;
 }
 
-.main {
-	margin: 10px;
+
+.rootAppContainer {
+	margin-top: $navBarHeightSmall;
 }
 
 @media (min-width: $constraint) {
-
-	.rootAppContainer {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.main {
-		width: 80%;
-		margin: min(10vh, 100px) 20px 20px;
-		max-width: 800px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-
-	}
 
 	h2 {
 		font-size: 3em;

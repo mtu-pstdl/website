@@ -8,6 +8,8 @@
 import React, {ReactElement, PropsWithChildren} from "react";
 import "./MenuView.css";
 import {ArrowRight} from "@material-ui/icons";
+import {links} from "./links";
+import {NavLink} from "react-router-dom";
 
 export interface MenuViewProps {
 	open: boolean;
@@ -17,14 +19,11 @@ export interface MenuViewProps {
 export function MenuView(props: PropsWithChildren<MenuViewProps>): ReactElement {
 
 	return (<div className={"MenuView" + (props.open ? " menuAnimate" : "")}>
-		<MenuItemView name={"home"} url={""}/>
-		<MenuItemView name={"projects"}/>
-		<MenuItemView name={"members"}/>
-		<MenuItemView name={"news"}/>
-		<MenuItemView name={"publications"}/>
-		<MenuItemView name={"facilities"}/>
-		<MenuItemView name={"partnerships"}/>
-		<MenuItemView name={"contact"}/>
+		{
+			(links.map((link, i) => {
+				return (<MenuItemView handleClose={props.handleClose} key={i} name={link.name} url={link.url}/>)
+			}))
+		}
 	</div>);
 
 }
@@ -33,11 +32,12 @@ export function MenuView(props: PropsWithChildren<MenuViewProps>): ReactElement 
 export interface MenuItemViewProps {
 	name: string;
 	url?: string;
+	handleClose: () => void;
 }
 
 export function MenuItemView(props: MenuItemViewProps): ReactElement {
-	return (<a className={"MenuItemView"}>
+	return (<NavLink onClick={props.handleClose} exact={(props.url !== undefined)} to={"/" + (props.url !== undefined ? props.url : props.name)} className={"MenuItemView"}>
 		<span className={"text"}>{props.name}</span>
 		<ArrowRight className={"arrow"}/>
-	</a>)
+	</NavLink>)
 }
