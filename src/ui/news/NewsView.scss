@@ -1,0 +1,86 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+
+@import "../variables";
+
+
+.NewsView {
+
+	background: $antiAstraBackground;
+	box-shadow: $antiAstraBoxShadow;
+	text-decoration: none;
+	color: white;
+	width: 100%;
+	margin-bottom: $paddingMedium;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: $paddingMedium;
+	border-radius: 10px;
+
+	.left {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 100%;
+		padding-right: $paddingSmall;
+
+		.top {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+
+			* {
+				display: block;
+			}
+
+			.title {
+				color: $mtuGold;
+				font-weight: bold;
+			}
+			.date {
+				font-weight: lighter;
+				padding: $paddingSmall 0;
+			}
+		}
+		.bottom {
+
+		}
+	}
+	.link {
+		display: block;
+		text-decoration: none;
+		color: white;
+	}
+}
+
+
+
+@media (min-width: $constraint) {
+	.NewsView {
+		padding: $paddingBig;
+		margin-bottom: $paddingBig;
+		.left {
+			.top {
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+			}
+		}
+	}
+
+	.NewsViewClickable {
+		transition: all 250ms ease-in-out;
+	}
+
+	.NewsViewClickable:hover {
+		box-shadow: 0 0 20px $mtuGold;
+		transform: scale(1.05);
+	}
+
+}

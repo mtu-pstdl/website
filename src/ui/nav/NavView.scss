@@ -8,7 +8,7 @@
 @import "../variables";
 
 .App {
-	width: 100vw;
+	width: 100%;
 }
 
 .NavView {
@@ -16,15 +16,44 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100vw;
+	width: 100%;
 	justify-content: space-between;
 	align-items: center;
-	height: $navBarHeightSmall;
+	height: $navBarHeight;
 	padding: 0 20px;
 	background: $mtuGold;
 	color: $mtuBlack;
 	box-shadow: 0 0 10px black;
 	z-index: 99999;
+
+	.bar {
+		display: none;
+		align-items: center;
+
+		.link {
+			color: black;
+			font-weight: lighter;
+			display: block;
+			margin-right: 28px;
+			text-transform: uppercase;
+			font-size: 1.25em;
+			text-decoration: none;
+			transition: transform 250ms ease-in-out;
+		}
+
+		.link:hover {
+			transform: scale(1.125);
+		}
+	}
+
+	.hamburger {
+		display: block;
+		transition: transform 250ms ease-in-out;
+	}
+
+	.hamburger:hover {
+		transform: scale(1.25);
+	}
 
 	.openButton {
 		width: 40px;
@@ -53,6 +82,17 @@
 			height: 100%;
 			width: 40px;
 			object-fit: contain;
+		}
+	}
+}
+
+@media(min-width: $navBarEnableWidth) {
+	.NavView {
+		.hamburger, .MenuView {
+			display: none;
+		}
+		.bar {
+			display: flex;
 		}
 	}
 }

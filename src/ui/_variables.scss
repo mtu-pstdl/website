@@ -9,10 +9,16 @@ $mtuGold: #ffcd00;
 $mtuBlack: black;
 $white: #fff;
 $background: #222;
-$constraint: 900px;
+$constraint: 800px;
 
 $antiAstraBoxShadow: 0 0 20px #202020;
 $antiAstraBackground: rgba(0,0,0,0.9);
 
-$navBarHeightSmall: 80px;
-$navBarWidth: min(100vw, 800px);
+$navBarHeight: 80px;
+$navBarWidth: min(100vw, #{$constraint});
+$navBarEnableWidth: 1400px;
+$mainWidth: min(100%, #{$constraint});
+
+$paddingSmall: 8px;
+$paddingMedium: 16px;
+$paddingBig: 32px;

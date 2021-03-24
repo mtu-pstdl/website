@@ -24,7 +24,7 @@ export function App(props: PropsWithChildren<AppProps>): ReactElement {
 					(links.map((link, i) => {
 						return (<Route key={i} path={"/" + (link.url ? link.url : link.name)}>
 							<div className={"rootAppContainer"}>
-								{link.name}
+								{link.element ? link.element : <div/>}
 							</div>
 						</Route>)
 					}))

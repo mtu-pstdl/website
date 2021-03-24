@@ -7,6 +7,14 @@
 
 @import "variables";
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+
+a {
+	color: $mtuGold;
+	text-decoration: none;
+}
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -18,8 +26,9 @@
 }
 
 body {
-	background: black;
-	color: white;
+	font-family: "Roboto", sans-serif;
+	background: $mtuBlack;
+	color: $white;
 }
 
 @font-face {
@@ -48,7 +57,15 @@ h2, h3 {
 
 
 .rootAppContainer {
-	margin-top: $navBarHeightSmall;
+	margin-top: $navBarHeight;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main {
+	width: $mainWidth;
+	padding: $paddingMedium;
 }
 
 @media (min-width: $constraint) {
@@ -62,7 +79,11 @@ h2, h3 {
 	}
 
 	h2, h3 {
-		margin: 20px 0;
+		margin: $paddingMedium 0;
+	}
+
+	.main {
+		padding: 40px;
 	}
 
 

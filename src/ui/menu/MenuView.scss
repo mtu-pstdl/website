@@ -9,11 +9,11 @@
 
 .MenuView {
 	position: fixed;
-	top: $navBarHeightSmall;
+	top: $navBarHeight;
 	left: 0;
 	width: $navBarWidth;
 	background: $mtuGold;
-	height: calc(100vh - #{$navBarHeightSmall});
+	height: calc(100vh - #{$navBarHeight});
 	z-index: 999;
 	color: black;
 	transform: translateX(100vw);

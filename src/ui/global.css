@@ -10,6 +10,12 @@
  * elijahcobb.com
  * github.com/elijahjcobb
  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+a {
+  color: #ffcd00;
+  text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,8 +26,9 @@
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   background: black;
-  color: white;
+  color: #fff;
 }
 
 @font-face {
@@ -49,9 +56,17 @@ h2, h3 {
 
 .rootAppContainer {
   margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (min-width: 900px) {
+.main {
+  width: min(100%, 800px);
+  padding: 16px;
+}
+
+@media (min-width: 800px) {
   h2 {
     font-size: 3em;
   }
@@ -61,7 +76,11 @@ h2, h3 {
   }
 
   h2, h3 {
-    margin: 20px 0;
+    margin: 16px 0;
+  }
+
+  .main {
+    padding: 40px;
   }
 }
 

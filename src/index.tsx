@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./ui/index.css";
 import "./ui/global.css";
 import {Firebase} from "./data/Firebase";
 import {App} from "./ui/App";
