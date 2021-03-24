@@ -19,6 +19,10 @@
   -moz-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+body {
+  background: black;
+}
+
 @font-face {
   font-family: Nasa;
   src: url("Righteous.ttf");

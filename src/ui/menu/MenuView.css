@@ -1,0 +1,62 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+.MenuView {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: min(100vw, 800px);
+  background: #ffcd00;
+  height: calc(100vh - 80px);
+  z-index: 999;
+  color: black;
+  transform: translateX(100vw);
+  box-shadow: 0 0 5px black inset;
+  transition: transform 0.45s cubic-bezier(0.55, 0, 0.1, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 20px;
+}
+
+.menuAnimate {
+  transform: translateX(calc(100vw - min(100vw, 800px)));
+}
+
+.MenuItemView {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 1.5em;
+  border-bottom: solid 1px gray;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.MenuItemView .arrow {
+  width: 30px;
+  height: 30px;
+}
+
+.MenuItemView .text {
+  transition: transform 250ms ease-in-out;
+}
+
+.MenuItemView:hover .text {
+  transform: scale(1.125);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=MenuView.css.map */

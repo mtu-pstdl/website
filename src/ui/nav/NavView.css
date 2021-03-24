@@ -1,0 +1,58 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+.App {
+  background: linear-gradient(black, white);
+  width: 100vw;
+}
+
+.NavView {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  background: #ffcd00;
+  color: black;
+  box-shadow: 0 0 10px black;
+  z-index: 99999;
+}
+.NavView .openButton {
+  width: 40px;
+  height: 40px;
+  transition: transform 250ms ease-in-out;
+}
+.NavView .openButton:hover {
+  transform: scale(1.25);
+}
+.NavView .header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.NavView .header * {
+  margin-right: 10px;
+}
+.NavView .header h1 {
+  font-size: 3em;
+}
+.NavView .header img {
+  height: 100%;
+  width: 40px;
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=NavView.css.map */
