@@ -35,17 +35,17 @@
 			font-weight: bold;
 			display: block;
 			padding: $paddingMedium;
-			margin-right: $paddingSmall;
+			margin-right: $paddingMedium;
 			text-transform: lowercase;
 			font-size: 1.125em;
 			text-decoration: none;
-			border-radius: 10px;
+			border-radius: $paddingMedium;
 			transition: box-shadow 250ms ease-in-out;
 		}
 
 		.link-active, .link:hover {
-			box-shadow: 2px 2px 5px $mtuGold,
-			0 0 5px black;
+			box-shadow: 4px 4px 10px $mtuGold,
+			0 0 10px black;
 		}
 	}
 

@@ -38,15 +38,15 @@
   font-weight: bold;
   display: block;
   padding: 16px;
-  margin-right: 8px;
+  margin-right: 16px;
   text-transform: lowercase;
   font-size: 1.125em;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 16px;
   transition: box-shadow 250ms ease-in-out;
 }
 .NavView .bar .link-active, .NavView .bar .link:hover {
-  box-shadow: 2px 2px 5px #ffcd00, 0 0 5px black;
+  box-shadow: 4px 4px 10px #ffcd00, 0 0 10px black;
 }
 .NavView .hamburger {
   display: block;
