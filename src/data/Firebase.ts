@@ -51,11 +51,21 @@ export interface Members {
 	alumni: MemberSet
 }
 
+export type MembersCleanedSubsection = {
+	subheader: string,
+	members: Member[]
+};
+
+export type MembersCleaned = {
+	header: string,
+	subsections: MembersCleanedSubsection[]
+}[];
+
 export abstract class Firebase {
 
 	public static firestore: firebase.firestore.Firestore;
 
-	public static init(): void {
+	public static init(debug: boolean = false): void {
 		firebase.initializeApp({
 			apiKey: "AIzaSyC_OFyi1PeI2v9JTGGW8jRWHkOf2r3-TvM",
 			authDomain: "pstdl-website.firebaseapp.com",
@@ -66,6 +76,7 @@ export abstract class Firebase {
 			measurementId: "G-XX0V1R08PM"
 		});
 		this.firestore = firebase.firestore();
+		if (debug) this.firestore.useEmulator("localhost", 8080);
 	}
 
 	public static async fetchNews(): Promise<News[]> {
@@ -100,30 +111,48 @@ export abstract class Firebase {
 		}
 	}
 
-	public static async fetchMembers(): Promise<Members> {
+	public static async fetchMembers(): Promise<Member[]> {
 		const collection = Firebase.firestore.collection("/members")
 		const docs = (await collection.get()).docs;
-		const members: Members = {
-			members: {
-				bs: [],
-				ms: [],
-				phd: [],
-				pi: []
-			},
-			alumni: {
-				bs: [],
-				ms: [],
-				phd: [],
-				pi: []
+		return docs.map(d => {
+			return d.data() as Member;
+		})
+	}
+
+	public static async fetchMembersClean(): Promise<MembersCleaned> {
+
+		function indexForType(major: string): number {
+			switch (major) {
+				case "pi":
+					return 0;
+				case "phd":
+					return 1;
+				case "ms":
+					return 2;
+				case "bs":
+					return 3;
+				default:
+					return -1;
 			}
-		};
-		for (const d of docs) {
-			const member = d.data() as Member;
-			const key = member.alumni === true ? "alumni" : "members";
-			const set = members[key][member.type]
-			set.concat(member)
 		}
-		return members;
+
+		const members = await Firebase.fetchMembers();
+		const res: MembersCleaned = [{header: "Members", subsections: [
+				{subheader: "pi", members: []},
+				{subheader: "phd", members: []},
+				{subheader: "ms", members: []},
+				{subheader: "bs", members: []}
+			]}, {header: "Alumni", subsections: [
+				{subheader: "pi", members: []},
+				{subheader: "phd", members: []},
+				{subheader: "ms", members: []},
+				{subheader: "bs", members: []}
+			]}];
+		for (const m of members) {
+			const p = res[(m.alumni === true) ? 1 : 0].subsections[indexForType(m.type)];
+			p.members.push(m)
+		}
+		return res;
 	}
 
 	public static formatDate(date: {month?: number, day?: number, year?: number}): firebase.firestore.Timestamp {

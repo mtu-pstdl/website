@@ -4,11 +4,9 @@ import "./ui/global.css";
 import {Firebase} from "./data/Firebase";
 import {App} from "./ui/App";
 
-Firebase.init();
+Firebase.init(true);
 
 ReactDOM.render(
-  <React.StrictMode>
-      <App/>
-  </React.StrictMode>,
+    <App/>,
   document.getElementById('root')
 );
