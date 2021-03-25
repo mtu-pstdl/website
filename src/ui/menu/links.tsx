@@ -9,9 +9,10 @@ import React, {ReactElement} from "react";
 import {NewsPage} from "../news/NewsPage";
 import {PublicationsPage} from "../publications/PublicationsPage";
 import {MembersPage} from "../members/MembersPage";
+import {HomePage} from "../home/HomePage";
 
 export const links: {name: string, url?: string, element?: ReactElement}[] = [
-	{name: "home", url: ""},
+	{name: "home", url: "", element: <HomePage/>},
 	{name: "projects"},
 	{name: "members", element: <MembersPage/>},
 	{name: "news", element: <NewsPage/>},

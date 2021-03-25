@@ -29,7 +29,7 @@ export function NavView(props: PropsWithChildren<NavViewProps>): ReactElement {
 		<div className={"bar"}>
 			{
 				(links.map((link, a) => {
-					return <NavLink key={a} className={"link"} exact={(link.url !== undefined)} to={"/" + (link.url !== undefined ? link.url : link.name)}>{link.name}</NavLink>
+					return <NavLink key={a} activeClassName={"link-active"} className={"link"} exact={(link.url !== undefined)} to={"/" + (link.url !== undefined ? link.url : link.name)}>{link.name}</NavLink>
 				}))
 			}
 		</div>

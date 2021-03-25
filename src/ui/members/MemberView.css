@@ -85,6 +85,8 @@
   text-align: justify;
   line-height: 1.5;
   max-width: 800px;
+  max-height: 70%;
+  overflow-y: scroll;
 }
 
 @media (min-width: 800px) {

@@ -61,6 +61,8 @@ export type MembersCleaned = {
 	subsections: MembersCleanedSubsection[]
 }[];
 
+type CollectionData = {id: string, doc: object}[];
+
 export abstract class Firebase {
 
 	public static firestore: firebase.firestore.Firestore;

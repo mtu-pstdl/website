@@ -32,17 +32,20 @@
 
 		.link {
 			color: black;
-			font-weight: lighter;
+			font-weight: bold;
 			display: block;
-			margin-right: 28px;
-			text-transform: uppercase;
+			padding: $paddingMedium;
+			margin-right: $paddingSmall;
+			text-transform: lowercase;
 			font-size: 1.125em;
 			text-decoration: none;
-			transition: transform 250ms ease-in-out;
+			border-radius: 10px;
+			transition: box-shadow 250ms ease-in-out;
 		}
 
-		.link:hover {
-			transform: scale(1.125);
+		.link-active, .link:hover {
+			box-shadow: 2px 2px 5px $mtuGold,
+			0 0 5px black;
 		}
 	}
 

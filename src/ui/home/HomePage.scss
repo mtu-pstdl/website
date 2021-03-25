@@ -1,0 +1,79 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+
+@import "../variables";
+
+.HomePage {
+
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - #{$navBarHeight});
+	align-items: center;
+	padding: $paddingSmall;
+
+	.moon {
+		height: 50%;
+		width: 100%;
+	}
+
+	.right {
+
+		height: 50%;
+		padding: $paddingMedium;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+
+		.logo {
+			width: 100%;
+		}
+
+		.mission {
+			padding: $paddingSmall;
+			text-align: center;
+		}
+
+	}
+}
+
+@media (min-width: $constraint) {
+	.HomePage {
+
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: $paddingBig;
+
+		.moon {
+			width: 50%;
+			height: 100%;
+		}
+
+		.right {
+
+			padding: $paddingBig;
+			width: 50%;
+			height: 100%;
+			justify-content: center;
+			align-items: flex-start;
+
+			.logo {
+
+			}
+
+			.mission {
+				text-align: left;
+				text-transform: uppercase;
+				line-height: 1.5;
+				font-style: italic;
+				font-size: 1.25em;
+			}
+
+		}
+	}
+}

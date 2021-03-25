@@ -43,6 +43,24 @@
 .PublicationsPage table .authorsColumn {
   min-width: 140px;
 }
+.PublicationsPage table .title {
+  width: 40%;
+}
+.PublicationsPage table .date {
+  width: 10%;
+}
+.PublicationsPage table .titleRow {
+  font-weight: bold;
+}
+.PublicationsPage table .dateRow {
+  font-weight: lighter;
+}
+.PublicationsPage table .authors {
+  width: 30%;
+}
+.PublicationsPage table .publications {
+  width: 20%;
+}
 .PublicationsPage .button {
   width: 60px;
   height: 60px;

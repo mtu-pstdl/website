@@ -22,7 +22,7 @@ export function App(props: PropsWithChildren<AppProps>): ReactElement {
 			<Switch>
 				{
 					(links.map((link, i) => {
-						return (<Route key={i} path={"/" + (link.url ? link.url : link.name)}>
+						return (<Route key={i} exact path={"/" + ((link.url !== undefined) ? link.url : link.name)}>
 							<div className={"rootAppContainer"}>
 								{link.element ? link.element : <div/>}
 							</div>

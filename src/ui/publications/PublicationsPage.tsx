@@ -43,18 +43,18 @@ export function PublicationsPage(): ReactElement {
 				<table className={"publications"}>
 					<thead>
 					<tr className={"header"}>
-						<th>Title</th>
-						<th>Date</th>
-						<th>Authors</th>
-						<th>Publication</th>
+						<th className={"title"}>Title</th>
+						<th className={"date"}>Date</th>
+						<th className={"authors"}>Authors</th>
+						<th className={"publications"}>Publication</th>
 					</tr>
 					</thead>
 					<tbody>
 					{publications.map((publication, i) => {
 						return (
 							<tr className={"row"} key={i}>
-								<td>{publication.title}</td>
-								<td>{publication.date.toLocaleDateString()}</td>
+								<td className={"titleRow"}>{publication.title}</td>
+								<td className={"dateRow"}>{publication.date.toLocaleDateString()}</td>
 								<td>{publication.authors.join(", ")}</td>
 								<td>{publication.publication}</td>
 							</tr>
