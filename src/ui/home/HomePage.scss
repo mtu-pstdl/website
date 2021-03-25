@@ -15,6 +15,10 @@
 	align-items: center;
 	padding: $paddingSmall;
 
+	.earth {
+		display: none;
+	}
+
 	.moon {
 		height: 50%;
 		width: 100%;
@@ -52,15 +56,23 @@
 		.moon {
 			width: 50%;
 			height: 100%;
+			margin: 0;
+			padding: 0;
+			z-index: 2;
 		}
 
 		.right {
 
 			padding: $paddingBig;
-			width: 50%;
-			height: 100%;
+			z-index: 2;
+			margin: 0;
+			width: 45%;
 			justify-content: center;
 			align-items: flex-start;
+			box-shadow: 0 0 40px $mtuGoldTainted;
+			border-radius: 20px;
+			background: rgba(0, 0, 0, 0.5);
+			transform: perspective(800px) rotateX(-2deg) rotateY(-8deg) translateX(-40px);
 
 			.logo {
 
@@ -68,12 +80,38 @@
 
 			.mission {
 				text-align: left;
-				text-transform: uppercase;
 				line-height: 1.5;
-				font-style: italic;
 				font-size: 1.25em;
 			}
 
+		}
+
+		.earth {
+			display: block;
+			position: fixed;
+			bottom: -150px;
+			right: -150px;
+			width: 300px;
+			height: 300px;
+			z-index: 2;
+		}
+
+		.mars {
+			display: block;
+			position: fixed;
+			top: -100px;
+			left: -100px;
+			width: 40px;
+			height: 40px;
+			animation: marsAnimation 60s infinite;
+		}
+
+		@keyframes marsAnimation {
+			100% {
+				top: calc(100vh - 40px);
+				left: calc(100vw - 40px);
+				//transform: translateX(600px) translateY(600px);
+			}
 		}
 	}
 }

@@ -32,11 +32,11 @@
 
 		.link {
 			color: black;
-			font-weight: bold;
+			font-weight: normal;
 			display: block;
 			padding: $paddingMedium;
 			margin-right: $paddingMedium;
-			text-transform: lowercase;
+			text-transform: capitalize;
 			font-size: 1.125em;
 			text-decoration: none;
 			border-radius: $paddingMedium;
@@ -79,6 +79,15 @@
 
 		h1 {
 			font-size: 3em;
+
+			.P, .S, .T, .D, .L {
+				padding: 0;
+				margin: 0;
+			}
+
+			.p, .s, .t, .d, .l {
+				display: none;
+			}
 		}
 
 		img {
@@ -96,6 +105,44 @@
 		}
 		.bar {
 			display: flex;
+		}
+
+		.header {
+			h1 {
+
+				display: flex;
+				justify-content: flex-start;
+				align-items: baseline;
+
+				.P, .S, .T, .D, .L {
+
+				}
+
+				.p, .s, .t, .d, .l {
+					font-weight: lighter;
+					text-transform: lowercase;
+					font-family: "Roboto", sans-serif;
+					padding: 0;
+					font-size: 0.5em;
+					margin: 0 0 0 $paddingSmall/2;
+					display: block;
+					width: 0;
+					overflow: hidden;
+					transition: width 250ms ease-in-out;
+				}
+
+				.P:hover, .S:hover, .T:hover, .D:hover, .L:hover {
+					cursor: pointer;
+				}
+
+				.P:hover + .p,
+				.S:hover + .s,
+				.T:hover + .t,
+				.D:hover + .d,
+				.L:hover + .l {
+					width: 140px;
+				}
+			}
 		}
 	}
 }

@@ -24,7 +24,18 @@ export function NavView(props: PropsWithChildren<NavViewProps>): ReactElement {
 		<div className={"header"}>
 			<img src={"/mtu.png"} alt={"mtu"}/>
 			<img src={"/logo.png"} alt={"pstdl"}/>
-			<h1>PSTDL</h1>
+			<h1>
+				<span className={"P"}>P</span>
+				<span className={"p"}>lanetary</span>
+				<span className={"S"}>S</span>
+				<span className={"s"}>urface</span>
+				<span className={"T"}>T</span>
+				<span className={"t"}>echnology</span>
+				<span className={"D"}>D</span>
+				<span className={"d"}>evelopment</span>
+				<span className={"L"}>L</span>
+				<span className={"l"}>ab</span>
+			</h1>
 		</div>
 		<div className={"bar"}>
 			{

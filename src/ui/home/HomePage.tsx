@@ -20,6 +20,8 @@ export function HomePage(): ReactElement {
 			<img className={"logo"} src={"/swoosh.png"} alt={"logo"}/>
 			<span className={"mission"}>Developing cutting edge technology solutions for planetary surface exploration of the Moon, Mars and beyond. Training the next generation of engineers that will return humanity to other planetary surfaces - this time to stay.</span>
 		</div>
+		<ModelView src={"/earth.glb"} className={"earth"}/>
+		<ModelView src={"/mars.glb"} className={"mars"}/>
 	</div>);
 
 }
