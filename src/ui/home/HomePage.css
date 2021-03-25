@@ -17,7 +17,7 @@
   align-items: center;
   padding: 8px;
 }
-.HomePage .earth {
+.HomePage .earth, .HomePage .mars {
   display: none;
 }
 .HomePage .moon {
