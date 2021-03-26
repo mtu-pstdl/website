@@ -4,7 +4,7 @@ import "./ui/global.css";
 import {Firebase} from "./data/Firebase";
 import {App} from "./ui/App";
 
-Firebase.init(true);
+Firebase.init(false);
 
 ReactDOM.render(
     <App/>,
