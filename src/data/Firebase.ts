@@ -61,6 +61,14 @@ export type MembersCleaned = {
 	subsections: MembersCleanedSubsection[]
 }[];
 
+export interface Project {
+	name: string;
+	summary: string;
+	url: string;
+	image?: string;
+	content?: string;
+}
+
 type CollectionData = {id: string, doc: object}[];
 
 export abstract class Firebase {
@@ -155,6 +163,12 @@ export abstract class Firebase {
 			p.members.push(m)
 		}
 		return res;
+	}
+
+	public static async fetchProjects(): Promise<Project[]> {
+		const collection = Firebase.firestore.collection("/projects")
+		const res = await collection.get();
+		return res.docs.map(doc => doc.data() as Project);
 	}
 
 	public static formatDate(date: {month?: number, day?: number, year?: number}): firebase.firestore.Timestamp {

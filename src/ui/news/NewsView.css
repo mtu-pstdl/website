@@ -53,7 +53,7 @@
   color: white;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .NewsView {
     padding: 32px;
     margin-bottom: 32px;

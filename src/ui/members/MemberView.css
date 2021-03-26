@@ -84,12 +84,12 @@
   padding: 32px;
   text-align: justify;
   line-height: 1.5;
-  max-width: 800px;
+  max-width: 900px;
   max-height: 70%;
   overflow-y: scroll;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .MemberView {
     margin: 32px;
     width: 40%;

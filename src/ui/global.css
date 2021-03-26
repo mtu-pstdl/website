@@ -62,11 +62,11 @@ h2, h3 {
 }
 
 .main {
-  width: min(100%, 800px);
+  width: min(100%, 900px);
   padding: 16px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   h2 {
     font-size: 3em;
   }

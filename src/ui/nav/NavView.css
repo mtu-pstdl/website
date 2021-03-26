@@ -81,13 +81,16 @@
 .NavView .header h1 .p, .NavView .header h1 .s, .NavView .header h1 .t, .NavView .header h1 .d, .NavView .header h1 .l {
   display: none;
 }
-.NavView .header img {
+.NavView .header .mtu {
   height: 100%;
   width: 40px;
   object-fit: contain;
 }
+.NavView .header .globe {
+  width: 100px;
+}
 
-@media (min-width: 1400px) {
+@media (min-width: 1490px) {
   .NavView .hamburger, .NavView .MenuView {
     display: none;
   }

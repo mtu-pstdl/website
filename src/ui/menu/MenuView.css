@@ -14,7 +14,7 @@
   position: fixed;
   top: 80px;
   left: 0;
-  width: min(100vw, 800px);
+  width: min(100vw, 900px);
   background: #ffcd00;
   height: calc(100vh - 80px);
   z-index: 999;
@@ -29,7 +29,7 @@
 }
 
 .menuAnimate {
-  transform: translateX(calc(100vw - min(100vw, 800px)));
+  transform: translateX(calc(100vw - min(100vw, 900px)));
 }
 
 .MenuItemView {

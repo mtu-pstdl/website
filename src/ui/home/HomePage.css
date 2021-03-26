@@ -40,7 +40,7 @@
   text-align: center;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .HomePage {
     flex-direction: row;
     justify-content: center;

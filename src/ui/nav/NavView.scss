@@ -90,10 +90,14 @@
 			}
 		}
 
-		img {
+		.mtu {
 			height: 100%;
 			width: 40px;
 			object-fit: contain;
+		}
+
+		.globe {
+			width: 100px;
 		}
 	}
 }

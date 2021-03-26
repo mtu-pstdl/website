@@ -71,7 +71,7 @@
   transform: scale(1.25);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .PublicationsPage {
     padding: 32px;
   }

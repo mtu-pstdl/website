@@ -22,8 +22,8 @@ export function NavView(props: PropsWithChildren<NavViewProps>): ReactElement {
 
 	return (<div className={"NavView"}>
 		<div className={"header"}>
-			<img src={"/mtu.png"} alt={"mtu"}/>
-			<img src={"/logo.png"} alt={"pstdl"}/>
+			<img className={"mtu"} src={"/mtu.png"} alt={"mtu"}/>
+			<img className={"globe"} src={"/globe.png"} alt={"pstdl"}/>
 			<h1>
 				<span className={"P"}>P</span>
 				<span className={"p"}>lanetary</span>
