@@ -1,0 +1,25 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+
+@import "../variables";
+
+.NotFoundPage {
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: calc(100vh - #{$navBarHeight});
+
+	.title {
+		font-size: calc(100vw / 6);
+		font-family: $nasaFont;
+		color: $mtuGold;
+	}
+
+
+}

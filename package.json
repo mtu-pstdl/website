@@ -15,8 +15,6 @@
     "@types/react-burger-menu": "latest",
     "@types/react-dom": "latest",
     "@types/react-router-dom": "latest",
-    "@types/three": "latest",
-    "firebase": "latest",
     "hamburger-react": "latest",
     "react": "latest",
     "react-async-hook": "latest",
@@ -26,8 +24,10 @@
     "react-markdown": "latest",
     "react-router-dom": "latest",
     "react-scripts": "latest",
-    "three": "latest",
-    "typescript": "latest"
+    "remark-gfm": "latest",
+    "typescript": "latest",
+    "parse": "latest",
+    "@types/parse": "latest"
   },
   "scripts": {
     "start": "react-scripts start",

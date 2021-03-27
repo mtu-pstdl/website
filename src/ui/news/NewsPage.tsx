@@ -10,12 +10,12 @@ import {NewsView} from "./NewsView";
 import "./NewsPage.css"
 import {AstraBackground} from "../astra/Astra";
 import {useAsync} from "react-async-hook"
-import {Firebase} from "../../data/Firebase";
 import {LinearProgress} from "@material-ui/core";
+import {API} from "../../data/API";
 
 export function NewsPage(): ReactElement {
 
-	const req = useAsync(Firebase.fetchNews, []);
+	const req = useAsync(API.fetchNews, []);
 
 	return (<div className={"NewsPage main"}>
 		<AstraBackground/>

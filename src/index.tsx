@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./ui/global.css";
-import {Firebase} from "./data/Firebase";
 import {App} from "./ui/App";
+import {API} from "./data/API";
 
-Firebase.init(false);
+API.init();
 
 ReactDOM.render(
     <App/>,

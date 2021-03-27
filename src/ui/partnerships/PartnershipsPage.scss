@@ -1,0 +1,21 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+
+.PartnershipsPage {
+
+	.grid {
+		display: flex;
+		flex-wrap: wrap;
+
+		img {
+			width: 30%;
+			object-fit: contain;
+			margin: 20px;
+		}
+	}
+
+}

@@ -5,33 +5,17 @@
  * github.com/elijahjcobb
  */
 
-import React, {ReactElement, useState} from "react";
+import React, {ReactElement} from "react";
 import {AstraBackground} from "../astra/Astra";
-import {Firebase, Publication} from "../../data/Firebase";
 import "./PublicationsPage.css";
 import {useAsync} from "react-async-hook";
-import {default as firebase} from 'firebase/app';
 import 'firebase/firestore';
-import {CircularProgress, LinearProgress} from "@material-ui/core";
-import {ExpandMore} from "@material-ui/icons";
+import {LinearProgress} from "@material-ui/core";
+import {API} from "../../data/API";
 
 export function PublicationsPage(): ReactElement {
 
-
-	const [publications, setPublications] = useState<Publication[]>([]);
-	const [nextKey, setNextKey] = useState<firebase.firestore.QueryDocumentSnapshot | undefined>(undefined);
-	const [isLoading, setIsLoading] = useState(false);
-
-	async function handleFetch(): Promise<boolean> {
-		setIsLoading(true);
-		const set = await Firebase.fetchPublications(nextKey);
-		setPublications(publications.concat(set.publications));
-		setNextKey(set.key);
-		setIsLoading(false);
-		return true;
-	}
-
-	const req = useAsync(handleFetch, []);
+	const req = useAsync(API.fetchPublications, []);
 
 	return (<div className={"PublicationsPage"}>
 		<AstraBackground/>
@@ -50,19 +34,18 @@ export function PublicationsPage(): ReactElement {
 					</tr>
 					</thead>
 					<tbody>
-					{publications.map((publication, i) => {
+					{req.result.map((publication, i) => {
 						return (
 							<tr className={"row"} key={i}>
-								<td className={"titleRow"}>{publication.title}</td>
-								<td className={"dateRow"}>{publication.date.toLocaleDateString()}</td>
-								<td>{publication.authors.join(", ")}</td>
-								<td>{publication.publication}</td>
+								<td className={"titleRow"}>{publication.get("title")}</td>
+								<td className={"dateRow"}>{publication.get("date").toLocaleDateString()}</td>
+								<td>{publication.get("authors").join(", ")}</td>
+								<td>{publication.get("publication")}</td>
 							</tr>
 						)
 					})}
 					</tbody>
 				</table>
-				{isLoading ? <CircularProgress/> : <ExpandMore className={"button"} onClick={handleFetch}/>}
 			</div>
 		)}
 	</div>);

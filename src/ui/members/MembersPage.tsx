@@ -8,12 +8,12 @@
 import React, {ReactElement} from "react";
 import {AstraBackground} from "../astra/Astra";
 import {MemberView} from "./MemberView";
-import {Firebase, MembersCleanedSubsection} from "../../data/Firebase";
 import {useAsync} from "react-async-hook";
 import "./MembersPage.css";
 import {LinearProgress} from "@material-ui/core";
+import {API, MembersSubsection} from "../../data/API";
 
-export function MemberSubsectionView(props: {value: MembersCleanedSubsection}): ReactElement {
+export function MemberSubsectionView(props: {value: MembersSubsection}): ReactElement {
 
 	function getSubheader(): string {
 		switch (props.value.subheader) {
@@ -37,7 +37,7 @@ export function MemberSubsectionView(props: {value: MembersCleanedSubsection}): 
 		<div className={"members"}>
 			{props.value.members
 				.sort((a, b) => {
-					return a.lastName.localeCompare(b.lastName)
+					return a.get("lastName").localeCompare(b.get("lastName"))
 				})
 				.map((m, i) => {
 				return <MemberView member={m} key={i}/>
@@ -46,7 +46,7 @@ export function MemberSubsectionView(props: {value: MembersCleanedSubsection}): 
 	</div>;
 }
 
-export function MemberSectionView(props: {value: {header: string, subsections: MembersCleanedSubsection[]}}): ReactElement {
+export function MemberSectionView(props: {value: {header: string, subsections: MembersSubsection[]}}): ReactElement {
 	return (<div>
 		<h2>{props.value.header}</h2>
 		{props.value.subsections.map((x, i) => {
@@ -57,7 +57,7 @@ export function MemberSectionView(props: {value: {header: string, subsections: M
 
 export function MembersPage(): ReactElement {
 
-	const req = useAsync(Firebase.fetchMembersClean, []);
+	const req = useAsync(API.fetchMembers, []);
 
 	return (<div className={"MembersPage main"}>
 		<AstraBackground/>
