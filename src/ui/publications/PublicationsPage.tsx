@@ -9,7 +9,6 @@ import React, {ReactElement} from "react";
 import {AstraBackground} from "../astra/Astra";
 import "./PublicationsPage.css";
 import {useAsync} from "react-async-hook";
-import 'firebase/firestore';
 import {LinearProgress} from "@material-ui/core";
 import {API} from "../../data/API";
 
