@@ -89,6 +89,29 @@ export class API {
 
 	}
 
+	public static fetchMarkdown(url: string): Promise<string> {
+		return new Promise<string>((resolve, reject) => {
+
+			const fullUrl: string = "https://raw.githubusercontent.com/mtu-pstdl/website-md/master/" + url + ".md";
+
+			const req = new XMLHttpRequest();
+			req.addEventListener("load", () => {
+				let res = req.responseText;
+				res = res.replaceAll(/\]\(/g, "](https://raw.githubusercontent.com/mtu-pstdl/website-md/master/");
+				res = res.replaceAll("https://raw.githubusercontent.com/mtu-pstdl/website-md/master/http", "http");
+				resolve(res);
+			});
+
+			req.addEventListener("error", () => {
+				reject();
+			})
+
+			req.open("GET", fullUrl);
+			req.send();
+
+		});
+	}
+
 	public static async fetchNews(): Promise<News[]> {
 		return await (new Query(News)).find();
 	}

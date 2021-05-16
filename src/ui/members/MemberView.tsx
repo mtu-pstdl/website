@@ -47,7 +47,7 @@ export function MemberView(props: PropsWithChildren<MemberViewProps>): ReactElem
 					(
 						<img className={"profile"} alt={"profile"} src={url}/>
 						) : (
-						<Avatar  className={"profile"}>{props.member.get("lastName").charAt(0).toUpperCase()}</Avatar>
+						<Avatar className={"profile"}>{props.member.get("lastName").charAt(0).toUpperCase()}</Avatar>
 					)}
 			</div>
 			<span className={"name"}>{props.member.get("firstName") + " " + props.member.get("lastName")}</span>
