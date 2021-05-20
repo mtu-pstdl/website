@@ -113,11 +113,11 @@ export class API {
 	}
 
 	public static async fetchNews(): Promise<News[]> {
-		return await (new Query(News)).find();
+		return await (new Query(News)).addDescending("date").find();
 	}
 
 	public static async fetchPublications(): Promise<Publication[]> {
-		return await (new Query(Publication)).find();
+		return await (new Query(Publication)).addDescending("date").find();
 	}
 
 	public static async fetchProjects(): Promise<Project[]> {

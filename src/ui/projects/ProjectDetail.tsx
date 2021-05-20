@@ -29,7 +29,7 @@ export function ProjectDetail(props: PropsWithChildren<ProjectDetailProps>): Rea
 	}
 
 	const title = props.project.get("title");
-	const content = props.project.get("content");
+	const content = props.project.get("md");
 	const req = useAsync(handleMarkdown, [content]);
 
 	return (<div className={"ProjectDetail main"}>
@@ -47,5 +47,6 @@ export function ProjectDetail(props: PropsWithChildren<ProjectDetailProps>): Rea
 				renderers={{link: props => <a href={props.href} target="_blank">{props.children}</a>}}
 			/>
 		)}
+		{!content && <span>Information coming soon.</span>}
 	</div>);
 }

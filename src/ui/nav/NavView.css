@@ -39,7 +39,7 @@
   display: block;
   padding: 16px;
   margin-right: 16px;
-  text-transform: capitalize;
+  text-transform: lowercase;
   font-size: 1.125em;
   text-decoration: none;
   border-radius: 16px;

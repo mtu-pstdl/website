@@ -9,7 +9,7 @@ import * as Parse from "parse";
 
 export interface ProjectProps {
 	title: string;
-	content?: string;
+	md?: string;
 	description?: string;
 	image?: Parse.File;
 }

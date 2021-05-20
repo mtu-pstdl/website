@@ -10,7 +10,7 @@ import * as Parse from "parse";
 export interface FacilityProps {
 	title: string;
 	description?: string;
-	content?: string;
+	md?: string;
 	image?: Parse.File;
 }
 

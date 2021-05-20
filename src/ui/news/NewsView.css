@@ -16,7 +16,7 @@
   text-decoration: none;
   color: white;
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,6 +42,7 @@
 .NewsView .left .top .title {
   color: #ffcd00;
   font-weight: bold;
+  font-size: 1.5em;
 }
 .NewsView .left .top .date {
   font-weight: lighter;

@@ -37,7 +37,7 @@
   color: black;
   display: flex;
   padding: 20px;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-weight: lighter;
   font-size: 1.5em;
   border-bottom: solid 1px gray;

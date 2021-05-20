@@ -20,7 +20,8 @@ export function ContactPage(props: PropsWithChildren<ContactPageProps>): ReactEl
 		<h2>Contact</h2>
 		<h3>General Inquiries</h3>
 		<p>Please direct general inquiries to Dr. Paul van Susante at <a className={"link"} href={"mailto:pjvansus@mtu.edu"}>pjvansus@mtu.edu</a></p>
-		<h3>Join</h3>
+		<h2>Apply</h2>
+		<h3>Work at the PSTDL</h3>
 		<ol>
 			<li>To apply to join our lab as a graduate or undergraduate researcher (US citizenship is required).</li>
 			<li>Email Dr. Paul van Susante at <a className={"link"} href={"mailto:pjvansus@mtu.edu"}>pjvansus@mtu.edu</a> with notification of completion of the application form and introduction.</li>
