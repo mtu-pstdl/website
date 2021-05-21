@@ -21,7 +21,7 @@
     "react-burger-menu": "latest",
     "react-dom": "latest",
     "react-globe": "latest",
-    "react-markdown": "latest",
+    "react-markdown": "5.0.3",
     "react-router-dom": "latest",
     "react-scripts": "latest",
     "remark-gfm": "latest",
