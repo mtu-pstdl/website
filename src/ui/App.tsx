@@ -5,54 +5,34 @@
  * github.com/elijahjcobb
  */
 
-import * as React from "react";
-import {TopBar} from "./pages/nav/TopBar";
+import React, {ReactElement, PropsWithChildren} from "react";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import {HomePage} from "./pages/home/HomePage";
-import {MembersPage} from "./pages/members/MembersPage";
-import {ProjectsPage} from "./pages/projects/ProjectsPage";
-import {PublicationsPage} from "./pages/publications/PublicationsPage";
-import {FacilitiesPage} from "./pages/facilities/FacilitiesPage";
-import {ContactPage} from "./pages/contact/ContactPage";
-import {AstraBackground} from "./components/stars/AstraBackground";
-import {NewsPage} from "./pages/news/NewsPage";
-import {PartnershipsPage} from "./pages/partnerships/PartnershipsPage";
+import {NavView} from "./nav/NavView";
+import {links} from "./menu/links";
+import {NotFoundPage} from "./404/NotFoundPage";
 
 export interface AppProps {
 
 }
 
-export interface AppState {
+export function App(props: PropsWithChildren<AppProps>): ReactElement {
 
-}
-
-export class App extends React.Component<AppProps, AppState> {
-
-	public constructor(props: AppProps) {
-
-		super(props);
-
-	}
-
-	public render(): React.ReactElement {
-		return (<div className={"App"}>
-			<AstraBackground/>
-			<Router>
-				<TopBar/>
-				<div className={"rootAppContainer"}>
-					<Switch>
-						<Route path="/projects"><ProjectsPage/></Route>
-						<Route path="/members"><MembersPage/></Route>
-						<Route path="/publications"><PublicationsPage/></Route>
-						<Route path="/facilities"><FacilitiesPage/></Route>
-						<Route path="/contact"><ContactPage/></Route>
-						<Route path="/news"><NewsPage/></Route>
-						<Route path="/partnerships"><PartnershipsPage/></Route>
-						<Route path="/"><HomePage/></Route>
-					</Switch>
-				</div>
-			</Router>
-		</div>);
-	}
+	return (<div className={"App"}>
+		<Router>
+			<NavView/>
+			<Switch>
+				{
+					(links.map((link, i) => {
+						return (<Route key={i} exact path={"/" + ((link.url !== undefined) ? link.url : link.name)}>
+							<div className={"rootAppContainer"}>
+								{link.element ? link.element : <NotFoundPage/>}
+							</div>
+						</Route>)
+					}))
+				}
+				<Route path="*"><NotFoundPage/></Route>
+			</Switch>
+		</Router>
+	</div>);
 
 }

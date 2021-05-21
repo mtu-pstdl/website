@@ -1,0 +1,131 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+
+@import "../variables";
+
+.ProjectDetail {
+
+	.close {
+		position: fixed;
+		top: $navBarHeight + 20px;
+		right: 20px;
+		width: 60px;
+		padding: 10px;
+		height: 60px;
+		background: $mtuGold;
+		color: black;
+		border-radius: 50%;
+		transition: transform 250ms ease-in-out;
+	}
+
+	.close:hover {
+		transform: scale(1.125) rotate(90deg);
+	}
+
+	.md {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		h1, h2, h3 {
+			font-size: 1.75em;
+			color: $mtuGold;
+			font-family: $nasaFont;
+			text-transform: uppercase;
+			margin: $paddingMedium 0 $paddingSmall;
+			padding: 0;
+			font-weight: bold;
+		}
+
+		p {
+			margin: $paddingSmall 0;
+			line-height: 1.5;
+		}
+
+		code {
+			font-family: "Roboto Mono", monospace;
+			color: $mtuGold;
+		}
+
+		pre code {
+			display: block;
+			background: black;
+			box-shadow: 0 0 $paddingSmall $mtuGold;
+			margin: $paddingSmall 0;
+			padding: $paddingMedium;
+			border-radius: $paddingMedium;
+		}
+
+		li {
+			margin: $paddingSmall $paddingMedium 0;
+		}
+
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			background: black;
+			border-radius: $paddingMedium;
+			margin: $paddingMedium 0;
+			overflow: hidden;
+			box-shadow: 0 0 $paddingSmall $mtuGold;
+		}
+
+		table td, table th {
+			box-shadow: 0 0 1px $mtuGold;
+			padding: $paddingSmall;
+		}
+
+		table th {
+			background: $mtuGold;
+			color: black;
+		}
+
+		table tr:nth-child(even) {
+			background: #111;
+		}
+
+		table th {
+			padding: $paddingMedium $paddingSmall;
+			text-align: left;
+		}
+
+		img {
+			width: 100%;
+			object-fit: contain;
+		}
+
+		a {
+
+		}
+	}
+}
+
+@media (min-width: $constraint) {
+	.ProjectDetail {
+
+		.md {
+
+			font-size: 1.125em;
+
+			h1, h2, h3 {
+				font-size: 2em;
+				color: $mtuGold;
+				font-family: $nasaFont;
+				text-transform: uppercase;
+				margin: $paddingMedium 0 $paddingSmall;
+				padding: 0;
+				font-weight: bold;
+			}
+
+			table td, table th {
+				padding: $paddingMedium;
+			}
+
+		}
+	}
+}

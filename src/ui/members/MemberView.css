@@ -1,0 +1,98 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+.MemberView {
+  display: flex;
+  margin: 16px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 0 8px #ffcd00;
+  overflow: hidden;
+  width: min(100%, 360px);
+}
+.MemberView .top {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+.MemberView .top .profile-container {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+.MemberView .top .profile-container .profile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: center;
+}
+.MemberView .top .name {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.MemberView .top .email {
+  font-weight: lighter;
+  color: gray;
+  font-size: 1.125em;
+}
+.MemberView .top .buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.MemberView .top .buttons .button {
+  margin: 8px;
+  transition: transform 250ms ease-in-out;
+  width: 40px;
+  height: 40px;
+  color: #ffcd00;
+}
+.MemberView .top .buttons .button:hover {
+  transform: scale(1.25);
+  cursor: pointer;
+}
+.MemberView .bottom {
+  display: block;
+  background: #ffcd00;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: lighter;
+  font-size: 1.25em;
+}
+.MemberView .bio {
+  font-size: 1.25em;
+  padding: 32px;
+  text-align: justify;
+  line-height: 1.5;
+  max-width: 900px;
+  max-height: 70%;
+}
+
+@media (min-width: 900px) {
+  .MemberView {
+    margin: 32px;
+    width: 40%;
+  }
+}
+
+/*# sourceMappingURL=MemberView.css.map */

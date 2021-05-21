@@ -1,0 +1,78 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+.NewsView {
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 20px #202020;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-radius: 10px;
+}
+.NewsView .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding-right: 8px;
+}
+.NewsView .left .top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.NewsView .left .top * {
+  display: block;
+}
+.NewsView .left .top .title {
+  color: #ffcd00;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.NewsView .left .top .date {
+  font-weight: lighter;
+  padding: 8px 0;
+}
+.NewsView .link {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+@media (min-width: 900px) {
+  .NewsView {
+    padding: 32px;
+    margin-bottom: 32px;
+  }
+  .NewsView .left .top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .NewsViewClickable {
+    transition: all 250ms ease-in-out;
+  }
+
+  .NewsViewClickable:hover {
+    box-shadow: 0 0 20px #ffcd00;
+    transform: scale(1.05);
+  }
+}
+
+/*# sourceMappingURL=NewsView.css.map */

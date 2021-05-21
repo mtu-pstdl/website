@@ -1,0 +1,108 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+.ProjectDetail .close {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  width: 60px;
+  padding: 10px;
+  height: 60px;
+  background: #ffcd00;
+  color: black;
+  border-radius: 50%;
+  transition: transform 250ms ease-in-out;
+}
+.ProjectDetail .close:hover {
+  transform: scale(1.125) rotate(90deg);
+}
+.ProjectDetail .md {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.ProjectDetail .md h1, .ProjectDetail .md h2, .ProjectDetail .md h3 {
+  font-size: 1.75em;
+  color: #ffcd00;
+  font-family: "Nasa", sans-serif;
+  text-transform: uppercase;
+  margin: 16px 0 8px;
+  padding: 0;
+  font-weight: bold;
+}
+.ProjectDetail .md p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+.ProjectDetail .md code {
+  font-family: "Roboto Mono", monospace;
+  color: #ffcd00;
+}
+.ProjectDetail .md pre code {
+  display: block;
+  background: black;
+  box-shadow: 0 0 8px #ffcd00;
+  margin: 8px 0;
+  padding: 16px;
+  border-radius: 16px;
+}
+.ProjectDetail .md li {
+  margin: 8px 16px 0;
+}
+.ProjectDetail .md table {
+  border-collapse: collapse;
+  width: 100%;
+  background: black;
+  border-radius: 16px;
+  margin: 16px 0;
+  overflow: hidden;
+  box-shadow: 0 0 8px #ffcd00;
+}
+.ProjectDetail .md table td, .ProjectDetail .md table th {
+  box-shadow: 0 0 1px #ffcd00;
+  padding: 8px;
+}
+.ProjectDetail .md table th {
+  background: #ffcd00;
+  color: black;
+}
+.ProjectDetail .md table tr:nth-child(even) {
+  background: #111;
+}
+.ProjectDetail .md table th {
+  padding: 16px 8px;
+  text-align: left;
+}
+.ProjectDetail .md img {
+  width: 100%;
+  object-fit: contain;
+}
+@media (min-width: 900px) {
+  .ProjectDetail .md {
+    font-size: 1.125em;
+  }
+  .ProjectDetail .md h1, .ProjectDetail .md h2, .ProjectDetail .md h3 {
+    font-size: 2em;
+    color: #ffcd00;
+    font-family: "Nasa", sans-serif;
+    text-transform: uppercase;
+    margin: 16px 0 8px;
+    padding: 0;
+    font-weight: bold;
+  }
+  .ProjectDetail .md table td, .ProjectDetail .md table th {
+    padding: 16px;
+  }
+}
+
+/*# sourceMappingURL=ProjectDetail.css.map */

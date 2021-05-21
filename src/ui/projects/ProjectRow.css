@@ -1,0 +1,78 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+.ProjectRow {
+  width: min(100%, 300px);
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 20px #333;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  justify-content: center;
+  border-radius: 20px;
+  align-items: center;
+  margin: 32px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 250ms ease-in-out, box-shadow 250ms ease-in-out;
+}
+.ProjectRow .background {
+  position: absolute;
+  filter: blur(8px);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ProjectRow .dark {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+}
+.ProjectRow * {
+  display: block;
+}
+.ProjectRow .logo, .ProjectRow .name, .ProjectRow .summary {
+  z-index: 2;
+}
+.ProjectRow .logo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 20px black;
+}
+.ProjectRow .name, .ProjectRow .summary {
+  padding: 8px;
+  text-align: center;
+}
+.ProjectRow .name {
+  font-weight: bold;
+  font-size: 1.125em;
+}
+.ProjectRow .summary {
+  font-weight: lighter;
+}
+
+.ProjectRow:hover {
+  box-shadow: 0 0 20px #ffcd00;
+  transform: scale(1.125);
+  cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  .ProjectRow .name, .ProjectRow .summary {
+    padding: 16px;
+  }
+}
+
+/*# sourceMappingURL=ProjectRow.css.map */

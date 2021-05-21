@@ -1,0 +1,95 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+.PublicationsPage {
+  padding: 16px;
+}
+.PublicationsPage .content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.PublicationsPage table {
+  width: 100%;
+}
+.PublicationsPage table .iconColumn {
+  width: 10px;
+}
+.PublicationsPage table th {
+  color: #ffcd00;
+  font-weight: bold;
+  text-align: left;
+}
+.PublicationsPage table tr {
+  text-align: left;
+}
+.PublicationsPage table .icon {
+  color: #ffcd00;
+  font-size: 1.5em;
+}
+.PublicationsPage table .dateColumn {
+  min-width: 100px;
+}
+.PublicationsPage table .authorsColumn {
+  min-width: 140px;
+}
+.PublicationsPage table .title {
+  width: 40%;
+}
+.PublicationsPage table .date {
+  width: 10%;
+}
+.PublicationsPage table .titleRow {
+  font-weight: bold;
+}
+.PublicationsPage table .dateRow {
+  font-weight: lighter;
+}
+.PublicationsPage table .authors {
+  width: 30%;
+}
+.PublicationsPage table .publications {
+  width: 20%;
+}
+.PublicationsPage .button {
+  width: 60px;
+  height: 60px;
+  color: #ffcd00;
+  transition: transform 250ms ease-in-out;
+}
+.PublicationsPage .button:hover {
+  transform: scale(1.25);
+}
+
+@media (min-width: 900px) {
+  .PublicationsPage {
+    padding: 32px;
+  }
+  .PublicationsPage .publicationSection {
+    margin-top: 100px;
+  }
+  .PublicationsPage table th {
+    font-size: 1.5em;
+  }
+  .PublicationsPage table th, .PublicationsPage table td {
+    padding: 16px;
+  }
+  .PublicationsPage table .icon {
+    transition: transform 250ms ease-in-out;
+  }
+  .PublicationsPage table .icon:hover {
+    transform: scale(1.5);
+  }
+}
+
+/*# sourceMappingURL=PublicationsPage.css.map */

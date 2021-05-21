@@ -6,6 +6,7 @@
  */
 
 $mtuGold: #ffcd00;
+$mtuGoldTainted: #292100;
 $mtuBlack: black;
 $white: #fff;
 $background: #222;
@@ -13,3 +14,14 @@ $constraint: 900px;
 
 $antiAstraBoxShadow: 0 0 20px #202020;
 $antiAstraBackground: rgba(0,0,0,0.9);
+
+$navBarHeight: 80px;
+$navBarWidth: min(100vw, #{$constraint});
+$navBarEnableWidth: 1490px;
+$mainWidth: min(100%, #{$constraint});
+
+$paddingSmall: 8px;
+$paddingMedium: 16px;
+$paddingBig: 32px;
+
+$nasaFont: "Nasa", sans-serif;

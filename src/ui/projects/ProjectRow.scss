@@ -1,0 +1,85 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+
+@import "../variables";
+
+.ProjectRow {
+
+	width: min(100%, 300px);
+	background: $antiAstraBackground;
+	box-shadow: 0 0 20px #333;
+	display: flex;
+	flex-direction: column;
+	padding: $paddingMedium;
+	justify-content: center;
+	border-radius: 20px;
+	align-items: center;
+	margin: $paddingBig;
+	position: relative;
+	overflow: hidden;
+	transition: transform 250ms ease-in-out, box-shadow 250ms ease-in-out;
+
+	.background {
+		position: absolute;
+		filter: blur(8px);
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.dark {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.75);
+	}
+
+	* {
+		display: block;
+	}
+
+	.logo, .name, .summary {
+		z-index: 2;
+	}
+
+	.logo {
+		width: 180px;
+		height: 180px;
+		object-fit: cover;
+		border-radius: 50%;
+		box-shadow: 0 0 20px black;
+	}
+
+	.name, .summary {
+		padding: $paddingSmall;
+		text-align: center;
+	}
+
+	.name {
+		font-weight: bold;
+		font-size: 1.125em;
+	}
+
+	.summary {
+		font-weight: lighter;
+	}
+
+}
+
+.ProjectRow:hover {
+	box-shadow: 0 0 20px $mtuGold;
+	transform: scale(1.125);
+	cursor: pointer;
+}
+
+@media (min-width: $constraint) {
+	.ProjectRow {
+		.name, .summary {
+			padding: $paddingMedium;
+		}
+	}
+}

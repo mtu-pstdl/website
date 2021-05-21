@@ -1,0 +1,119 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+
+@import "../variables";
+
+.PublicationsPage {
+	padding: $paddingMedium;
+
+	.content {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	table {
+
+		width: 100%;
+
+		.iconColumn {
+			width: 10px;
+		}
+
+		th {
+			color: $mtuGold;
+			font-weight: bold;
+			text-align: left;
+		}
+
+		tr {
+			text-align: left;
+		}
+
+		.icon {
+			color: $mtuGold;
+			font-size: 1.5em;
+		}
+
+		.dateColumn {
+			min-width: 100px;
+		}
+
+		.authorsColumn {
+			min-width: 140px;
+		}
+
+		.title {
+			width: 40%;
+		}
+
+		.date {
+			width: 10%;
+		}
+
+		.titleRow {
+			font-weight: bold;
+		}
+
+		.dateRow {
+			font-weight: lighter;
+		}
+
+		.authors {
+			width: 30%;
+		}
+
+		.publications {
+			width: 20%;
+		}
+
+	}
+
+	.button {
+		width: 60px;
+		height: 60px;
+		color: $mtuGold;
+		transition: transform 250ms ease-in-out;
+	}
+
+	.button:hover {
+		transform: scale(1.25);
+	}
+}
+
+@media (min-width: $constraint) {
+	.PublicationsPage {
+		padding: $paddingBig;
+		.publicationSection {
+			margin-top: 100px;
+		}
+
+		table {
+
+			th {
+				font-size: 1.5em;
+			}
+
+			//tr {
+			//	font-size: 1.125em;
+			//}
+
+			th, td {
+				padding: $paddingMedium;
+			}
+
+			.icon {
+				transition: transform 250ms ease-in-out;
+			}
+
+			.icon:hover {
+				transform: scale(1.5);
+			}
+		}
+	}
+}

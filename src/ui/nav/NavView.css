@@ -1,0 +1,129 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+.App {
+  width: 100%;
+}
+
+.NavView {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  background: #ffcd00;
+  color: black;
+  box-shadow: 0 0 10px black;
+  z-index: 99999;
+}
+.NavView .bar {
+  display: none;
+  align-items: center;
+}
+.NavView .bar .link {
+  color: black;
+  font-weight: normal;
+  display: block;
+  padding: 16px;
+  margin-right: 16px;
+  text-transform: lowercase;
+  font-size: 1.125em;
+  text-decoration: none;
+  border-radius: 16px;
+  transition: box-shadow 250ms ease-in-out;
+}
+.NavView .bar .link-active, .NavView .bar .link:hover {
+  box-shadow: 4px 4px 10px #ffcd00, 0 0 10px black;
+}
+.NavView .hamburger {
+  display: block;
+  transition: transform 250ms ease-in-out;
+}
+.NavView .hamburger:hover {
+  transform: scale(1.25);
+}
+.NavView .openButton {
+  width: 40px;
+  height: 40px;
+  transition: transform 250ms ease-in-out;
+}
+.NavView .openButton:hover {
+  transform: scale(1.25);
+}
+.NavView .header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.NavView .header * {
+  margin-right: 10px;
+}
+.NavView .header h1 {
+  font-size: 3em;
+}
+.NavView .header h1 .P, .NavView .header h1 .S, .NavView .header h1 .T, .NavView .header h1 .D, .NavView .header h1 .L {
+  padding: 0;
+  margin: 0;
+}
+.NavView .header h1 .p, .NavView .header h1 .s, .NavView .header h1 .t, .NavView .header h1 .d, .NavView .header h1 .l {
+  display: none;
+}
+.NavView .header .mtu {
+  height: 100%;
+  width: 40px;
+  object-fit: contain;
+}
+.NavView .header .globe {
+  width: 100px;
+}
+
+@media (min-width: 1490px) {
+  .NavView .hamburger, .NavView .MenuView {
+    display: none;
+  }
+  .NavView .bar {
+    display: flex;
+  }
+  .NavView .header h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+  .NavView .header h1 .p, .NavView .header h1 .s, .NavView .header h1 .t, .NavView .header h1 .d, .NavView .header h1 .l {
+    font-weight: lighter;
+    text-transform: lowercase;
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    font-size: 0.5em;
+    margin: 0 0 0 4px;
+    display: block;
+    width: 0;
+    overflow: hidden;
+    transition: width 250ms ease-in-out;
+  }
+  .NavView .header h1 .P:hover, .NavView .header h1 .S:hover, .NavView .header h1 .T:hover, .NavView .header h1 .D:hover, .NavView .header h1 .L:hover {
+    cursor: pointer;
+  }
+  .NavView .header h1 .P:hover + .p,
+.NavView .header h1 .S:hover + .s,
+.NavView .header h1 .T:hover + .t,
+.NavView .header h1 .D:hover + .d,
+.NavView .header h1 .L:hover + .l {
+    width: 140px;
+  }
+}
+
+/*# sourceMappingURL=NavView.css.map */

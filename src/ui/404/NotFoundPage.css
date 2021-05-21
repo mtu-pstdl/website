@@ -1,0 +1,26 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+.NotFoundPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 80px);
+}
+.NotFoundPage .title {
+  font-size: calc(100vw / 6);
+  font-family: "Nasa", sans-serif;
+  color: #ffcd00;
+}
+
+/*# sourceMappingURL=NotFoundPage.css.map */

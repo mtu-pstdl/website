@@ -1,0 +1,152 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+
+@import "../variables";
+
+.App {
+	width: 100%;
+}
+
+.NavView {
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	height: $navBarHeight;
+	padding: 0 20px;
+	background: $mtuGold;
+	color: $mtuBlack;
+	box-shadow: 0 0 10px black;
+	z-index: 99999;
+
+	.bar {
+		display: none;
+		align-items: center;
+
+		.link {
+			color: black;
+			font-weight: normal;
+			display: block;
+			padding: $paddingMedium;
+			margin-right: $paddingMedium;
+			text-transform: lowercase;
+			font-size: 1.125em;
+			text-decoration: none;
+			border-radius: $paddingMedium;
+			transition: box-shadow 250ms ease-in-out;
+		}
+
+		.link-active, .link:hover {
+			box-shadow: 4px 4px 10px $mtuGold,
+			0 0 10px black;
+		}
+	}
+
+	.hamburger {
+		display: block;
+		transition: transform 250ms ease-in-out;
+	}
+
+	.hamburger:hover {
+		transform: scale(1.25);
+	}
+
+	.openButton {
+		width: 40px;
+		height: 40px;
+		transition: transform 250ms ease-in-out;
+	}
+
+	.openButton:hover {
+		transform: scale(1.25);
+	}
+
+	.header {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+
+		* {
+			margin-right: 10px;
+		}
+
+		h1 {
+			font-size: 3em;
+
+			.P, .S, .T, .D, .L {
+				padding: 0;
+				margin: 0;
+			}
+
+			.p, .s, .t, .d, .l {
+				display: none;
+			}
+		}
+
+		.mtu {
+			height: 100%;
+			width: 40px;
+			object-fit: contain;
+		}
+
+		.globe {
+			width: 100px;
+		}
+	}
+}
+
+@media(min-width: $navBarEnableWidth) {
+	.NavView {
+		.hamburger, .MenuView {
+			display: none;
+		}
+		.bar {
+			display: flex;
+		}
+
+		.header {
+			h1 {
+
+				display: flex;
+				justify-content: flex-start;
+				align-items: baseline;
+
+				.P, .S, .T, .D, .L {
+
+				}
+
+				.p, .s, .t, .d, .l {
+					font-weight: lighter;
+					text-transform: lowercase;
+					font-family: "Roboto", sans-serif;
+					padding: 0;
+					font-size: 0.5em;
+					margin: 0 0 0 $paddingSmall/2;
+					display: block;
+					width: 0;
+					overflow: hidden;
+					transition: width 250ms ease-in-out;
+				}
+
+				.P:hover, .S:hover, .T:hover, .D:hover, .L:hover {
+					cursor: pointer;
+				}
+
+				.P:hover + .p,
+				.S:hover + .s,
+				.T:hover + .t,
+				.D:hover + .d,
+				.L:hover + .l {
+					width: 140px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,117 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+
+@import "../variables";
+
+.HomePage {
+
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - #{$navBarHeight});
+	align-items: center;
+	padding: $paddingSmall;
+
+	.earth, .mars {
+		display: none;
+	}
+
+	.moon {
+		height: 50%;
+		width: 100%;
+		max-width: 600px;
+		max-height: 600px;
+	}
+
+	.right {
+
+		height: 50%;
+		padding: $paddingMedium;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+
+		.logo {
+			width: 100%;
+		}
+
+		.mission {
+			padding: $paddingSmall;
+			text-align: center;
+		}
+
+	}
+}
+
+@media (min-width: $constraint) {
+	.HomePage {
+
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: $paddingBig;
+
+		.moon {
+			margin: 0;
+			padding: 0;
+			z-index: 2;
+		}
+
+		.right {
+
+			padding: $paddingBig;
+			z-index: 2;
+			margin: 0;
+			width: 45%;
+			justify-content: center;
+			align-items: flex-start;
+			box-shadow: 0 0 40px $mtuGoldTainted;
+			border-radius: 20px;
+			background: rgba(0, 0, 0, 0.5);
+			transform: perspective(800px) rotateX(-2deg) rotateY(-8deg) translateX(-40px);
+
+			.logo {
+
+			}
+
+			.mission {
+				text-align: left;
+				line-height: 1.5;
+				font-size: 1.25em;
+			}
+
+		}
+
+		.earth {
+			display: block;
+			position: fixed;
+			bottom: -150px;
+			right: -150px;
+			width: 300px;
+			height: 300px;
+			z-index: 2;
+		}
+
+		.mars {
+			display: block;
+			position: fixed;
+			top: -100px;
+			left: -100px;
+			width: 40px;
+			height: 40px;
+			animation: marsAnimation 60s infinite;
+		}
+
+		@keyframes marsAnimation {
+			100% {
+				top: calc(100vh - 40px);
+				left: calc(100vw - 40px);
+			}
+		}
+
+	}
+}
